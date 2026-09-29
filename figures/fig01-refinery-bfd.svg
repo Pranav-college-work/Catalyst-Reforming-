@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 640" width="1360" height="640" role="img" aria-labelledby="t d">
+<title id="t">Where the FCC sits in a refinery</title>
+<desc id="d">Crude distillation feeds vacuum distillation; vacuum gas oil is hydrotreated and cracked in the FCC; FCC gasoline, alkylate and reformate go to the gasoline pool; LCO goes to hydrotreating; residue routes (ARDS, coker gas oil) can also feed the FCC.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .blk{fill:#F4F6F8;stroke:#1E2329;stroke-width:2}
+  .fcc{fill:#FCE6DC;stroke:#C0392B;stroke-width:3.5}
+  .bt{font-size:15px;font-weight:700;text-anchor:middle}
+  .bs{font-size:12px;text-anchor:middle;fill:#3A4048}
+  .al{font-size:12.5px;fill:#2B3036}
+  .prod{font-size:14px;font-weight:700}
+  .oil{stroke:#9A4B12;stroke-width:2.6;fill:none}
+  .dash{stroke-dasharray:9 5}
+</style>
+<defs>
+  <marker id="m" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9A4B12"/></marker>
+</defs>
+<rect width="1360" height="640" fill="#FFFFFF"/>
+<text x="40" y="36" font-size="20" font-weight="700">Where the FCC sits in a refinery</text>
+<text x="40" y="58" font-size="13" fill="#4A5159">Simplified from Fahim et al. (2010) Fig 8.1 and lecture Fig 4.1. Dashed = residue routes used by residue FCC (RFCC).</text>
+
+<!-- crude -> CDU -->
+<path class="oil" d="M20,310 L98,310" marker-end="url(#m)"/>
+<text class="al" x="56" y="300" text-anchor="middle" font-weight="600">crude</text>
+<rect class="blk" x="100" y="80" width="120" height="480" rx="8"/>
+<text class="bt" x="160" y="300">Atmospheric</text><text class="bt" x="160" y="320">distillation</text><text class="bs" x="160" y="340">(CDU)</text>
+
+<!-- light products from CDU -->
+<path class="oil" d="M220,105 L300,105" marker-end="url(#m)"/><text class="al" x="308" y="110">LPG, fuel gas</text>
+<path class="oil" d="M220,170 L328,170" marker-end="url(#m)"/>
+<text class="al" x="274" y="162" text-anchor="middle">naphtha</text>
+<rect class="blk" x="330" y="145" width="230" height="50" rx="6"/>
+<text class="bt" x="445" y="167">Naphtha HT + reformer</text><text class="bs" x="445" y="184">/ isomerisation</text>
+<path class="oil" d="M560,170 L1038,170" marker-end="url(#m)"/>
+<text class="al" x="800" y="162" text-anchor="middle">reformate, isomerate</text>
+<path class="oil" d="M220,250 L300,250" marker-end="url(#m)"/><text class="al" x="308" y="255">kerosene, diesel → hydrotreating</text>
+
+<!-- residue -> VDU -> VGO HT -> FCC -->
+<path class="oil" d="M220,410 L328,410" marker-end="url(#m)"/>
+<text class="al" x="258" y="402" text-anchor="middle">atm. residue</text>
+<rect class="blk" x="330" y="370" width="140" height="80" rx="6"/>
+<text class="bt" x="400" y="405">Vacuum</text><text class="bt" x="400" y="424">distillation</text>
+<path class="oil" d="M470,410 L558,410" marker-end="url(#m)"/>
+<text class="al" x="514" y="402" text-anchor="middle">VGO</text>
+<rect class="blk" x="560" y="380" width="160" height="60" rx="6"/>
+<text class="bt" x="640" y="407">VGO hydrotreater</text><text class="bs" x="640" y="425">removes S, N, metals</text>
+<path class="oil" d="M720,410 L798,410" marker-end="url(#m)"/>
+<text class="al" x="759" y="402" text-anchor="middle">HT-VGO</text>
+
+<!-- vacuum residue -> coker -->
+<path class="oil" d="M400,450 L400,525 L558,525" marker-end="url(#m)"/>
+<text class="al" x="480" y="517" text-anchor="middle">vacuum residue</text>
+<rect class="blk" x="560" y="500" width="160" height="50" rx="6"/>
+<text class="bt" x="640" y="522">Coker / thermal</text><text class="bs" x="640" y="539">cracking (coke out)</text>
+<path class="oil dash" d="M720,525 L760,525 L760,470 L798,470" marker-end="url(#m)"/>
+<text class="al" x="726" y="546" font-size="11.5">coker gas oil</text>
+
+<!-- AR -> ARDS -> FCC -->
+<path class="oil dash" d="M280,410 L280,590 L558,590" marker-end="url(#m)"/>
+<rect class="blk" x="560" y="565" width="160" height="50" rx="6"/>
+<text class="bt" x="640" y="587">ARDS</text><text class="bs" x="640" y="604">residue desulphurisation</text>
+<path class="oil dash" d="M720,590 L870,590 L870,482" marker-end="url(#m)"/>
+<text class="al" x="795" y="582" text-anchor="middle" font-size="11.5">desulphurised AR</text>
+
+<!-- FCC -->
+<rect class="fcc" x="800" y="300" width="140" height="180" rx="8"/>
+<text x="870" y="378" font-size="26" font-weight="800" text-anchor="middle" fill="#9E2A1E">FCC</text>
+<text class="bs" x="870" y="400">fluid catalytic</text><text class="bs" x="870" y="416">cracking</text>
+<rect x="826" y="436" width="88" height="22" rx="11" fill="#C0392B"/>
+<text x="870" y="452" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF">this unit</text>
+
+<!-- FCC products -->
+<path class="oil" d="M870,300 L870,210 L1038,210" marker-end="url(#m)"/>
+<text class="al" x="955" y="202" text-anchor="middle">FCC gasoline</text>
+<path class="oil" d="M940,340 L1038,340" marker-end="url(#m)"/>
+<text class="al" x="989" y="332" text-anchor="middle">C₃/C₄ olefins</text>
+<rect class="blk" x="1040" y="310" width="160" height="60" rx="6"/>
+<text class="bt" x="1120" y="337">Alkylation</text><text class="bs" x="1120" y="355">/ MTBE</text>
+<path class="oil" d="M1120,310 L1120,252" marker-end="url(#m)"/>
+<text class="al" x="1128" y="287">alkylate, MTBE</text>
+<path class="oil" d="M940,420 L1038,420" marker-end="url(#m)"/>
+<text class="al" x="989" y="412" text-anchor="middle">LCO</text>
+<rect class="blk" x="1040" y="395" width="160" height="50" rx="6"/>
+<text class="bt" x="1120" y="425">LCO hydrotreating</text>
+<path class="oil" d="M940,465 L1250,465" marker-end="url(#m)"/>
+<text class="al" x="1090" y="484" text-anchor="middle">decant (slurry) oil</text>
+
+<rect class="blk" x="1040" y="130" width="160" height="120" rx="6"/>
+<text class="bt" x="1120" y="186">Gasoline</text><text class="bt" x="1120" y="205">blending pool</text>
+<path class="oil" d="M1200,190 L1250,190" marker-end="url(#m)"/>
+<path class="oil" d="M1200,420 L1250,420" marker-end="url(#m)"/>
+<text class="prod" x="1258" y="195">Gasoline</text>
+<text class="prod" x="1258" y="425">Diesel</text>
+<text class="prod" x="1258" y="470">Fuel oil</text>
+</svg>

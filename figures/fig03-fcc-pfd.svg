@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 930" width="1500" height="930" role="img" aria-labelledby="t d">
+<title id="t">FCC unit – process flow diagram (side-by-side type)</title>
+<desc id="d">Riser reactor, reactor/disengager with cyclones, steam stripper, regenerator, flue-gas train, air blower, feed preheater, main fractionator, gas concentration unit and slurry settler, with numbered streams.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .eq{fill:#F4F6F8;stroke:#1E2329;stroke-width:2}
+  .lbl{font-size:15px;font-weight:600}
+  .sm{font-size:13px;fill:#3A4048}
+  .xs{font-size:12px;fill:#3A4048}
+  .tag{font-family:Consolas,"Courier New",monospace;font-size:12px;font-weight:700;fill:#5A616A}
+  .cond{font-size:12.5px;font-weight:600;fill:#8A3A0B}
+  .oil{stroke:#9A4B12;stroke-width:3;fill:none}
+  .vap{stroke:#1B7F4B;stroke-width:3;fill:none}
+  .rcat{stroke:#C0392B;stroke-width:4.5;fill:none}
+  .scat{stroke:#4B4F55;stroke-width:4.5;fill:none}
+  .air{stroke:#1F5FAF;stroke-width:3;fill:none}
+  .flue{stroke:#7D848C;stroke-width:3.5;fill:none;stroke-dasharray:10 5}
+  .stm{stroke:#0E8F9B;stroke-width:2.5;fill:none;stroke-dasharray:7 4}
+  .shaft{stroke:#1E2329;stroke-width:2;fill:none;stroke-dasharray:2 5}
+  .num circle{fill:#fff;stroke:#1E2329;stroke-width:1.6}
+  .num text{font-size:12px;font-weight:700;text-anchor:middle}
+  .valve{fill:#fff;stroke:#1E2329;stroke-width:1.8}
+  .tray{stroke:#6B727B;stroke-width:1.6}
+</style>
+<defs>
+  <marker id="m-oil" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9A4B12"/></marker>
+  <marker id="m-vap" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B7F4B"/></marker>
+  <marker id="m-rcat" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+  <marker id="m-scat" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4B4F55"/></marker>
+  <marker id="m-air" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1F5FAF"/></marker>
+  <marker id="m-flue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7D848C"/></marker>
+  <marker id="m-stm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0E8F9B"/></marker>
+  <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#E9E6E1"/><line x1="0" y1="0" x2="0" y2="8" stroke="#C9C3BA" stroke-width="2"/></pattern>
+</defs>
+
+<rect x="0" y="0" width="1500" height="930" fill="#FFFFFF"/>
+
+<!-- ================= REGENERATOR R-102 ================= -->
+<path class="eq" d="M240,300 L240,620 L300,680 L360,680 L420,620 L420,300 Q420,250 330,250 Q240,250 240,300 Z"/>
+<path d="M242,470 Q256,462 270,470 T298,470 T326,470 T354,470 T382,470 T418,470 L418,620 L359,678 L301,678 L242,620 Z" fill="#FBE1D6"/>
+<!-- cyclones -->
+<g fill="#FFFFFF" stroke="#1E2329" stroke-width="1.6">
+  <rect x="265" y="290" width="30" height="38"/><path d="M265,328 L280,358 L295,328"/>
+  <rect x="365" y="290" width="30" height="38"/><path d="M365,328 L380,358 L395,328"/>
+</g>
+<g stroke="#1E2329" stroke-width="1.6" fill="none">
+  <line x1="280" y1="290" x2="280" y2="262"/><line x1="380" y1="290" x2="380" y2="262"/>
+  <line x1="280" y1="358" x2="280" y2="500"/><line x1="380" y1="358" x2="380" y2="500"/>
+  <line x1="248" y1="262" x2="412" y2="262"/>
+</g>
+<!-- air grid -->
+<line x1="252" y1="612" x2="408" y2="612" stroke="#1E2329" stroke-width="2"/>
+<g fill="#1E2329"><circle cx="265" cy="612" r="2.6"/><circle cx="290" cy="612" r="2.6"/><circle cx="315" cy="612" r="2.6"/><circle cx="340" cy="612" r="2.6"/><circle cx="365" cy="612" r="2.6"/><circle cx="390" cy="612" r="2.6"/></g>
+<text class="sm" x="330" y="440" text-anchor="middle">dilute phase</text>
+<text class="sm" x="330" y="555" text-anchor="middle">dense bed</text>
+<text class="xs" x="330" y="572" text-anchor="middle">(turbulent fluidisation)</text>
+<text class="lbl" x="232" y="505" text-anchor="end">Regenerator</text>
+<text class="tag" x="232" y="523" text-anchor="end">R-102</text>
+<text class="cond" x="232" y="543" text-anchor="end">bed ≈ 727 °C</text>
+<text class="cond" x="232" y="560" text-anchor="end">2.3 barg</text>
+
+<!-- ================= FLUE GAS TRAIN ================= -->
+<path class="flue" d="M330,250 L330,62 L115,62 L115,90" marker-end="url(#m-flue)"/>
+<text class="cond" x="222" y="52" text-anchor="middle">flue gas ≈ 735 °C</text>
+<polygon class="eq" points="88,92 142,92 160,150 70,150"/>
+<text class="sm" x="115" y="120" text-anchor="middle" font-weight="600">Expander</text>
+<text class="tag" x="115" y="139" text-anchor="middle">X-101</text>
+<path class="flue" d="M115,150 L115,183" marker-end="url(#m-flue)"/>
+<rect class="eq" x="60" y="185" width="110" height="62" rx="4"/>
+<text class="sm" x="115" y="207" text-anchor="middle" font-weight="600">CO boiler /</text>
+<text class="xs" x="115" y="223" text-anchor="middle">waste-heat boiler</text>
+<text class="tag" x="115" y="240" text-anchor="middle">E-101</text>
+<path class="stm" d="M170,216 L214,216" marker-end="url(#m-stm)"/>
+<text class="xs" x="192" y="206" text-anchor="middle">steam</text>
+<path class="flue" d="M115,247 L115,283" marker-end="url(#m-flue)"/>
+<rect class="eq" x="60" y="285" width="110" height="50" rx="4"/>
+<text class="sm" x="115" y="306" text-anchor="middle" font-weight="600">ESP</text>
+<text class="xs" x="115" y="324" text-anchor="middle">catalyst fines out</text>
+<path class="flue" d="M115,335 L115,378" marker-end="url(#m-flue)"/>
+<text class="sm" x="115" y="396" text-anchor="middle" font-weight="600">to stack</text>
+
+<!-- shaft: expander drives air blower -->
+<path class="shaft" d="M72,121 L30,121 L30,700 L115,700 L115,728"/>
+<text class="xs" transform="translate(22,420) rotate(-90)" text-anchor="middle">expander shaft drives blower</text>
+
+<!-- ================= AIR BLOWER ================= -->
+<circle class="eq" cx="115" cy="760" r="30"/>
+<path d="M92,741 L140,751 M92,779 L140,769" stroke="#1E2329" stroke-width="2" fill="none"/>
+<text class="sm" x="115" y="810" text-anchor="middle" font-weight="600">Air blower</text>
+<text class="tag" x="115" y="827" text-anchor="middle">B-101</text>
+<path class="air" d="M40,760 L83,760" marker-end="url(#m-air)"/>
+<text class="xs" x="40" y="750">air</text>
+<path class="air" d="M145,760 L330,760 L330,682" marker-end="url(#m-air)"/>
+
+<!-- ================= REACTOR / DISENGAGER V-101 ================= -->
+<path class="eq" d="M460,140 Q460,92 590,92 Q720,92 720,140 L720,340 L460,340 Z"/>
+<rect x="462" y="318" width="256" height="21" fill="url(#hatch)"/>
+<!-- stripper -->
+<path d="M490,340 L490,480 L520,512 L550,480 L550,340" fill="url(#hatch)" stroke="#1E2329" stroke-width="2"/>
+<g stroke="#1E2329" stroke-width="2"><line x1="490" y1="380" x2="514" y2="394"/><line x1="550" y1="412" x2="526" y2="426"/><line x1="490" y1="444" x2="514" y2="458"/></g>
+<!-- cyclone -->
+<g fill="#FFFFFF" stroke="#1E2329" stroke-width="1.6"><rect x="540" y="130" width="30" height="40"/><path d="M540,170 L555,200 L570,170"/></g>
+<line x1="555" y1="200" x2="555" y2="318" stroke="#1E2329" stroke-width="1.6"/>
+<line x1="555" y1="130" x2="555" y2="94" stroke="#1E2329" stroke-width="1.6"/>
+<text class="lbl" x="505" y="240" text-anchor="middle">Reactor</text>
+<text class="sm" x="505" y="258" text-anchor="middle">disengager</text>
+<text class="tag" x="505" y="276" text-anchor="middle">V-101</text>
+<text class="cond" x="594" y="250" text-anchor="middle">533 °C</text>
+<text class="cond" x="594" y="267" text-anchor="middle">2.1 barg</text>
+<text class="lbl" x="482" y="402" text-anchor="end">Stripper</text>
+<text class="tag" x="482" y="420" text-anchor="end">S-101</text>
+
+<!-- ================= RISER R-101 ================= -->
+<rect class="eq" x="632" y="190" width="16" height="680"/>
+<g fill="#C0392B" opacity="0.55"><path d="M634,300 L640,290 L646,300 Z"/><path d="M634,420 L640,410 L646,420 Z"/><path d="M634,560 L640,550 L646,560 Z"/><path d="M634,700 L640,690 L646,700 Z"/></g>
+<!-- riser termination -->
+<path d="M612,206 L612,190 L668,190 L668,206" stroke="#1E2329" stroke-width="2.4" fill="none"/>
+<text class="lbl" transform="translate(667,560) rotate(-90)" text-anchor="middle">Riser reactor  R-101</text>
+<text class="cond" transform="translate(686,560) rotate(-90)" text-anchor="middle">480–550 °C · 2–10 s</text>
+
+<!-- ================= CATALYST CIRCULATION ================= -->
+<!-- spent catalyst: stripper -> regenerator -->
+<path class="scat" d="M520,512 L520,530 L424,579" marker-end="url(#m-scat)"/>
+<g transform="translate(472,554.5) rotate(153)"><path class="valve" d="M-10,-7 L0,0 L-10,7 Z M10,-7 L0,0 L10,7 Z"/></g>
+<text class="tag" x="468" y="536" text-anchor="middle">SCSV</text>
+<!-- regenerated catalyst: regenerator -> riser base -->
+<path class="rcat" d="M405,635 L540,770 L540,850 L630,850" marker-end="url(#m-rcat)"/>
+<g transform="translate(472.5,702.5) rotate(45)"><path class="valve" d="M-10,-7 L0,0 L-10,7 Z M10,-7 L0,0 L10,7 Z"/></g>
+<text class="tag" x="494" y="700">RCSV</text>
+<text class="xs" x="532" y="872" text-anchor="end">regenerated catalyst</text>
+
+<!-- ================= STEAM ================= -->
+<path class="stm" d="M590,630 L590,470 L553,470" marker-end="url(#m-stm)"/>
+<text class="xs" x="584" y="648" text-anchor="end">stripping steam</text>
+<path class="stm" d="M640,912 L640,873" marker-end="url(#m-stm)"/>
+<text class="xs" x="652" y="908">lift steam</text>
+<path class="stm" d="M665,752 L665,797" marker-end="url(#m-stm)"/>
+<text class="xs" x="674" y="757">dispersion steam</text>
+
+<!-- ================= FEED ================= -->
+<rect class="eq" x="720" y="770" width="80" height="60" rx="3"/>
+<path d="M745,824 Q740,808 750,796 Q752,808 760,812 Q758,800 768,788 Q776,806 772,824 Z" fill="#E8793A" stroke="#9A4B12" stroke-width="1.2"/>
+<text class="sm" x="760" y="850" text-anchor="middle" font-weight="600">Feed preheater</text>
+<text class="tag" x="760" y="866" text-anchor="middle">H-101</text>
+<path class="oil" d="M866,800 L802,800" marker-end="url(#m-oil)"/>
+<path class="oil" d="M720,800 L650,800" marker-end="url(#m-oil)"/>
+<text class="cond" x="684" y="820" text-anchor="middle">316–427 °C</text>
+<text class="lbl" x="872" y="797">Fresh feed</text>
+<text class="sm" x="870" y="815">VGO / AGO</text>
+
+<!-- ================= REACTOR VAPOUR -> FRACTIONATOR ================= -->
+<path class="vap" d="M555,94 L555,70 L860,70 L860,590 L898,590" marker-end="url(#m-vap)"/>
+<text class="xs" x="700" y="60" text-anchor="middle">cracked HC vapour + steam</text>
+
+<!-- ================= MAIN FRACTIONATOR C-101 ================= -->
+<rect class="eq" x="900" y="110" width="80" height="550" rx="36"/>
+<g class="tray">
+  <line x1="902" y1="170" x2="960" y2="170"/><line x1="920" y1="205" x2="978" y2="205"/>
+  <line x1="902" y1="240" x2="960" y2="240"/><line x1="920" y1="285" x2="978" y2="285"/>
+  <line x1="902" y1="320" x2="960" y2="320"/><line x1="920" y1="385" x2="978" y2="385"/>
+  <line x1="902" y1="420" x2="960" y2="420"/><line x1="920" y1="485" x2="978" y2="485"/>
+  <line x1="902" y1="520" x2="960" y2="520"/><line x1="920" y1="555" x2="978" y2="555"/>
+</g>
+<text class="lbl" x="990" y="216">Main fractionator</text>
+<text class="tag" x="990" y="234">C-101</text>
+
+<!-- overhead -> GCU -->
+<path class="vap" d="M940,110 L940,70 L1078,70" marker-end="url(#m-vap)"/>
+<rect class="eq" x="1080" y="30" width="200" height="160" rx="6"/>
+<text class="lbl" x="1180" y="100" text-anchor="middle">Gas concentration</text>
+<text class="lbl" x="1180" y="119" text-anchor="middle">unit</text>
+<text class="tag" x="1180" y="140" text-anchor="middle">GCU</text>
+<path class="vap" d="M1280,55 L1320,55" marker-end="url(#m-vap)"/>
+<path class="vap" d="M1280,92 L1320,92" marker-end="url(#m-vap)"/>
+<path class="vap" d="M1280,129 L1320,129" marker-end="url(#m-vap)"/>
+<path class="oil" d="M1280,166 L1320,166" marker-end="url(#m-oil)"/>
+<text class="sm" x="1328" y="60">Fuel gas + H₂S</text>
+<text class="sm" x="1328" y="97">C₃ / C₃= (LPG)</text>
+<text class="sm" x="1328" y="134">C₄ / C₄= (LPG)</text>
+<text class="sm" x="1328" y="171">Light gasoline</text>
+
+<!-- side draws -->
+<path class="oil" d="M980,260 L1320,260" marker-end="url(#m-oil)"/>
+<path class="oil" d="M980,360 L1320,360" marker-end="url(#m-oil)"/>
+<path class="oil" d="M980,460 L1320,460" marker-end="url(#m-oil)"/>
+<text class="sm" x="1328" y="265" font-weight="600">Heavy gasoline</text>
+<text class="sm" x="1328" y="365" font-weight="600">Light cycle oil (LCO)</text>
+<text class="sm" x="1328" y="465" font-weight="600">Heavy cycle oil (HCO)</text>
+
+<!-- bottoms -> pump -> settler -->
+<path class="oil" d="M940,660 L940,700 L968,700"/>
+<circle class="eq" cx="984" cy="700" r="16"/>
+<path d="M976,690 L996,700 L976,710" fill="none" stroke="#1E2329" stroke-width="1.6"/>
+<text class="tag" x="984" y="732" text-anchor="middle">P-101</text>
+<path class="oil" d="M1000,700 L1078,700" marker-end="url(#m-oil)"/>
+<path class="eq" d="M1080,600 L1160,600 L1160,710 L1120,745 L1080,710 Z"/>
+<text class="sm" x="1120" y="650" text-anchor="middle" font-weight="600">Slurry</text>
+<text class="sm" x="1120" y="667" text-anchor="middle" font-weight="600">settler</text>
+<text class="tag" x="1120" y="686" text-anchor="middle">V-102</text>
+<path class="oil" d="M1120,600 L1120,560 L1320,560" marker-end="url(#m-oil)"/>
+<text class="sm" x="1328" y="565" font-weight="600">Clarified (decant) oil</text>
+<!-- recycle -->
+<path class="oil" d="M1120,745 L1120,885 L822,885 L822,803" marker-end="url(#m-oil)" stroke-dasharray="12 5"/>
+<text class="xs" x="965" y="877" text-anchor="middle">slurry / HCO recycle to riser (optional)</text>
+
+<!-- ================= STREAM NUMBERS ================= -->
+<g class="num">
+  <circle cx="846" cy="800" r="11"/><text x="846" y="804">1</text>
+  <circle cx="665" cy="776" r="11"/><text x="665" y="780">2</text>
+  <circle cx="640" cy="893" r="11"/><text x="640" y="897">3</text>
+  <circle cx="540" cy="812" r="11"/><text x="540" y="816">4</text>
+  <circle cx="590" cy="560" r="11"/><text x="590" y="564">5</text>
+  <circle cx="500" cy="540" r="11"/><text x="500" y="544">6</text>
+  <circle cx="232" cy="760" r="11"/><text x="232" y="764">7</text>
+  <circle cx="330" cy="160" r="11"/><text x="330" y="164">8</text>
+  <circle cx="835" cy="70" r="11"/><text x="835" y="74">9</text>
+  <circle cx="1010" cy="70" r="11"/><text x="1010" y="74">10</text>
+  <circle cx="1300" cy="55" r="11"/><text x="1300" y="59">11</text>
+  <circle cx="1300" cy="92" r="11"/><text x="1300" y="96">12</text>
+  <circle cx="1300" cy="129" r="11"/><text x="1300" y="133">13</text>
+  <circle cx="1300" cy="166" r="11"/><text x="1300" y="170">14</text>
+  <circle cx="1040" cy="260" r="11"/><text x="1040" y="264">15</text>
+  <circle cx="1040" cy="360" r="11"/><text x="1040" y="364">16</text>
+  <circle cx="1040" cy="460" r="11"/><text x="1040" y="464">17</text>
+  <circle cx="1040" cy="700" r="11"/><text x="1040" y="704">18</text>
+  <circle cx="1220" cy="560" r="11"/><text x="1220" y="564">19</text>
+  <circle cx="1120" cy="840" r="11"/><text x="1120" y="844">20</text>
+</g>
+
+<!-- ================= LEGEND / TITLE BLOCK ================= -->
+<g transform="translate(1196,606)">
+  <rect x="0" y="0" width="290" height="310" rx="6" fill="#FAFAF8" stroke="#1E2329" stroke-width="1.5"/>
+  <text x="14" y="26" font-size="15" font-weight="700">FCC unit · process flow diagram</text>
+  <text class="xs" x="14" y="45">Side-by-side type. Redrawn after Fahim et al.</text>
+  <text class="xs" x="14" y="61">(2010) Fig 8.7 and lecture Fig 4.11.</text>
+  <line x1="14" y1="74" x2="276" y2="74" stroke="#C9C6BF"/>
+  <path class="oil" d="M14,96 L58,96"/><text class="xs" x="68" y="100">hydrocarbon liquid</text>
+  <path class="vap" d="M14,120 L58,120"/><text class="xs" x="68" y="124">hydrocarbon vapour / gas</text>
+  <path class="rcat" d="M14,144 L58,144"/><text class="xs" x="68" y="148">regenerated catalyst (hot)</text>
+  <path class="scat" d="M14,168 L58,168"/><text class="xs" x="68" y="172">spent catalyst (coked)</text>
+  <path class="air" d="M14,192 L58,192"/><text class="xs" x="68" y="196">air</text>
+  <path class="flue" d="M14,216 L58,216"/><text class="xs" x="68" y="220">flue gas</text>
+  <path class="stm" d="M14,240 L58,240"/><text class="xs" x="68" y="244">steam</text>
+  <path class="shaft" d="M14,264 L58,264"/><text class="xs" x="68" y="268">mechanical shaft</text>
+  <g transform="translate(26,290)"><path class="valve" d="M-10,-7 L0,0 L-10,7 Z M10,-7 L0,0 L10,7 Z"/></g>
+  <text class="xs" x="46" y="294">slide valve</text>
+  <g class="num"><circle cx="152" cy="290" r="10"/><text x="152" y="294">n</text></g>
+  <text class="xs" x="168" y="294">stream number</text>
+</g>
+</svg>

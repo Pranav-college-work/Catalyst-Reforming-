@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 720" width="1440" height="720" role="img" aria-labelledby="t d">
+<title id="t">FCC unit – block flow diagram</title>
+<desc id="d">Feed preheater, riser reactor, disengager, stripper, regenerator, flue-gas train, main fractionator, gas concentration unit and slurry settler connected by labelled stream arrows.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .blk{fill:#F4F6F8;stroke:#1E2329;stroke-width:2}
+  .hot{fill:#FCE6DC}
+  .bt{font-size:16px;font-weight:700;text-anchor:middle}
+  .bs{font-size:12.5px;text-anchor:middle;fill:#3A4048}
+  .al{font-size:13px;fill:#2B3036}
+  .oil{stroke:#9A4B12;stroke-width:3;fill:none}
+  .vap{stroke:#1B7F4B;stroke-width:3;fill:none}
+  .rcat{stroke:#C0392B;stroke-width:4;fill:none}
+  .scat{stroke:#4B4F55;stroke-width:4;fill:none}
+  .air{stroke:#1F5FAF;stroke-width:3;fill:none}
+  .flue{stroke:#7D848C;stroke-width:3.5;fill:none;stroke-dasharray:10 5}
+  .stm{stroke:#0E8F9B;stroke-width:2.5;fill:none;stroke-dasharray:7 4}
+</style>
+<defs>
+  <marker id="m-oil" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9A4B12"/></marker>
+  <marker id="m-vap" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B7F4B"/></marker>
+  <marker id="m-rcat" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+  <marker id="m-scat" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4B4F55"/></marker>
+  <marker id="m-air" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1F5FAF"/></marker>
+  <marker id="m-flue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7D848C"/></marker>
+  <marker id="m-stm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0E8F9B"/></marker>
+</defs>
+<rect width="1440" height="720" fill="#FFFFFF"/>
+
+<text x="40" y="42" font-size="20" font-weight="700">FCC unit · block flow diagram</text>
+<text x="40" y="64" font-size="13" fill="#4A5159">Blocks are process steps; arrows are streams, coloured by what they carry. After Fahim et al. (2010) §8.9 and lecture pp. 16–17.</text>
+
+<!-- blocks -->
+<rect class="blk" x="60" y="300" width="160" height="70" rx="6"/>
+<text class="bt" x="140" y="330">Feed preheater</text><text class="bs" x="140" y="350">fired heater</text>
+
+<rect class="blk hot" x="310" y="300" width="160" height="70" rx="6"/>
+<text class="bt" x="390" y="330">Riser reactor</text><text class="bs" x="390" y="350">480–550 °C · 2–10 s</text>
+
+<rect class="blk" x="560" y="300" width="160" height="70" rx="6"/>
+<text class="bt" x="640" y="330">Disengager</text><text class="bs" x="640" y="350">+ cyclones</text>
+
+<rect class="blk" x="830" y="260" width="160" height="280" rx="6"/>
+<text class="bt" x="910" y="392">Main</text><text class="bt" x="910" y="412">fractionator</text>
+
+<rect class="blk" x="1080" y="110" width="160" height="110" rx="6"/>
+<text class="bt" x="1160" y="158">Gas concentration</text><text class="bt" x="1160" y="178">unit</text>
+
+<rect class="blk" x="560" y="440" width="160" height="70" rx="6"/>
+<text class="bt" x="640" y="470">Steam stripper</text><text class="bs" x="640" y="490">removes adsorbed oil</text>
+
+<rect class="blk hot" x="310" y="440" width="160" height="100" rx="6"/>
+<text class="bt" x="390" y="472">Regenerator</text><text class="bs" x="390" y="494">coke + O₂ → CO₂ / CO</text><text class="bs" x="390" y="514">620–845 °C</text>
+
+<rect class="blk" x="60" y="440" width="160" height="100" rx="6"/>
+<text class="bt" x="140" y="476">Flue-gas train</text><text class="bs" x="140" y="498">expander, CO boiler,</text><text class="bs" x="140" y="516">ESP (catalyst fines)</text>
+
+<rect class="blk" x="830" y="600" width="160" height="60" rx="6"/>
+<text class="bt" x="910" y="636">Slurry settler</text>
+
+<!-- feed -->
+<path class="oil" d="M140,218 L140,298" marker-end="url(#m-oil)"/>
+<text class="al" x="140" y="206" text-anchor="middle" font-weight="600">Fresh feed (VGO / AGO)</text>
+<path class="oil" d="M910,660 L910,695 L30,695 L30,335 L58,335" marker-end="url(#m-oil)" stroke-dasharray="12 5"/>
+<text class="al" x="470" y="686" text-anchor="middle">slurry / HCO recycle (optional)</text>
+<path class="oil" d="M220,335 L308,335" marker-end="url(#m-oil)"/>
+<text class="al" x="264" y="326" text-anchor="middle">hot feed</text>
+
+<!-- reactor side -->
+<path class="vap" d="M470,335 L558,335" marker-end="url(#m-vap)"/>
+<text class="al" x="514" y="312" text-anchor="middle">HC vapour</text><text class="al" x="514" y="327" text-anchor="middle">+ catalyst</text>
+<path class="vap" d="M720,335 L828,335" marker-end="url(#m-vap)"/>
+<text class="al" x="774" y="326" text-anchor="middle">cracked vapour</text>
+<path class="scat" d="M640,370 L640,438" marker-end="url(#m-scat)"/>
+<text class="al" x="650" y="410">catalyst + adsorbed HC</text>
+<path class="stm" d="M640,612 L640,512" marker-end="url(#m-stm)"/>
+<text class="al" x="650" y="602">stripping steam</text>
+
+<!-- catalyst loop -->
+<path class="scat" d="M560,475 L472,475" marker-end="url(#m-scat)"/>
+<text class="al" x="516" y="464" text-anchor="middle" font-size="12">spent catalyst</text>
+<path class="rcat" d="M390,440 L390,372" marker-end="url(#m-rcat)"/>
+<text class="al" x="380" y="402" text-anchor="end">regenerated</text><text class="al" x="380" y="418" text-anchor="end">catalyst (hot)</text>
+<path class="air" d="M390,622 L390,542" marker-end="url(#m-air)"/>
+<text class="al" x="400" y="612">air</text>
+<path class="flue" d="M310,490 L222,490" marker-end="url(#m-flue)"/>
+<text class="al" x="266" y="481" text-anchor="middle">flue gas</text>
+<path class="flue" d="M140,540 L140,612" marker-end="url(#m-flue)"/>
+<text class="al" x="150" y="602">to stack</text>
+
+<!-- fractionator products -->
+<path class="vap" d="M910,260 L910,165 L1078,165" marker-end="url(#m-vap)"/>
+<text class="al" x="995" y="156" text-anchor="middle">overhead vapour</text>
+<path class="vap" d="M1240,128 L1290,128" marker-end="url(#m-vap)"/>
+<path class="vap" d="M1240,152 L1290,152" marker-end="url(#m-vap)"/>
+<path class="vap" d="M1240,176 L1290,176" marker-end="url(#m-vap)"/>
+<path class="oil" d="M1240,200 L1290,200" marker-end="url(#m-oil)"/>
+<text class="al" x="1298" y="133">fuel gas + H₂S</text>
+<text class="al" x="1298" y="157">C₃ / C₃= (LPG)</text>
+<text class="al" x="1298" y="181">C₄ / C₄= (LPG)</text>
+<text class="al" x="1298" y="205">light gasoline</text>
+<path class="oil" d="M990,300 L1290,300" marker-end="url(#m-oil)"/>
+<path class="oil" d="M990,360 L1290,360" marker-end="url(#m-oil)"/>
+<path class="oil" d="M990,420 L1290,420" marker-end="url(#m-oil)"/>
+<text class="al" x="1298" y="305" font-weight="600">heavy gasoline</text>
+<text class="al" x="1298" y="365" font-weight="600">light cycle oil (LCO)</text>
+<text class="al" x="1298" y="425" font-weight="600">heavy cycle oil (HCO)</text>
+<path class="oil" d="M910,540 L910,598" marker-end="url(#m-oil)"/>
+<text class="al" x="920" y="576">slurry (bottoms)</text>
+<path class="oil" d="M990,630 L1290,630" marker-end="url(#m-oil)"/>
+<text class="al" x="1298" y="635" font-weight="600">clarified oil</text>
+
+<!-- legend -->
+<g transform="translate(1030,455)">
+  <rect width="380" height="140" rx="6" fill="#FAFAF8" stroke="#C9C6BF"/>
+  <text x="14" y="24" font-size="13" font-weight="700">Stream key</text>
+  <path class="oil" d="M14,48 L50,48"/><text class="al" x="58" y="52" font-size="12">HC liquid</text>
+  <path class="vap" d="M14,74 L50,74"/><text class="al" x="58" y="78" font-size="12">HC vapour / gas</text>
+  <path class="rcat" d="M14,100 L50,100"/><text class="al" x="58" y="104" font-size="12">hot regenerated catalyst</text>
+  <path class="scat" d="M14,124 L50,124"/><text class="al" x="58" y="128" font-size="12">spent catalyst</text>
+  <path class="air" d="M214,48 L250,48"/><text class="al" x="258" y="52" font-size="12">air</text>
+  <path class="flue" d="M214,74 L250,74"/><text class="al" x="258" y="78" font-size="12">flue gas</text>
+  <path class="stm" d="M214,100 L250,100"/><text class="al" x="258" y="104" font-size="12">steam</text>
+  <path class="oil" d="M214,124 L250,124" stroke-dasharray="12 5"/><text class="al" x="258" y="128" font-size="12">optional recycle</text>
+</g>
+</svg>

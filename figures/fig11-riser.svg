@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900" role="img" aria-labelledby="t d">
+<title id="t">Anatomy of an FCC riser reactor</title>
+<desc id="d">A vertical riser about 33 m tall and 0.8 m inside diameter. Lift steam and hot regenerated catalyst enter at the bottom, atomised feed is injected just above, the mixture flows up in pneumatic transport for 2 to 10 seconds and is separated at the riser termination.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .t{font-size:14.5px;font-weight:700}
+  .s{font-size:13px;fill:#3A4048}
+  .lead{stroke:#6B727B;stroke-width:1.3;fill:none}
+</style>
+<defs>
+  <linearGradient id="g" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0" stop-color="#F3C2AE"/><stop offset="0.35" stop-color="#F6DCC9"/><stop offset="1" stop-color="#DDEFE3"/>
+  </linearGradient>
+  <marker id="m" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1E2329"/></marker>
+  <marker id="mo" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9A4B12"/></marker>
+  <marker id="mr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="14" markerHeight="14" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+  <marker id="ms" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0E8F9B"/></marker>
+  <marker id="mv" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B7F4B"/></marker>
+</defs>
+<rect width="900" height="900" fill="#FFFFFF"/>
+
+<!-- riser body -->
+<rect x="330" y="110" width="50" height="700" fill="url(#g)" stroke="#1E2329" stroke-width="2.4"/>
+<g fill="#6B4A3A" opacity="0.7">
+  <circle cx="342" cy="770" r="2.4"/><circle cx="360" cy="760" r="2.4"/><circle cx="371" cy="778" r="2.4"/><circle cx="348" cy="740" r="2.4"/><circle cx="366" cy="728" r="2.4"/>
+  <circle cx="352" cy="690" r="2.2"/><circle cx="370" cy="660" r="2.2"/><circle cx="344" cy="630" r="2.2"/><circle cx="362" cy="590" r="2.2"/>
+  <circle cx="350" cy="520" r="2"/><circle cx="368" cy="470" r="2"/><circle cx="345" cy="410" r="2"/><circle cx="362" cy="340" r="2"/><circle cx="350" cy="260" r="2"/><circle cx="366" cy="190" r="2"/>
+</g>
+<g stroke="#1B7F4B" stroke-width="2" fill="none" opacity="0.8"><path d="M355,560 L355,520" marker-end="url(#mv)"/><path d="M355,400 L355,360" marker-end="url(#mv)"/><path d="M355,250 L355,210" marker-end="url(#mv)"/></g>
+<!-- termination -->
+<path d="M300,128 L300,98 L410,98 L410,128" fill="none" stroke="#1E2329" stroke-width="3"/>
+<path d="M300,130 L300,160" stroke="#1B7F4B" stroke-width="2.4" marker-end="url(#mv)"/>
+<path d="M410,130 L410,160" stroke="#1B7F4B" stroke-width="2.4" marker-end="url(#mv)"/>
+
+<!-- ID dimension -->
+<path d="M330,74 L380,74" stroke="#1E2329" stroke-width="1.6" marker-start="url(#m)" marker-end="url(#m)"/>
+<line x1="330" y1="66" x2="330" y2="96" stroke="#1E2329" stroke-width="1"/><line x1="380" y1="66" x2="380" y2="96" stroke="#1E2329" stroke-width="1"/>
+<text x="355" y="56" font-size="14" font-weight="700" text-anchor="middle">ID ≈ 0.8 m</text>
+<!-- height dimension -->
+<path d="M262,110 L262,810" stroke="#1E2329" stroke-width="1.6" marker-start="url(#m)" marker-end="url(#m)"/>
+<line x1="252" y1="110" x2="328" y2="110" stroke="#1E2329" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="252" y1="810" x2="328" y2="810" stroke="#1E2329" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="250" y="460" font-size="15" font-weight="700" text-anchor="middle" transform="rotate(-90 250 460)">height ≈ 33 m</text>
+
+<!-- regenerated catalyst entry (wye) -->
+<path d="M150,690 L326,790" stroke="#C0392B" stroke-width="7" fill="none" marker-end="url(#mr)"/>
+<g transform="translate(222,731) rotate(29.6)"><path d="M-11,-8 L0,0 L-11,8 Z M11,-8 L0,0 L11,8 Z" fill="#fff" stroke="#1E2329" stroke-width="1.8"/></g>
+<text class="t" x="40" y="640">Hot regenerated catalyst</text>
+<text class="s" x="40" y="658">649–760 °C, via slide valve</text>
+<!-- lift steam -->
+<path d="M355,870 L355,813" stroke="#0E8F9B" stroke-width="3" stroke-dasharray="7 4" marker-end="url(#ms)"/>
+<text class="t" x="372" y="866">Lift steam</text>
+<text class="s" x="372" y="884">fluidises catalyst before feed contact</text>
+<!-- feed nozzles -->
+<path d="M470,655 L384,700" stroke="#9A4B12" stroke-width="3.5" marker-end="url(#mo)"/>
+<path d="M470,725 L384,720" stroke="#9A4B12" stroke-width="3.5" marker-end="url(#mo)"/>
+
+<!-- annotations right -->
+<path class="lead" d="M412,112 L480,112"/>
+<text class="t" x="488" y="108">Riser termination</text>
+<text class="s" x="488" y="126">vapour and catalyst separate quickly</text>
+<text class="s" x="488" y="143">(disengager + cyclones) → stops over-cracking</text>
+
+<path class="lead" d="M382,300 L480,300"/>
+<text class="t" x="488" y="296">Top of riser</text>
+<text class="s" x="488" y="314">vapour-rich; catalyst now coked (spent)</text>
+<text class="s" x="488" y="331">T falls along height: cracking is endothermic</text>
+
+<path class="lead" d="M382,450 L480,450"/>
+<text class="t" x="488" y="446">Riser body = the reactor</text>
+<text class="s" x="488" y="464">pneumatic transport, close to plug flow</text>
+<text class="s" x="488" y="481">480–550 °C · residence time 2–10 s</text>
+<text class="s" x="488" y="498">(lecture: 1–4 s) · 1–5 bar</text>
+
+<text class="t" x="488" y="650">Feed injection nozzles</text>
+<text class="s" x="488" y="668">feed 316–427 °C + dispersion steam;</text>
+<text class="s" x="488" y="685">hot catalyst vaporises the oil instantly</text>
+<text class="s" x="488" y="740">mixing temperature ≈ 822 K (Ex. E8.4)</text>
+
+<text x="880" y="24" font-size="11.5" text-anchor="end" fill="#5A616A">Not to scale · dimensions: Fahim et al. (2010) Ex. E8.4 (Ali and Corriou 1997)</text>
+</svg>

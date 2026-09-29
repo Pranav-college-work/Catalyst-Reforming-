@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" aria-labelledby="t d">
+<title id="t">Acid strength needed by each acid-catalysed reaction</title>
+<desc id="d">From weakest to strongest acid requirement: cis-trans isomerisation, double-bond isomerisation, tertiary carbenium isomerisation, hydrogen transfer, polymerisation, branching, aromatic alkylation, cracking.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .r{font-size:14px;text-anchor:end}
+</style>
+<defs>
+  <marker id="m" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1E2329"/></marker>
+</defs>
+<rect width="900" height="440" fill="#FFFFFF"/>
+<g>
+  <rect x="270" y="40"  width="70"  height="30" fill="#F7E3D8"/><text class="r" x="258" y="60">cis–trans isomerisation</text>
+  <rect x="270" y="82"  width="130" height="30" fill="#F3D2C1"/><text class="r" x="258" y="102">double-bond isomerisation</text>
+  <rect x="270" y="124" width="195" height="30" fill="#EFC0AA"/><text class="r" x="258" y="144">tertiary carbenium isomerisation</text>
+  <rect x="270" y="166" width="270" height="30" fill="#EAAC91"/><text class="r" x="258" y="186">hydrogen transfer</text>
+  <rect x="270" y="208" width="345" height="30" fill="#E39676"/><text class="r" x="258" y="228">polymerisation</text>
+  <rect x="270" y="250" width="415" height="30" fill="#D97D5B"/><text class="r" x="258" y="270">branching</text>
+  <rect x="270" y="292" width="485" height="30" fill="#CB6240"/><text class="r" x="258" y="312">aromatic alkylation</text>
+  <rect x="270" y="334" width="560" height="30" fill="#B8431F"/><text class="r" x="258" y="354" font-weight="700">cracking</text>
+</g>
+<text x="815" y="354" font-size="13" text-anchor="end" fill="#FFFFFF" font-weight="700">needs the strongest sites</text>
+<line x1="270" y1="30" x2="270" y2="380" stroke="#1E2329" stroke-width="2"/>
+<line x1="270" y1="380" x2="860" y2="380" stroke="#1E2329" stroke-width="2" marker-end="url(#m)"/>
+<text x="560" y="406" font-size="15" font-weight="600" text-anchor="middle">acid strength required →</text>
+<text x="880" y="430" font-size="12" text-anchor="end" fill="#5A616A">Redrawn from lecture Fig 4.7 (p. 10)</text>
+</svg>

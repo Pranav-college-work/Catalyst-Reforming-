@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 470" width="1100" height="470" role="img" aria-labelledby="t d">
+<title id="t">FCC reaction network</title>
+<desc id="d">Heavy gas oil cracks to gasoline plus LCO and to gases (primary cracking). Gasoline over-cracks to gases (secondary cracking). Dehydrogenation, oligomerisation and cycloaddition lead to residue and coke.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .n{stroke:#1E2329;stroke-width:2}
+  .t{font-size:17px;font-weight:700;text-anchor:middle}
+  .s{font-size:13px;text-anchor:middle;fill:#3A4048}
+  .good{stroke:#1B7F4B;stroke-width:3.2;fill:none}
+  .bad{stroke:#C8660F;stroke-width:3.2;fill:none;stroke-dasharray:10 6}
+  .gl{font-size:14px;font-weight:600;fill:#1B6A40}
+  .bl{font-size:14px;font-weight:600;fill:#A04F08}
+</style>
+<defs>
+  <marker id="mg" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B7F4B"/></marker>
+  <marker id="mb" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C8660F"/></marker>
+</defs>
+<rect width="1100" height="470" fill="#FFFFFF"/>
+
+<rect class="n" x="60" y="190" width="200" height="80" rx="10" fill="#F6ECE3"/>
+<text class="t" x="160" y="226">Heavy gas oil</text><text class="s" x="160" y="248">VGO feed</text>
+
+<rect class="n" x="460" y="80" width="200" height="80" rx="10" fill="#E3F2E9"/>
+<text class="t" x="560" y="116">Gasoline + LCO</text><text class="s" x="560" y="138">wanted product</text>
+
+<rect class="n" x="860" y="80" width="200" height="80" rx="10" fill="#EEF1F4"/>
+<text class="t" x="960" y="116">Gases</text><text class="s" x="960" y="138">H₂, C₁, C₂, C₃, C₄</text>
+
+<rect class="n" x="460" y="340" width="200" height="80" rx="10" fill="#E9E6E1"/>
+<text class="t" x="560" y="376">Residue + coke</text><text class="s" x="560" y="398">coke fuels the regenerator</text>
+
+<!-- primary cracking to gasoline -->
+<path class="good" d="M260,215 L458,132" marker-end="url(#mg)"/>
+<text class="gl" x="330" y="160" text-anchor="middle">primary cracking</text>
+<!-- primary cracking to gases (arc) -->
+<path class="good" d="M160,190 C160,20 960,20 960,78" marker-end="url(#mg)"/>
+<text class="gl" x="560" y="30" text-anchor="middle">primary cracking</text>
+<!-- secondary cracking -->
+<path class="bad" d="M660,120 L858,120" marker-end="url(#mb)"/>
+<text class="bl" x="760" y="108" text-anchor="middle">secondary cracking</text>
+<text x="760" y="142" font-size="12" text-anchor="middle" fill="#A04F08">(over-cracking)</text>
+<!-- to coke -->
+<path class="bad" d="M260,248 L458,370" marker-end="url(#mb)"/>
+<text class="bl" x="300" y="318" text-anchor="middle">dehydrogenation,</text>
+<text class="bl" x="300" y="336" text-anchor="middle">oligomerisation</text>
+<path class="bad" d="M560,160 L560,338" marker-end="url(#mb)"/>
+<text class="bl" x="572" y="240">cycloaddition,</text>
+<text class="bl" x="572" y="258">dehydrogenation</text>
+
+<g transform="translate(760,300)">
+  <rect width="300" height="84" rx="8" fill="#FAFAF8" stroke="#C9C6BF"/>
+  <path class="good" d="M16,28 L64,28"/><text x="74" y="33" font-size="13">desired: maximise</text>
+  <path class="bad" d="M16,58 L64,58"/><text x="74" y="63" font-size="13">side reactions: limit</text>
+</g>
+<text x="1080" y="458" font-size="12" text-anchor="end" fill="#5A616A">After Fahim et al. (2010) Fig 8.3</text>
+</svg>

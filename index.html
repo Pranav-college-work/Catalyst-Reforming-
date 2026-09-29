@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FCC Study Material</title>
+<meta name="description" content="Fluid catalytic cracking study material for the 1 Oct presentation: overview, chapters and presentation order.">
+<script>try{var t=localStorage.getItem('fcc-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'},options:{enableMenu:false}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js" async></script>
+<script src="assets/app.js" defer></script>
+</head>
+<body data-next="01-unit-and-types.html">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html" aria-label="FCC study material home"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="9" width="11" height="17" rx="5" fill="none" stroke="#F0804F" stroke-width="2.2"/><rect x="20" y="3" width="4" height="24" fill="#E9E7E2"/><path d="M8 26v2h14" fill="none" stroke="#F0804F" stroke-width="2.2"/><path d="M22 3h-6v6" fill="none" stroke="#E9E7E2" stroke-width="2"/></svg><div><b>FCC</b><span>1 Oct presentation</span></div></a>
+    <nav class="chapters" aria-label="Chapters"><a href="index.html" aria-current="page">Home</a><a href="01-unit-and-types.html"><i>01</i>Unit & types</a><a href="02-feed-catalyst-conditions.html"><i>02</i>Feed, catalyst, conditions</a><a href="03-flow-diagrams.html"><i>03</i>BFD & PFD</a><a href="04-reactions-mechanism.html"><i>04</i>Reactions & mechanism</a><a href="05-reactor.html"><i>05</i>Reactor</a><a href="06-products-optimisation.html"><i>06</i>Products & optimisation</a><a href="sources.html">Sources</a></nav>
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme"></button>
+  </div>
+  <div class="progress"></div>
+</header>
+<div class="layout">
+  <aside class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol id="tocList"></ol>
+    <p class="keys"><kbd>[</kbd> <kbd>]</kbd> previous / next chapter<br>Click any diagram to zoom.</p>
+  </aside>
+  <main id="main">
+    <div class="home-hero">
+      <div>
+        <p class="kicker">Petroleum Refining Engineering · presentation, 1 Oct</p>
+        <h1>Fluid <em>Catalytic</em> Cracking</h1>
+        <p class="oneline">Heavy gas oil meets hot, acidic zeolite powder for a few seconds in a riser at about 500 °C and breaks into gasoline, LPG olefins and cycle oils. The coke left on the catalyst is burned in a regenerator, and that heat drives the cracking.</p>
+        <p style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn2" href="01-unit-and-types.html" style="text-decoration:none">Start with chapter 1 →</a>
+          <a class="btn2" href="03-flow-diagrams.html#pfd" style="text-decoration:none">Jump to the PFD</a>
+        </p>
+      </div>
+      <div>
+<figure class="fig "><div class="fig-h"><span class="no">Overview</span><span class="ti">FCC block flow diagram</span><a class="btn" href="figures/fig02-fcc-bfd.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom FCC block flow diagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig02-fcc-bfd.svg" alt="FCC block flow diagram" loading="lazy"></div><figcaption>The whole unit in one picture. Chapter 3 walks through it block by block and then shows the full PFD. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.9</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16–17</span></a></figcaption></figure>
+      </div>
+    </div>
+
+    <section class="s">
+      <h2 class="sh" id="glance" data-toc="Unit at a glance"><span class="n">00</span>Unit at a glance</h2>
+      <div class="sheet">
+        <div class="sheet-h"><b>FCC · unit datasheet</b><span>typical values · click a chip for the source</span></div>
+        <dl class="spec">
+          <div><dt>What it is</dt><dd>Conversion unit: cracks C–C bonds of heavy oil on an acid catalyst <small><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 199</span></a></small></dd></div>
+          <div><dt>Feed</dt><dd>Gas oil boiling 316–566 °C (AGO, VGO) <small>residue feeds in RFCC after desulphurisation <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 200–201</span></a></small></dd></div>
+          <div><dt>Catalyst</dt><dd>Zeolite Y (faujasite) in a clay matrix <small>~70–75 µm powder, ~800 m²/g <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></small></dd></div>
+          <div><dt>Reactor</dt><dd>Riser: pneumatic transport, near plug flow <small>plus a fluidised-bed regenerator <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5</span></a></small></dd></div>
+          <div><dt>Reaction temperature</dt><dd>480–550 °C <small>≈ 533 °C riser outlet in the max-gasoline case <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208, Table 8.4</span></a></small></dd></div>
+          <div><dt>Regenerator temperature</dt><dd>620–845 °C <small>≈ 727 °C in the max-gasoline case <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></small></dd></div>
+          <div><dt>Pressure</dt><dd>1–5 bar <small>reactor ≈ 2.1 barg, regenerator ≈ 2.3 barg <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208, Table 8.4</span></a></small></dd></div>
+          <div><dt>Contact time</dt><dd>2–10 s in the riser <small>lecture quotes 1–4 s <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></small></dd></div>
+          <div><dt>Catalyst / oil ratio</dt><dd>≈ 5.4 kg/kg <small>max-gasoline case <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></small></dd></div>
+          <div><dt>Mechanism</dt><dd>Carbenium-ion chain, β-scission <small>lecture calls it "carbonium ion" <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 9–12</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.5</span></a></small></dd></div>
+          <div><dt>Main product</dt><dd>Gasoline, 35–60 wt% <small>good octane <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.2</span></a></small></dd></div>
+          <div><dt>By-products</dt><dd>Dry gas + H₂S, LPG, LCO, HCO/slurry, coke 3–5 wt% <small><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.2</span></a></small></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="s">
+      <h2 class="sh" id="chapters" data-toc="Chapters"><span class="n">01</span>Chapters</h2>
+      <div class="cards">
+        <a class="card" href="01-unit-and-types.html"><span class="num">CHAPTER 01</span><span class="go">→</span><h3>Unit &amp; types</h3><p>Definition, role in the refinery, thermal vs catalytic cracking, fixed / moving / fluid bed, side-by-side vs stacked, modern variants.</p></a>
+        <a class="card" href="02-feed-catalyst-conditions.html"><span class="num">CHAPTER 02</span><span class="go">→</span><h3>Feed, catalyst, conditions</h3><p>Operating-parameter datasheet, feedstock and contaminants, zeolite Y, matrix, ZSM-5, deactivation.</p></a>
+        <a class="card" href="03-flow-diagrams.html"><span class="num">CHAPTER 03</span><span class="go">→</span><h3>BFD &amp; PFD</h3><p>Block flow diagram, full process flow diagram with 20 numbered streams, stream table, process steps, equipment list.</p></a>
+        <a class="card" href="04-reactions-mechanism.html"><span class="num">CHAPTER 04</span><span class="go">→</span><h3>Reactions &amp; mechanism</h3><p>Reaction network, reactions by hydrocarbon class, heat effects, carbenium-ion mechanism step by step.</p></a>
+        <a class="card" href="05-reactor.html"><span class="num">CHAPTER 05</span><span class="go">→</span><h3>Reactor</h3><p>Riser + regenerator, fluidisation regimes, riser dimensions, heat balance with a worked example, lump kinetics chart.</p></a>
+        <a class="card" href="06-products-optimisation.html"><span class="num">CHAPTER 06</span><span class="go">→</span><h3>Products &amp; optimisation</h3><p>Yields, by-products, conversion, yield-correlation calculator, optimisation levers and operating modes.</p></a>
+      </div>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="talk" data-toc="Presentation order"><span class="n">02</span>Suggested 10-minute presentation order</h2>
+      <ol class="talk">
+        <li><a href="01-unit-and-types.html#what">What FCC is and why refineries need it</a><span>1 min</span></li>
+        <li><a href="01-unit-and-types.html#types">Types: fixed → moving → fluidised bed, side-by-side vs stacked</a><span>1 min</span></li>
+        <li><a href="02-feed-catalyst-conditions.html#params">Feed, catalyst and operating conditions</a><span>1.5 min</span></li>
+        <li><a href="03-flow-diagrams.html#pfd">Walk the PFD: feed → riser → stripper → regenerator → fractionator</a><span>2 min</span></li>
+        <li><a href="04-reactions-mechanism.html#mechanism">Reactions and the carbenium-ion mechanism</a><span>2 min</span></li>
+        <li><a href="05-reactor.html#heat">Reactor type and the heat balance</a><span>1 min</span></li>
+        <li><a href="06-products-optimisation.html#levers">Products, by-products and how to optimise</a><span>1 min</span></li>
+        <li><a href="06-products-optimisation.html#summary">Conclusion: 8 lines to remember</a><span>0.5 min</span></li>
+      </ol>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="howto" data-toc="How to read this"><span class="n">03</span>How to read this material</h2>
+      <ul class="pts">
+        <li><b>Every number has a source chip.</b> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a> means page 16 of the lecture PDF <i>Cracking and Reforming 1</i>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a> means Fahim et al. (2010), <i>Fundamentals of Petroleum Refining</i>, Chapter 8. <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>Eq. 8.17</span></a> means I calculated it here from the source's own equations or data.</li>
+        <li><b>Diagrams share one colour code for streams:</b>
+          <div class="legend" style="margin-top:6px">
+            <span><i style="background:#9A4B12"></i>hydrocarbon liquid</span>
+            <span><i style="background:#1B7F4B"></i>hydrocarbon vapour</span>
+            <span><i style="background:#C0392B"></i>hot regenerated catalyst</span>
+            <span><i style="background:#4B4F55"></i>spent catalyst</span>
+            <span><i style="background:#1F5FAF"></i>air</span>
+            <span><i style="background:repeating-linear-gradient(90deg,#7D848C 0 7px,transparent 7px 11px)"></i>flue gas</span>
+            <span><i style="background:repeating-linear-gradient(90deg,#0E8F9B 0 5px,transparent 5px 9px)"></i>steam</span>
+          </div></li>
+        <li><b>Diagrams are standalone SVG files</b> in the <code>figures</code> folder, so you can drop them straight into slides. Click any diagram to zoom.</li>
+        <li><b>Each chapter ends with a quick check.</b> Try to answer before opening it.</li>
+        <li>Keyboard: <kbd>[</kbd> and <kbd>]</kbd> jump to the previous or next chapter.</li>
+      </ul>
+    </section>
+
+<nav class="pager" aria-label="Chapter navigation"><a class="next" href="01-unit-and-types.html"><small>next →</small><b>Unit & types</b></a></nav>
+    <footer class="foot">Fluid catalytic cracking · study material for the 1 Oct presentation · Sources: lecture <i>Cracking and Reforming 1</i> and Fahim et al. (2010), <i>Fundamentals of Petroleum Refining</i>, Ch. 8. <a href="sources.html">Full source list →</a></footer>
+  </main>
+</div>
+<button class="totop" type="button" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<dialog class="lb" id="lb" aria-label="Diagram viewer">
+  <div class="lb-bar"><span class="ti"></span>
+    <button type="button" data-z="out" aria-label="Zoom out">−</button>
+    <button type="button" data-z="fit">Fit</button>
+    <button type="button" data-z="in" aria-label="Zoom in">+</button>
+    <a class="open" href="#" target="_blank" rel="noopener">Open SVG</a>
+    <button type="button" data-z="close">Close ✕</button></div>
+  <div class="lb-body"><img alt=""></div>
+</dialog>
+</body>
+</html>

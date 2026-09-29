@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FCC Products and Optimisation</title>
+<meta name="description" content="FCC products and by-products, conversion and yield correlations with a calculator, and how to optimise the unit.">
+<script>try{var t=localStorage.getItem('fcc-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'},options:{enableMenu:false}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js" async></script>
+<script src="assets/app.js" defer></script><script src="assets/charts.js" defer></script>
+</head>
+<body data-prev="05-reactor.html" data-next="sources.html">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html" aria-label="FCC study material home"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="9" width="11" height="17" rx="5" fill="none" stroke="#F0804F" stroke-width="2.2"/><rect x="20" y="3" width="4" height="24" fill="#E9E7E2"/><path d="M8 26v2h14" fill="none" stroke="#F0804F" stroke-width="2.2"/><path d="M22 3h-6v6" fill="none" stroke="#E9E7E2" stroke-width="2"/></svg><div><b>FCC</b><span>1 Oct presentation</span></div></a>
+    <nav class="chapters" aria-label="Chapters"><a href="index.html">Home</a><a href="01-unit-and-types.html"><i>01</i>Unit & types</a><a href="02-feed-catalyst-conditions.html"><i>02</i>Feed, catalyst, conditions</a><a href="03-flow-diagrams.html"><i>03</i>BFD & PFD</a><a href="04-reactions-mechanism.html"><i>04</i>Reactions & mechanism</a><a href="05-reactor.html"><i>05</i>Reactor</a><a href="06-products-optimisation.html" aria-current="page"><i>06</i>Products & optimisation</a><a href="sources.html">Sources</a></nav>
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme"></button>
+  </div>
+  <div class="progress"></div>
+</header>
+<div class="layout">
+  <aside class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol id="tocList"></ol>
+    <p class="keys"><kbd>[</kbd> <kbd>]</kbd> previous / next chapter<br>Click any diagram to zoom.</p>
+  </aside>
+  <main id="main">
+    <header class="hero">
+      <p class="kicker">Chapter 06 · products and optimisation</p>
+      <h1>Products, by-products and how to optimise</h1>
+      <p class="lede">What comes out and in what amounts, where the by-products go, how conversion is defined, a calculator built on the book's yield correlations, and the levers an operator pulls to steer the unit.</p>
+      <div class="meta"><span><b>Sources:</b> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Tables 8.2, 8.4, 8.6, 8.8; §8.11, 8.16</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16–24</span></a></span></div>
+    </header>
+
+    <section class="s prose">
+      <h2 class="sh" id="products" data-toc="Products & yields"><span class="n">6.1</span>Products and typical yields</h2>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Product</th><th>Characteristics / use</th><th class="num">Yield, wt%</th><th style="min-width:170px">0 ——— 60 wt%</th></tr></thead>
+        <tbody>
+          <tr><td>Dry gas + H₂S</td><td>H₂, C₁, C₂ (+ some C₃); H₂S must be removed → fuel gas</td><td class="num">3–5</td><td><div class="rb"><span style="left:5%;width:3.4%"></span></div></td></tr>
+          <tr><td>LPG: C₃, C₃=, C₄, C₄=</td><td>Petrochemical feedstock; olefins to alkylation / MTBE</td><td class="num">8–20</td><td><div class="rb"><span style="left:13.3%;width:20%"></span></div></td></tr>
+          <tr><td><b>Gasoline</b></td><td><b>Main product</b>, good octane number</td><td class="num">35–60</td><td><div class="rb"><span style="left:58.3%;width:41.7%"></span></div></td></tr>
+          <tr><td>Light cycle oil (LCO)</td><td>Rich in aromatics, high sulphur; diluent for fuel, diesel after hydrotreating</td><td class="num">12–20</td><td><div class="rb"><span style="left:20%;width:13.3%"></span></div></td></tr>
+          <tr><td>HCO + slurry</td><td>Very aromatic; slurry carries solids (catalyst fines)</td><td class="num">10–15</td><td><div class="rb"><span style="left:16.7%;width:8.3%"></span></div></td></tr>
+          <tr><td>Coke</td><td>Stays on catalyst, burned in the regenerator</td><td class="num">3–5</td><td><div class="rb"><span style="left:5%;width:3.4%"></span></div></td></tr>
+        </tbody></table></div>
+      <p class="small">Source: <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.2</span></a>. Bars show each range on a 0–60 wt% scale.</p>
+      <ul class="pts">
+        <li><b>High liquid yield:</b> mass liquid yield is usually 90–93 %; liquid <i>volume</i> yield is often above 100 % because the products are less dense than the feed. The remaining mass is gas and coke. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 23</span></a></li>
+        <li>The yield pattern comes from a complex interaction of <b>feed characteristics</b> and <b>reactor conditions (severity)</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 23</span></a></li>
+        <li>FCC gasoline properties used in blending: RON 83.2, MON 80.9, RVP 13.9 psi. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 9.1</span></a></li>
+      </ul>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="byproducts" data-toc="By-products"><span class="n">6.2</span>By-products and where they go</h2>
+      <div class="tw"><table class="t">
+        <thead><tr><th>By-product</th><th>Origin</th><th>Fate</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Coke</td><td>Condensation of aromatics / olefins on the catalyst</td><td>Burned in the regenerator: the unit's own fuel</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 202, 206</span></a></td></tr>
+          <tr><td>Dry gas + H₂S</td><td>Over-cracking; sulphur in feed</td><td>H₂S removed; gas to refinery fuel</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.2</span></a></td></tr>
+          <tr><td>Hydrogen</td><td>Dehydrogenation, promoted by nickel on the catalyst</td><td>Leaves with dry gas; reduced by Sb passivation</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
+          <tr><td>Flue gas</td><td>Coke combustion: CO₂, CO, H₂O, N₂, O₂, SO₂</td><td>Cyclones + ESP remove fines; CO boiler burns CO; heat and power recovered</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 211, 217</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16–17</span></a></td></tr>
+          <tr><td>Decant (clarified) oil</td><td>Fractionator bottoms after settling</td><td>Aromatic solvent, fuel-oil component, or recycle to riser</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a></td></tr>
+          <tr><td>Catalyst fines</td><td>Attrition during circulation</td><td>Caught by cyclones / ESP or leave in slurry; replaced by make-up catalyst</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></td></tr>
+        </tbody></table></div>
+    </section>
+
+    <section class="s">
+      <h2 class="sh" id="conversion" data-toc="Conversion & yield calculator"><span class="n">6.3</span>Conversion and yield correlations</h2>
+      <div class="prose">
+      <div class="eq"><div class="eqn"><div>\[ \text{CONV}\% = \frac{\text{volume of oil feed} - \text{volume of cycle stock}}{\text{volume of oil feed}} \times 100 \]</div><span class="tagno">(8.12)</span></div><p class="why">Cycle stock is the part not cracked to gasoline and lighter (LCO + HCO). At 75 % conversion, cycle stock is 25 %. Lecture form: conversion = 100 % − gas-oil yield. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 212, 214</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 23</span></a></p></div>
+      <p>The book gives regressions of plant data on zeolite catalyst (Maples, 1993) that need only <b>conversion</b> and <b>feed API gravity</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.11, Table 8.6</span></a></p>
+      <div class="tw"><table class="t plain">
+        <thead><tr><th>Product</th><th>Correlation</th></tr></thead>
+        <tbody>
+          <tr><td>Coke, wt%</td><td>\(0.05356\,C - 0.18598\,\text{API} + 5.966975\)</td></tr>
+          <tr><td>Gases (C₁–C₂ + H₂S), wt%</td><td>\(0.0552\,C + 0.597\)</td></tr>
+          <tr><td>Gasoline, LV%</td><td>\(0.7754\,C - 0.7778\)</td></tr>
+          <tr><td>LCO, LV%</td><td>\(0.0047\,C^2 - 0.8564\,C + 53.576\)</td></tr>
+          <tr><td>HCO, LV%</td><td>\(100 - C - \text{LCO}\)</td></tr>
+          <tr><td>C₃, LV%</td><td>\(0.0436\,C - 0.8714\)</td></tr>
+          <tr><td>C₃=, LV%</td><td>\(0.0003\,C^2 + 0.0633\,C + 0.0143\)</td></tr>
+          <tr><td>iC₄, LV%</td><td>\(0.0007\,C^2 + 0.0047\,C + 1.40524\)</td></tr>
+          <tr><td>nC₄, LV%</td><td>\(0.0002\,C^2 + 0.019\,C + 0.0476\)</td></tr>
+          <tr><td>C₄=, LV%</td><td>\(0.0993\,C - 0.1556\)</td></tr>
+          <tr><td>Gasoline API</td><td>\(-0.19028\,C + 0.02772\,(\text{gasoline LV\%}) + 64.08\)</td></tr>
+          <tr><td>LCO API</td><td>\(-0.34661\,C + 1.725715\,(\text{feed API})\)</td></tr>
+        </tbody></table></div>
+      <p class="small">\(C\) = conversion, LV%. Signs checked by reproducing every value in Ex. E8.1 <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>check of Table 8.6</span></a>. Coke and gases are wt%; the rest are liquid-volume %, so the column does not sum to 100.</p>
+      </div>
+
+      <div class="tool" id="yieldTool">
+        <div class="tool-h">
+          <div><h3 style="margin:0">Yield calculator</h3><p class="small" style="margin:4px 0 0">Loaded with Ex. E8.1: 20,000 BPD AGO + 15,000 BPD VGO, mixed API 20.02, 75 % conversion. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.1</span></a></p></div>
+        </div>
+        <div class="tool-h">
+          <label class="field">Conversion <b><span id="cv">75</span> LV%</b><input type="range" id="conv" min="55" max="85" step="0.5" value="75"></label>
+          <label class="field">Feed API gravity<input type="number" id="api" min="10" max="35" step="0.01" value="20.02"></label>
+          <button class="btn2" type="button" id="ex81">Reset to Ex. E8.1</button>
+        </div>
+        <div class="tool-grid">
+          <div class="chart" id="yieldChart" role="img" aria-label="Product yields bar chart"></div>
+          <div id="yieldTable"></div>
+        </div>
+        <p class="small" style="margin:10px 0 0">The correlation only holds while HCO ≥ 0, which limits the slider to 85 %. The book's printed HCO for Ex. E8.1 is 9.7 LV%, but 100 − 75 − 15.8 = 9.2. <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>check of Ex. E8.1</span></a></p>
+      </div>
+    </section>
+
+    <section class="s">
+      <h2 class="sh" id="levers" data-toc="Optimisation levers"><span class="n">6.4</span>Optimisation: the levers</h2>
+      <div class="prose"><p>"Increase product" means shifting the balance between the <b>primary cracking you want</b> and the <b>secondary cracking and coking you don't</b> (Fig 4.1), within the heat balance.</p></div>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Lever (↑ = increase)</th><th>Effect</th><th>Why</th><th>Watch out</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Reaction temperature ↑</td><td>Conversion ↑; lighter products ↑</td><td>Reaction rate depends directly on temperature</td><td>Past the optimum, gasoline over-cracks to gas; Table 8.4 sets 533 °C for max gasoline</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 5</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Catalyst-to-oil ratio ↑</td><td>Conversion ↑</td><td>More active sites and more heat per kg of feed (general principle; not quantified in the sources)</td><td>Higher circulation goes with higher coke; circulation is also tied to the heat balance</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 206, 211</span></a></td></tr>
+          <tr><td>Contact time: keep it short</td><td>Gasoline yield ↑ at a given conversion</td><td>Zeolite is very active; short riser time + fast separation stops over-cracking</td><td>Too short → low conversion</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 19</span></a></td></tr>
+          <tr><td>Pressure: keep it low</td><td>Favours cracking</td><td>Cracking multiplies the number of moles</td><td>Unit runs at 1–5 bar</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
+          <tr><td>Feed preheat ↑</td><td>Less catalyst circulation needed at the same riser temperature</td><td>Feed brings more of its own heat (Eq. 8.17)</td><td>Lower C/O → lower conversion and coke</td><td><a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>Eq. 8.17</span></a></td></tr>
+          <tr><td>Zeolite (vs amorphous) catalyst</td><td>More gasoline; less coke and dry gas; more iso-butane</td><td>~100× activity and strong H-transfer</td><td>Octane 2–3 numbers lower</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–13</span></a></td></tr>
+          <tr><td>ZSM-5 additive</td><td>Octane ↑ (~+1 RON per 5 %); more C₃/C₄ olefins</td><td>Shape-selective cracking of linear paraffins</td><td>Some gasoline goes to LPG</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></td></tr>
+          <tr><td>Catalyst formulation</td><td>Tuned for max gasoline or max olefins</td><td>Better understanding of crackability and severity</td><td>—</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 24</span></a></td></tr>
+          <tr><td>Full burn to CO₂</td><td>Better product distribution at the same conversion</td><td>Residual carbon on catalyst lower → more active, more selective</td><td>About twice the air of partial burn</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></td></tr>
+          <tr><td>CO-promoter additive</td><td>Complete CO → CO₂ in the regenerator</td><td>ppm metal in the matrix</td><td>—</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></td></tr>
+          <tr><td>Feed hydrotreating</td><td>Gasoline and middle distillate ↑; coke ↓</td><td>Removes metals, S, N; lowers carbon-forming tendency; adds hydrogen</td><td>Needed above 15 ppm metals and 3 % CCR</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
+          <tr><td>Antimony (Ni passivation)</td><td>Coke up to −15 %, H₂ up to −45 %</td><td>Deactivates nickel's dehydrogenation activity</td><td>Works up to 15 ppm Ni + V</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
+          <tr><td>Stripping steam ↑</td><td>Oil recovered, less coke to regenerator</td><td>Steam vaporises heavy oil off the catalyst</td><td>Steam cost</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5</span></a></td></tr>
+          <tr><td>HCO / slurry recycle</td><td>Converts more cycle oil</td><td>Second pass through the riser</td><td>Very aromatic stream: aromatic rings tend to condense to coke</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 202, 211</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
+        </tbody></table></div>
+    </section>
+
+    <section class="s">
+      <h2 class="sh" id="modes" data-toc="Operating modes"><span class="n">6.5</span>Operating modes</h2>
+      <div class="cmp">
+        <div class="card"><h3>Max gasoline</h3>
+          <ul class="pts"><li>Feed 446 °F (230 °C), C/O 5.4</li><li>Riser outlet 991 °F (533 °C)</li><li>Regenerator 1341 °F (727 °C)</li><li>Reactor / regenerator 30 / 33 psig</li><li>Dispersion steam 0.9 wt%</li></ul><p><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></p></div>
+        <div class="card"><h3>Max light olefins</h3>
+          <ul class="pts"><li>Severe riser conditions, blended catalyst (Petro-FCC), or new catalysts (DCC, CPP)</li><li>Propylene 22 wt% vs 4.7 wt% conventional</li><li>Naphtha drops from 53.5 to 28 wt%</li><li>ZSM-5 shifts gasoline-range paraffins to C₃/C₄</li></ul><p><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.16, Table 8.8, p. 209</span></a></p></div>
+        <div class="card"><h3>More middle distillate (LCO)</h3>
+          <ul class="pts"><li>Run at <b>lower conversion</b></li><li>By Table 8.6, LCO falls as conversion rises in the usual range (e.g. 20.7 LV% at 55 % vs 15.8 LV% at 75 %)</li><li>LCO must be hydrotreated for diesel</li></ul><p><a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>Table 8.6</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Fig 8.1</span></a></p></div>
+      </div>
+      <div class="prose">
+      <h3>Constraints that limit optimisation</h3>
+      <ul class="pts">
+        <li><b>Heat balance:</b> steady state only while regenerator heat = reactor heat demand; coke yield is not free. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a></li>
+        <li><b>Regenerator burning capacity:</b> high-CCR feed can lay down more coke than can be burned. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></li>
+        <li><b>High coke laydown</b> raises air/oxygen demand, regenerator temperature and the need for heat removal. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></li>
+        <li><b>Regenerator temperature ceiling:</b> overheating deactivates the catalyst. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></li>
+        <li><b>Metals:</b> V destroys activity; Ni makes coke and H₂. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="summary" data-toc="Conclusion"><span class="n">6.6</span>Conclusion: 8 lines to remember</h2>
+      <ol class="pts">
+        <li>FCC cracks heavy gas oil (316–566 °C) into gasoline, LPG olefins and cycle oils on a circulating fluidised zeolite catalyst. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 199–200</span></a></li>
+        <li>Riser reactor: 480–550 °C, 1–5 bar, 2–10 s, pneumatic transport, near plug flow. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 208, 210</span></a></li>
+        <li>Regenerator burns coke at 620–845 °C; the hot catalyst carries that heat back to the riser. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></li>
+        <li>Catalyst: rare-earth-exchanged zeolite Y in a kaolin/binder matrix, ~70 µm; ZSM-5 for octane and olefins. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 13, 16</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></li>
+        <li>Mechanism: carbenium-ion chain — protonation, β-scission, rearrangement to 3° ions, hydride transfer. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a></li>
+        <li>Net reaction is endothermic; coke yield is set by the heat balance. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 208, 211</span></a></li>
+        <li>Products: gasoline 35–60, LPG 8–20, LCO 12–20, HCO + slurry 10–15, dry gas 3–5, coke 3–5 wt%. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.2</span></a></li>
+        <li>Optimise with temperature, C/O, short contact time, catalyst choice, full CO₂ burn and a clean (hydrotreated) feed. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 17–20</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.7</span></a></li>
+      </ol>
+    </section>
+
+    <section class="s qc">
+      <h2 class="sh" id="check" data-toc="Quick check"><span class="n">6.7</span>Quick check</h2>
+      <details><summary>Define conversion in FCC.</summary><div class="ans">Percentage of feed volume cracked to gasoline and lighter: (feed − cycle stock) / feed × 100, where cycle stock is the LCO + HCO left in the gas-oil range. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.12</span></a></div></details>
+      <details><summary>Why can the liquid volume yield exceed 100 %?</summary><div class="ans">Products are lighter (less dense) than the feed, so the same mass takes up more volume. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 23</span></a></div></details>
+      <details><summary>Name three ways to raise gasoline yield.</summary><div class="ans">Zeolite catalyst; short riser contact with fast separation; optimum riser temperature (not too high); hydrotreated feed; full CO₂ regeneration for a cleaner catalyst. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–20</span></a></div></details>
+      <details><summary>You want more propylene. What do you change?</summary><div class="ans">Add ZSM-5, raise severity, or move to a DCC / Petro-FCC style design. Petro-FCC gives 22 wt% propylene vs 4.7 wt% conventional. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.16, Table 8.8</span></a></div></details>
+    </section>
+
+<nav class="pager" aria-label="Chapter navigation"><a class="prev" href="05-reactor.html"><small>← previous</small><b>Reactor</b></a><a class="next" href="sources.html"><small>next →</small><b>Sources</b></a></nav>
+    <footer class="foot">Fluid catalytic cracking · study material for the 1 Oct presentation · Sources: lecture <i>Cracking and Reforming 1</i> and Fahim et al. (2010), <i>Fundamentals of Petroleum Refining</i>, Ch. 8. <a href="sources.html">Full source list →</a></footer>
+  </main>
+</div>
+<button class="totop" type="button" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<dialog class="lb" id="lb" aria-label="Diagram viewer">
+  <div class="lb-bar"><span class="ti"></span>
+    <button type="button" data-z="out" aria-label="Zoom out">−</button>
+    <button type="button" data-z="fit">Fit</button>
+    <button type="button" data-z="in" aria-label="Zoom in">+</button>
+    <a class="open" href="#" target="_blank" rel="noopener">Open SVG</a>
+    <button type="button" data-z="close">Close ✕</button></div>
+  <div class="lb-body"><img alt=""></div>
+</dialog>
+</body>
+</html>

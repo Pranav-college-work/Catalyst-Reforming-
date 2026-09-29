@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FCC Unit and Types</title>
+<meta name="description" content="What the fluid catalytic cracking unit is, why a refinery needs it, thermal vs catalytic cracking, fixed/moving/fluid bed types and FCC configurations.">
+<script>try{var t=localStorage.getItem('fcc-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'},options:{enableMenu:false}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js" async></script>
+<script src="assets/app.js" defer></script>
+</head>
+<body data-prev="index.html" data-next="02-feed-catalyst-conditions.html">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html" aria-label="FCC study material home"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="9" width="11" height="17" rx="5" fill="none" stroke="#F0804F" stroke-width="2.2"/><rect x="20" y="3" width="4" height="24" fill="#E9E7E2"/><path d="M8 26v2h14" fill="none" stroke="#F0804F" stroke-width="2.2"/><path d="M22 3h-6v6" fill="none" stroke="#E9E7E2" stroke-width="2"/></svg><div><b>FCC</b><span>1 Oct presentation</span></div></a>
+    <nav class="chapters" aria-label="Chapters"><a href="index.html">Home</a><a href="01-unit-and-types.html" aria-current="page"><i>01</i>Unit & types</a><a href="02-feed-catalyst-conditions.html"><i>02</i>Feed, catalyst, conditions</a><a href="03-flow-diagrams.html"><i>03</i>BFD & PFD</a><a href="04-reactions-mechanism.html"><i>04</i>Reactions & mechanism</a><a href="05-reactor.html"><i>05</i>Reactor</a><a href="06-products-optimisation.html"><i>06</i>Products & optimisation</a><a href="sources.html">Sources</a></nav>
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme"></button>
+  </div>
+  <div class="progress"></div>
+</header>
+<div class="layout">
+  <aside class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol id="tocList"></ol>
+    <p class="keys"><kbd>[</kbd> <kbd>]</kbd> previous / next chapter<br>Click any diagram to zoom.</p>
+  </aside>
+  <main id="main">
+    <header class="hero">
+      <p class="kicker">Chapter 01 · the unit and its types</p>
+      <h1>What the FCC unit is</h1>
+      <p class="lede">Definition, why a refinery needs it, how it differs from thermal cracking, and the types of catalytic cracking from Houdry's fixed beds to today's riser units.</p>
+      <div class="meta"><span><b>Sources:</b> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 2–26</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.1–8.2, 8.8, 8.16</span></a></span><span><b>Figures:</b> 1.1–1.3</span></div>
+    </header>
+
+    <section class="s prose">
+      <h2 class="sh" id="what" data-toc="Definition"><span class="n">1.1</span>What catalytic cracking is</h2>
+      <ul class="pts">
+        <li><b>Cracking</b> breaks large, high-boiling hydrocarbon molecules into smaller, lighter ones. With heat alone it is <i>thermal cracking</i> (pyrolysis); it can also be done with a catalyst. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 2</span></a></li>
+        <li><b>Catalytic cracking</b> uses an acidic catalyst. It differs from thermal cracking in mechanism: a <b>carbenium-ion</b> chain instead of free radicals. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a></li>
+        <li>It is the most widely used refinery process for turning heavy oil into <b>high-octane gasoline</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a></li>
+        <li><b>FCC</b> (fluid catalytic cracking) uses a fine catalyst powder (average ~70 µm) that <b>behaves like a fluid when aerated</b>. It circulates continuously between the reactor and the regenerator and carries heat from one to the other. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></li>
+        <li>The FCC is called <b>"the heart of the refinery"</b>: it upgrades low-value vacuum gas oil (VGO) into gasoline and C₃/C₄ olefins, which feed alkylation. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 199</span></a></li>
+        <li>Cracking is <b>endothermic</b>. Burning the coke off the catalyst in the regenerator supplies the heat. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 199</span></a></li>
+      </ul>
+      <div class="callout exam"><span class="lab">One-line definition (exam)</span>
+        <p>FCC is a continuous process in which preheated heavy gas oil is cracked over a circulating, fluidised zeolite catalyst in a <b>riser reactor</b> at <b>480–550 °C</b> and <b>1–5 bar</b> for a few seconds. It makes high-octane gasoline, LPG olefins and cycle oils. Coke on the spent catalyst is burned off in a <b>regenerator</b>, which supplies the heat of reaction. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 199, 208, 210</span></a></p></div>
+    </section>
+
+    <section class="s">
+      <h2 class="sh" id="why" data-toc="Role in the refinery"><span class="n">1.2</span>Objective and role in the refinery</h2>
+<figure class="fig "><div class="fig-h"><span class="no">Fig 1.1</span><span class="ti">Where the FCC sits in a refinery</span><a class="btn" href="figures/fig01-refinery-bfd.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Where the FCC sits in a refinery"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig01-refinery-bfd.svg" alt="Where the FCC sits in a refinery" loading="lazy"></div><figcaption><b>Read left to right:</b> crude → CDU → vacuum distillation → VGO hydrotreater → <b>FCC</b> → gasoline pool, alkylation and LCO hydrotreating. Dashed lines are residue routes (ARDS, coker gas oil) used by residue FCC units. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Fig 8.1</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>Fig 4.1</span></a></figcaption></figure>
+      <div class="prose">
+      <div class="tw"><table class="t">
+        <thead><tr><th>Point</th><th>What it means</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Process objective</td><td>Convert heavy, low-value gas oil into lighter, high-value products, mainly high-octane gasoline</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 200</span></a></td></tr>
+          <tr><td>Olefin supplier</td><td>C₃=/C₄= and C₅= olefins go to alkylation and MTBE; some units are dedicated to petrochemicals (UOP Petro-FCC)</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 200</span></a></td></tr>
+          <tr><td>Secondary conversion</td><td>A secondary (conversion) process, as opposed to primary fractionation; upgrades heavier ends to lighter products</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 14</span></a></td></tr>
+          <tr><td>Residue upgrading</td><td>Desulphurised atmospheric and vacuum residues can be fed; the unit is then a residue FCC (RFCC)</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 199</span></a></td></tr>
+          <tr><td>Downstream processing</td><td>Products may be further hydrocracked, or alkylated to improve gasoline anti-knock</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 15</span></a></td></tr>
+        </tbody></table></div>
+      </div>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="thermal" data-toc="Thermal vs catalytic"><span class="n">1.3</span>Thermal vs catalytic cracking</h2>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Aspect</th><th>Thermal cracking</th><th>Catalytic cracking (FCC)</th></tr></thead>
+        <tbody>
+          <tr><td>Driving agent</td><td>Heat alone <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 2</span></a></td><td>Heat + acidic catalyst <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a></td></tr>
+          <tr><td>Mechanism</td><td>Free radicals, e.g. \(\ce{RCH2-CH3 -> RCH2^{.} + CH3^{.}}\) <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 3</span></a></td><td>Carbenium ions formed on acid sites <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a></td></tr>
+          <tr><td>Temperature</td><td>Visbreaking 425–460 °C; thermal cracking 460–520 °C <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>Tab 4.1</span></a></td><td>480–550 °C in the riser <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
+          <tr><td>Product stability</td><td>Olefins crack again to diolefins and alkynes; more unsaturation <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 3</span></a></td><td>Gives more stable, saturated compounds <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a></td></tr>
+          <tr><td>Molecule shape</td><td>Mostly straight-chain fragments</td><td>Branched (iso) products, because ions rearrange to the stable tertiary form <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a></td></tr>
+          <tr><td>Cracked gas</td><td>Lighter gases (CH₄, C₂, H₂) from radical chains <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 3</span></a></td><td>Rich in C₃ and C₄ <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></td></tr>
+          <tr><td>Gasoline octane</td><td>Lower</td><td>High: iso-paraffins and aromatics <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></td></tr>
+        </tbody></table></div>
+    </section>
+
+    <section class="s">
+      <h2 class="sh" id="types" data-toc="Types by catalyst bed"><span class="n">1.4</span>Types of catalytic cracking (by how the catalyst is contacted)</h2>
+<figure class="fig "><div class="fig-h"><span class="no">Fig 1.2</span><span class="ti">Fixed bed → moving bed → fluidised bed</span><a class="btn" href="figures/fig05-evolution.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Fixed bed → moving bed → fluidised bed"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig05-evolution.svg" alt="Fixed bed → moving bed → fluidised bed" loading="lazy"></div><figcaption>The main problem in catalytic cracking is that coke deactivates the catalyst within minutes. Each generation found a better way to regenerate it: cycling reactors (fixed bed), moving beads (TCC), then a circulating fluidised powder (FCC). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 14–17</span></a></figcaption></figure>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Type</th><th>Examples in the lecture</th><th>Catalyst form</th><th>How it is regenerated</th><th>History</th></tr></thead>
+        <tbody>
+          <tr><td>Fixed bed</td><td>Houdry process</td><td>Fixed beds of catalyst in several reactors</td><td>Cyclic: each reactor alternates between cracking and in-place regeneration</td><td>Commercialised in the late 1930s; first unit Sun Oil, Paulsboro, June 1936 (3 reactors, 2,000 b/d); 12,000 b/d at Marcus Hook, 1937 <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 15</span></a></td></tr>
+          <tr><td>Moving bed</td><td>Thermofor Catalytic Cracking (TCC), air-lift TCC</td><td>Beads</td><td>Beads move down through reactor and kiln, then are lifted back</td><td>Pilot 1941; first commercial 20,000 b/d unit at Magnolia's Beaumont refinery, 1943 <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 15</span></a></td></tr>
+          <tr><td>Fluidised bed</td><td>FCC: UOP, Texaco, Kellogg (Orthoflow), Exxon Flexicracking</td><td>~70 µm powder</td><td>Continuous: powder circulates between reactor and regenerator</td><td>The standard today; the FCC process has run for over 60 years <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 14</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 199</span></a></td></tr>
+        </tbody></table></div>
+      <div class="callout key prose"><span class="lab">Key point</span><p>The process flows of all catalytic crackers are similar: hot oil meets catalyst, coke builds up and deactivates it, catalyst and vapour are separated, adsorbed oil is steam-stripped, and coke is burned off with air. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 15–16</span></a></p></div>
+    </section>
+
+    <section class="s">
+      <h2 class="sh" id="config" data-toc="FCC configurations"><span class="n">1.5</span>FCC configurations</h2>
+<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 1.3</span><span class="ti">Side-by-side and stacked (Orthoflow) FCC units</span><a class="btn" href="figures/fig04-configurations.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Side-by-side and stacked (Orthoflow) FCC units"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig04-configurations.svg" alt="Side-by-side and stacked (Orthoflow) FCC units" loading="lazy"></div><figcaption>Same streams in both: F feed, P products, S steam, A air, FG flue gas. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Fig 8.6</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></figcaption></figure>
+      <div class="cmp">
+        <div class="card"><h3>Side-by-side <span class="tagpill">book PFD type</span></h3><ul class="pts"><li>Reactor and regenerator are <b>separate vessels</b> next to each other. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></li><li>Catalyst moves through standpipes and slide valves.</li><li>Book Fig 8.7 PFD (chapter 3) is this type.</li></ul></div>
+        <div class="card"><h3>Stacked (Orthoflow)</h3><ul class="pts"><li>The <b>reactor is mounted on top of</b> the regenerator. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></li><li>Kellogg Orthoflow design. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 14</span></a></li><li>Kellogg units use plug valves to limit erosion from catalyst-laden streams. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 19–20</span></a></li></ul></div>
+      </div>
+      <div class="prose">
+      <h3>Where the cracking happens: dense bed vs riser</h3>
+      <ol class="pts">
+        <li><b>Until about 1965</b> most units cracked in a <b>dense fluidised bed</b> inside the reactor vessel. Severity was controlled by bed depth (time) and temperature. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></li>
+        <li>Cracking already happened in the riser (the catalyst was hottest and most active there), but riser conditions were not deliberately controlled. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></li>
+        <li><b>Zeolite catalysts</b> are far more active, so much more cracking took place in the riser. Units were redesigned with a <b>catalyst–oil separator in place of the dense-bed reactor</b>: short contact time prevents over-cracking of gasoline to gas and coke. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16, 19</span></a></li>
+        <li>Newer designs take <b>up to 25 % reduced crude</b> in the feed and are built for both complete CO₂ combustion and CO-combustion control. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 19–20</span></a></li>
+      </ol>
+      </div>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="variants" data-toc="Modern variants"><span class="n">1.6</span>Modern variants</h2>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Variant</th><th>What is different</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>RFCC (residue FCC)</td><td>Feeds desulphurised, sometimes deasphalted, residues; specially designed for high CCR and metals</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 199, 201</span></a></td></tr>
+          <tr><td>UOP RCC</td><td>Reduced crude cracking</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>Fig 4.10</span></a></td></tr>
+          <tr><td>Exxon Flexicracking IIIR</td><td>High height-to-diameter lower regenerator for efficient single-stage regeneration</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 19, 26</span></a></td></tr>
+          <tr><td>DCC (deep catalytic cracking)</td><td>New catalyst, heavy feeds → light olefins: paraffinic feed gives 23 wt% propylene and 6.9 wt% isobutylene</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.16.1</span></a></td></tr>
+          <tr><td>CPP (catalytic pyrolysis)</td><td>Extension of DCC with more ethylene: C₃= up to ~20 wt%, C₂= 10–20 wt%</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.16.2</span></a></td></tr>
+          <tr><td>UOP Petro-FCC</td><td>Severe riser conditions with blended catalyst: 18 LV% C₃=, 7 LV% C₂=, 10 LV% C₄=, 20 LV% benzene + p-xylene</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.16.3</span></a></td></tr>
+        </tbody></table></div>
+      <h3>Conventional FCC vs Petro-FCC yields (wt%)</h3>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Component</th><th class="num">Conventional</th><th class="num">Petro-FCC</th></tr></thead>
+        <tbody>
+          <tr><td>H₂S, H₂, C₁, C₂</td><td class="num">2</td><td class="num">3</td></tr>
+          <tr><td>Ethylene</td><td class="num">1</td><td class="num">6</td></tr>
+          <tr><td>Propylene</td><td class="num">4.7</td><td class="num">22</td></tr>
+          <tr><td>Propane</td><td class="num">1.8</td><td class="num">2</td></tr>
+          <tr><td>Butene</td><td class="num">6.5</td><td class="num">14</td></tr>
+          <tr><td>Butane</td><td class="num">4.5</td><td class="num">5</td></tr>
+          <tr><td>Naphtha</td><td class="num">53.5</td><td class="num">28</td></tr>
+          <tr><td>Distillate</td><td class="num">14</td><td class="num">9.5</td></tr>
+          <tr><td>Fuel oil</td><td class="num">7</td><td class="num">5</td></tr>
+          <tr><td>Coke</td><td class="num">5</td><td class="num">5.5</td></tr>
+        </tbody></table></div>
+      <p class="small">Source: <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.8</span></a> (Hsu and Robinson, 2006).</p>
+    </section>
+
+    <section class="s qc">
+      <h2 class="sh" id="check" data-toc="Quick check"><span class="n">1.7</span>Quick check</h2>
+      <details><summary>Why can an FCC run continuously when the Houdry unit could not?</summary><div class="ans">The catalyst is a fine powder that flows like a fluid, so it circulates continuously: coked catalyst leaves the reactor, is regenerated in a separate vessel and comes back. Houdry beds were fixed, so each reactor had to stop cracking to regenerate. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 15–16</span></a></div></details>
+      <details><summary>Why did cracking move from the dense bed into the riser?</summary><div class="ans">Zeolites are much more active than amorphous catalysts (about 100×). With the old dense bed, gasoline over-cracked to gas and coke. A short, controlled riser contact followed by quick separation keeps gasoline yield high. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12, 19</span></a></div></details>
+      <details><summary>Name the two FCC configurations and one difference.</summary><div class="ans">Side-by-side: reactor and regenerator are separate adjacent vessels. Stacked (Orthoflow): reactor sits on top of the regenerator. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 209–210</span></a></div></details>
+      <details><summary>What supplies the heat for the endothermic cracking reactions?</summary><div class="ans">Burning the coke deposited on the catalyst, in the regenerator. The hot regenerated catalyst carries that heat back to the riser. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 199</span></a></div></details>
+    </section>
+
+<nav class="pager" aria-label="Chapter navigation"><a class="prev" href="index.html"><small>← previous</small><b>Home</b></a><a class="next" href="02-feed-catalyst-conditions.html"><small>next →</small><b>Feed, catalyst, conditions</b></a></nav>
+    <footer class="foot">Fluid catalytic cracking · study material for the 1 Oct presentation · Sources: lecture <i>Cracking and Reforming 1</i> and Fahim et al. (2010), <i>Fundamentals of Petroleum Refining</i>, Ch. 8. <a href="sources.html">Full source list →</a></footer>
+  </main>
+</div>
+<button class="totop" type="button" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<dialog class="lb" id="lb" aria-label="Diagram viewer">
+  <div class="lb-bar"><span class="ti"></span>
+    <button type="button" data-z="out" aria-label="Zoom out">−</button>
+    <button type="button" data-z="fit">Fit</button>
+    <button type="button" data-z="in" aria-label="Zoom in">+</button>
+    <a class="open" href="#" target="_blank" rel="noopener">Open SVG</a>
+    <button type="button" data-z="close">Close ✕</button></div>
+  <div class="lb-body"><img alt=""></div>
+</dialog>
+</body>
+</html>

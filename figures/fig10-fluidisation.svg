@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="1000" height="580" role="img" aria-labelledby="t d">
+<title id="t">Modes of fluidisation and where each is used in an FCC unit</title>
+<desc id="d">Pressure drop rises with gas velocity in a fixed bed, levels off after minimum fluidisation through bubbling, slugging and turbulent regimes, then falls in pneumatic transport. Stripper and standpipes run bubbling, the regenerator turbulent, and the riser and lift line in pneumatic transport.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .ax{stroke:#1E2329;stroke-width:2;fill:none}
+  .reg{font-size:14px;font-weight:700;text-anchor:middle}
+  .chip rect{fill:#FCE6DC;stroke:#C0392B;stroke-width:1.5}
+  .chip text{font-size:13px;font-weight:600;text-anchor:middle;fill:#7A2416}
+  .box{stroke:#1E2329;stroke-width:1.6}
+</style>
+<defs>
+  <marker id="m" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1E2329"/></marker>
+  <marker id="mr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+  <pattern id="dense" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#fff"/><circle cx="3.5" cy="3.5" r="2.2" fill="#6B727B"/></pattern>
+  <pattern id="loose" width="11" height="11" patternUnits="userSpaceOnUse"><rect width="11" height="11" fill="#fff"/><circle cx="3" cy="4" r="2" fill="#6B727B"/><circle cx="8.5" cy="9" r="2" fill="#6B727B"/></pattern>
+</defs>
+<rect width="1000" height="580" fill="#FFFFFF"/>
+
+<!-- icons -->
+<g>
+  <rect x="200" y="30" width="50" height="64" fill="url(#dense)" class="box"/>
+  <rect x="395" y="30" width="50" height="64" fill="url(#dense)" class="box"/>
+  <circle cx="410" cy="52" r="7" fill="#fff"/><circle cx="430" cy="75" r="8" fill="#fff"/>
+  <rect x="505" y="30" width="50" height="64" fill="url(#dense)" class="box"/>
+  <rect x="512" y="44" width="36" height="22" rx="10" fill="#fff"/>
+  <rect x="615" y="30" width="50" height="64" fill="url(#loose)" class="box"/>
+  <rect x="805" y="24" width="30" height="76" fill="#FFFFFF" class="box"/>
+  <g fill="#6B727B"><circle cx="814" cy="40" r="2"/><circle cx="826" cy="62" r="2"/><circle cx="815" cy="85" r="2"/></g>
+  <path d="M820,95 L820,32" stroke="#C0392B" stroke-width="1.6" marker-end="url(#mr)"/>
+</g>
+
+<!-- axes -->
+<path class="ax" d="M120,450 L120,110" marker-end="url(#m)"/>
+<path class="ax" d="M120,450 L930,450" marker-end="url(#m)"/>
+<text x="84" y="280" font-size="15" font-weight="600" text-anchor="middle" transform="rotate(-90 84 280)">pressure drop across bed, ΔP</text>
+<text x="525" y="486" font-size="15" font-weight="600" text-anchor="middle">superficial gas velocity, u →</text>
+
+<!-- curve -->
+<path d="M120,450 L330,212 Q340,198 352,206 L720,206 C762,206 800,330 900,392" fill="none" stroke="#1F5FAF" stroke-width="4"/>
+<line x1="340" y1="130" x2="340" y2="450" stroke="#6B727B" stroke-width="1.5" stroke-dasharray="6 5"/>
+<line x1="720" y1="130" x2="720" y2="450" stroke="#6B727B" stroke-width="1.5" stroke-dasharray="6 5"/>
+<line x1="480" y1="150" x2="480" y2="206" stroke="#B9C0C8" stroke-width="1.2" stroke-dasharray="3 4"/>
+<line x1="590" y1="150" x2="590" y2="206" stroke="#B9C0C8" stroke-width="1.2" stroke-dasharray="3 4"/>
+<text x="340" y="468" font-size="12.5" text-anchor="middle">u<tspan font-size="10" dy="3">mf</tspan></text>
+<text x="720" y="468" font-size="12.5" text-anchor="middle">transport velocity</text>
+<text x="352" y="126" font-size="12" fill="#3A4048">minimum fluidisation</text>
+
+<text class="reg" x="225" y="120">fixed bed</text>
+<text class="reg" x="420" y="190">bubbling</text>
+<text class="reg" x="530" y="190">slugging</text>
+<text class="reg" x="650" y="190">turbulent</text>
+<text class="reg" x="820" y="125">pneumatic transport</text>
+<text x="820" y="143" font-size="12.5" text-anchor="middle" fill="#3A4048">(dilute phase)</text>
+<text x="545" y="236" font-size="12.5" text-anchor="middle" fill="#3A4048">fluidised bed: ΔP ≈ bed weight / area, almost constant</text>
+
+<!-- FCC mapping -->
+<g class="chip">
+  <rect x="330" y="506" width="200" height="50" rx="10"/><text x="430" y="527">stripper · standpipe</text><text x="430" y="545">bubbling</text>
+  <rect x="560" y="506" width="180" height="50" rx="10"/><text x="650" y="527">regenerator bed</text><text x="650" y="545">turbulent</text>
+  <rect x="770" y="506" width="190" height="50" rx="10"/><text x="865" y="527">riser · lift line</text><text x="865" y="545">pneumatic transport</text>
+</g>
+<text x="40" y="535" font-size="14" font-weight="700">Used in FCC →</text>
+<text x="990" y="574" font-size="11.5" text-anchor="end" fill="#5A616A">After Fahim et al. (2010) Fig 8.2 and Table 8.5</text>
+</svg>

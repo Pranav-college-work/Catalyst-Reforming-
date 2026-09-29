@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t d">
+<title id="t">FCC configurations: side-by-side and stacked</title>
+<desc id="d">Side-by-side: reactor and regenerator are separate adjacent vessels. Stacked (Orthoflow): reactor is mounted on top of the regenerator.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .eq{fill:#F4F6F8;stroke:#1E2329;stroke-width:2}
+  .bed{fill:#FBE1D6}
+  .riser{fill:#F4F6F8;stroke:#1E2329;stroke-width:2}
+  .l{font-size:14px;font-weight:600;text-anchor:middle}
+  .k{font-size:15px;font-weight:800}
+  .rcat{stroke:#C0392B;stroke-width:4;fill:none}
+  .scat{stroke:#4B4F55;stroke-width:4;fill:none}
+  .oil{stroke:#9A4B12;stroke-width:3;fill:none}
+  .vap{stroke:#1B7F4B;stroke-width:3;fill:none}
+  .air{stroke:#1F5FAF;stroke-width:3;fill:none}
+  .flue{stroke:#7D848C;stroke-width:3;fill:none;stroke-dasharray:9 5}
+  .stm{stroke:#0E8F9B;stroke-width:2.5;fill:none;stroke-dasharray:6 4}
+</style>
+<defs>
+  <marker id="m-rcat" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+  <marker id="m-scat" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4B4F55"/></marker>
+  <marker id="m-oil" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#9A4B12"/></marker>
+  <marker id="m-vap" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B7F4B"/></marker>
+  <marker id="m-air" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1F5FAF"/></marker>
+  <marker id="m-flue" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7D848C"/></marker>
+  <marker id="m-stm" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0E8F9B"/></marker>
+</defs>
+<rect width="1000" height="560" fill="#FFFFFF"/>
+<text x="500" y="26" font-size="14" text-anchor="middle" fill="#3A4048">F = feed · P = products · S = steam · A = air · FG = flue gas   (after Fahim et al. 2010, Fig 8.6)</text>
+<line x1="500" y1="44" x2="500" y2="540" stroke="#D5D2CB" stroke-width="1.5"/>
+
+<!-- ===== Side-by-side ===== -->
+<path class="eq" d="M70,210 Q70,170 140,170 Q210,170 210,210 L210,400 L170,440 L110,440 L70,400 Z"/>
+<path class="bed" d="M72,320 L208,320 L208,400 L169,438 L111,438 L72,400 Z"/>
+<text class="l" x="140" y="280">Regenerator</text>
+<path class="eq" d="M300,120 Q300,85 360,85 Q420,85 420,120 L420,240 L300,240 Z"/>
+<text class="l" x="360" y="175">Reactor</text>
+<path class="eq" d="M330,240 L330,330 L360,356 L390,330 L390,240"/>
+<text x="360" y="296" font-size="12" text-anchor="middle">stripper</text>
+<rect class="riser" x="440" y="140" width="14" height="350"/>
+<rect class="riser" x="419" y="140" width="35" height="14"/>
+<rect x="421" y="142" width="31" height="10" fill="#F4F6F8"/>
+<text x="468" y="330" font-size="13" transform="rotate(-90 468 330)" text-anchor="middle">riser</text>
+<path class="scat" d="M360,356 L360,380 L213,380" marker-end="url(#m-scat)"/>
+<path class="rcat" d="M140,440 L140,480 L437,480" marker-end="url(#m-rcat)"/>
+<path class="oil" d="M495,468 L457,468" marker-end="url(#m-oil)"/><text class="k" x="472" y="460" fill="#9A4B12">F</text>
+<path class="stm" d="M292,318 L327,318" marker-end="url(#m-stm)"/><text class="k" x="272" y="323" fill="#0E8F9B">S</text>
+<path class="air" d="M26,396 L68,396" marker-end="url(#m-air)"/><text class="k" x="22" y="386" fill="#1F5FAF">A</text>
+<path class="flue" d="M140,170 L140,112" marker-end="url(#m-flue)"/><text class="k" x="150" y="118" fill="#5E656D">FG</text>
+<path class="vap" d="M360,85 L360,48" marker-end="url(#m-vap)"/><text class="k" x="370" y="58" fill="#1B7F4B">P</text>
+<text x="250" y="522" font-size="16" font-weight="700" text-anchor="middle">Side-by-side type</text>
+<text x="250" y="543" font-size="13" text-anchor="middle" fill="#3A4048">reactor and regenerator are separate adjacent vessels</text>
+
+<!-- ===== Stacked ===== -->
+<path class="eq" d="M600,320 Q600,280 700,280 Q800,280 800,320 L800,440 L760,470 L640,470 L600,440 Z"/>
+<path class="bed" d="M602,380 L798,380 L798,440 L759,468 L641,468 L602,440 Z"/>
+<text class="l" x="700" y="428">Regenerator</text>
+<path class="eq" d="M640,130 Q640,92 700,92 Q760,92 760,130 L760,200 L640,200 Z"/>
+<text class="l" x="700" y="160">Reactor</text>
+<rect class="eq" x="685" y="200" width="30" height="100"/>
+<text x="733" y="246" font-size="12">stripper</text>
+<path class="scat" d="M700,300 L700,368" marker-end="url(#m-scat)"/>
+<rect class="riser" x="844" y="130" width="14" height="375"/>
+<rect class="riser" x="759" y="130" width="99" height="14"/>
+<rect x="761" y="132" width="95" height="10" fill="#F4F6F8"/>
+<text x="872" y="330" font-size="13" transform="rotate(-90 872 330)" text-anchor="middle">riser</text>
+<path class="rcat" d="M720,470 L720,510 L841,510" marker-end="url(#m-rcat)"/>
+<path class="oil" d="M905,494 L861,494" marker-end="url(#m-oil)"/><text class="k" x="880" y="486" fill="#9A4B12">F</text>
+<path class="stm" d="M648,250 L682,250" marker-end="url(#m-stm)"/><text class="k" x="628" y="255" fill="#0E8F9B">S</text>
+<path class="air" d="M556,430 L598,430" marker-end="url(#m-air)"/><text class="k" x="552" y="420" fill="#1F5FAF">A</text>
+<path class="flue" d="M615,294 L615,236" marker-end="url(#m-flue)"/><text class="k" x="570" y="244" fill="#5E656D">FG</text>
+<path class="vap" d="M700,92 L700,52" marker-end="url(#m-vap)"/><text class="k" x="710" y="62" fill="#1B7F4B">P</text>
+<text x="750" y="535" font-size="16" font-weight="700" text-anchor="middle">Stacked type (Orthoflow)</text>
+<text x="750" y="554" font-size="13" text-anchor="middle" fill="#3A4048">reactor is mounted on top of the regenerator</text>
+</svg>

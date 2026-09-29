@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-labelledby="t d">
+<title id="t">Evolution of catalytic cracking: fixed bed, moving bed, fluidised bed</title>
+<desc id="d">Houdry fixed-bed cyclic reactors (1936), Thermofor moving-bed cracking with bead air-lift (1943), and fluidised-bed FCC with riser cracking after zeolite catalysts (about 1965).</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .eq{fill:#F4F6F8;stroke:#1E2329;stroke-width:2}
+  .h{font-size:18px;font-weight:700;text-anchor:middle}
+  .s{font-size:13px;text-anchor:middle;fill:#3A4048}
+  .yr{font-size:14px;font-weight:700;text-anchor:middle;fill:#FFFFFF}
+</style>
+<defs>
+  <marker id="m" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1E2329"/></marker>
+  <marker id="mr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C0392B"/></marker>
+  <marker id="mg" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4B4F55"/></marker>
+</defs>
+<rect width="1200" height="440" fill="#FFFFFF"/>
+<!-- timeline -->
+<line x1="60" y1="40" x2="1140" y2="40" stroke="#1E2329" stroke-width="2" marker-end="url(#m)"/>
+<rect x="160" y="26" width="80" height="28" rx="14" fill="#1E2329"/><text class="yr" x="200" y="45">1936</text>
+<rect x="560" y="26" width="80" height="28" rx="14" fill="#1E2329"/><text class="yr" x="600" y="45">1943</text>
+<rect x="940" y="26" width="120" height="28" rx="14" fill="#C0392B"/><text class="yr" x="1000" y="45">~1965 →</text>
+
+<!-- panel 1: fixed bed -->
+<g>
+  <rect class="eq" x="95" y="110" width="50" height="170" rx="22"/>
+  <rect class="eq" x="175" y="110" width="50" height="170" rx="22"/>
+  <rect class="eq" x="255" y="110" width="50" height="170" rx="22"/>
+  <g fill="#8C8577"><rect x="99" y="140" width="42" height="110"/><rect x="179" y="140" width="42" height="110"/><rect x="259" y="140" width="42" height="110"/></g>
+  <rect x="179" y="140" width="42" height="110" fill="#E07B53"/>
+  <text x="120" y="304" font-size="12" text-anchor="middle">on stream</text>
+  <text x="200" y="304" font-size="12" text-anchor="middle">regenerating</text>
+  <text x="280" y="304" font-size="12" text-anchor="middle">purging</text>
+  <path d="M110,96 Q200,70 290,96" fill="none" stroke="#1E2329" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#m)"/>
+  <text class="h" x="200" y="350">Fixed bed · Houdry</text>
+  <text class="s" x="200" y="372">reactors switch between cracking</text>
+  <text class="s" x="200" y="390">and in-place regeneration (cyclic)</text>
+</g>
+
+<!-- panel 2: moving bed TCC -->
+<g>
+  <rect class="eq" x="560" y="90" width="90" height="90" rx="10"/>
+  <text x="605" y="140" font-size="13" text-anchor="middle" font-weight="600">reactor</text>
+  <rect class="eq" x="560" y="200" width="90" height="90" rx="10" fill="#FCE6DC"/>
+  <text x="605" y="250" font-size="13" text-anchor="middle" font-weight="600">kiln</text>
+  <line x1="605" y1="180" x2="605" y2="200" stroke="#1E2329" stroke-width="2"/>
+  <g fill="#4B4F55"><circle cx="585" cy="160" r="3"/><circle cx="615" cy="168" r="3"/><circle cx="598" cy="112" r="3"/><circle cx="625" cy="130" r="3"/><circle cx="578" cy="270" r="3"/><circle cx="628" cy="262" r="3"/><circle cx="600" cy="220" r="3"/></g>
+  <path d="M650,280 L700,280 L700,70 L620,70 L620,88" fill="none" stroke="#C0392B" stroke-width="3.5" marker-end="url(#mr)"/>
+  <text x="712" y="180" font-size="12" transform="rotate(90 712 180)" text-anchor="middle" fill="#9E2A1E">air-lift of beads</text>
+  <path d="M540,110 L540,270" stroke="#4B4F55" stroke-width="2" fill="none" marker-end="url(#mg)"/>
+  <text x="530" y="190" font-size="12" transform="rotate(-90 530 190)" text-anchor="middle">beads move down</text>
+  <text class="h" x="600" y="350">Moving bed · TCC (Thermofor)</text>
+  <text class="s" x="600" y="372">catalyst beads flow down reactor → kiln,</text>
+  <text class="s" x="600" y="390">then are lifted back to the top</text>
+</g>
+
+<!-- panel 3: fluid bed -->
+<g>
+  <path class="eq" d="M900,170 Q900,140 940,140 Q980,140 980,170 L980,280 L955,300 L925,300 L900,280 Z" fill="#FCE6DC"/>
+  <text x="940" y="225" font-size="12" text-anchor="middle" font-weight="600">regen.</text>
+  <path class="eq" d="M1030,105 Q1030,80 1065,80 Q1100,80 1100,105 L1100,170 L1030,170 Z"/>
+  <text x="1065" y="135" font-size="12" text-anchor="middle" font-weight="600">reactor</text>
+  <rect class="eq" x="1110" y="95" width="12" height="220"/>
+  <rect x="1098" y="95" width="24" height="12" fill="#F4F6F8" stroke="#1E2329" stroke-width="2"/>
+  <rect x="1099" y="97" width="21" height="8" fill="#F4F6F8"/>
+  <path d="M1050,170 L1050,215 L982,215" stroke="#4B4F55" stroke-width="3.5" fill="none" marker-end="url(#mg)"/>
+  <path d="M940,300 L940,320 L1107,320" stroke="#C0392B" stroke-width="3.5" fill="none" marker-end="url(#mr)"/>
+  <text x="1140" y="210" font-size="12" transform="rotate(-90 1140 210)" text-anchor="middle">riser</text>
+  <text class="h" x="1000" y="350">Fluidised bed · FCC</text>
+  <text class="s" x="1000" y="372">~70 µm powder circulates as a fluid;</text>
+  <text class="s" x="1000" y="390">zeolites moved cracking into the riser</text>
+</g>
+<text x="600" y="428" font-size="12" text-anchor="middle" fill="#5A616A">Dates and descriptions: lecture "Cracking and Reforming 1", pp. 14–17.</text>
+</svg>

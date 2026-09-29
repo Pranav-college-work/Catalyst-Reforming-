@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420" role="img" aria-labelledby="t d">
+<title id="t">Shape-selective cracking in ZSM-5</title>
+<desc id="d">Linear n-hexane enters the narrow ZSM-5 channel and cracks to C3 products. Bulky iso-hexane and benzene cannot enter, so the gasoline left behind is richer in iso-paraffins and aromatics, raising octane.</desc>
+<style>
+  text{font-family:"Segoe UI",Arial,Helvetica,sans-serif;fill:#1E2329}
+  .b{stroke:#1E2329;stroke-width:2.6;fill:none;stroke-linejoin:round;stroke-linecap:round}
+  .c{font-size:13px;text-anchor:middle;fill:#3A4048}
+  .cb{font-size:14px;text-anchor:middle;font-weight:600}
+</style>
+<defs>
+  <marker id="m" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1B7F4B"/></marker>
+  <marker id="mk" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1E2329"/></marker>
+  <pattern id="xtal" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#EEF1F4"/><circle cx="8" cy="8" r="1.6" fill="#B9C0C8"/></pattern>
+</defs>
+<rect width="1000" height="420" fill="#FFFFFF"/>
+
+<rect x="330" y="90" width="360" height="220" rx="6" fill="url(#xtal)" stroke="#1E2329" stroke-width="2"/>
+<text x="510" y="78" font-size="15" font-weight="700" text-anchor="middle">ZSM-5 crystal (zig-zag channels)</text>
+<polygon points="330,178 420,163 510,193 600,163 690,178 690,214 600,199 510,229 420,199 330,214" fill="#FFFFFF" stroke="#1E2329" stroke-width="1.8"/>
+<text class="c" x="510" y="270">acid sites inside the channel crack</text>
+<text class="c" x="510" y="288">only molecules slim enough to enter</text>
+
+<!-- n-hexane -->
+<polyline class="b" points="120,205 145,190 170,205 195,190 220,205 245,190"/>
+<text class="cb" x="182" y="232">n-hexane</text>
+<text class="c" x="182" y="249">linear: fits</text>
+<path d="M258,197 L326,197" stroke="#1B7F4B" stroke-width="3" marker-end="url(#m)"/>
+<!-- inside: hexane fragment -->
+<polyline class="b" points="430,190 455,178 480,190 505,178" opacity="0.5"/>
+
+<!-- iso-hexane blocked -->
+<polyline class="b" points="120,105 150,88 180,105 210,88"/>
+<line class="b" x1="150" y1="88" x2="150" y2="62"/><line class="b" x1="180" y1="105" x2="180" y2="130"/>
+<text class="cb" x="170" y="152">iso-hexane</text>
+<path d="M232,110 L310,150" stroke="#1E2329" stroke-width="2.4" marker-end="url(#mk)"/>
+<g stroke="#C0392B" stroke-width="4" stroke-linecap="round"><line x1="302" y1="126" x2="322" y2="146"/><line x1="322" y1="126" x2="302" y2="146"/></g>
+<text x="270" y="108" font-size="12" fill="#9E2A1E" font-weight="600">too bulky</text>
+
+<!-- benzene blocked -->
+<g transform="translate(160,330)"><polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="#1E2329" stroke-width="2.6"/><circle r="15" fill="none" stroke="#1E2329" stroke-width="2"/></g>
+<text class="cb" x="160" y="385">benzene</text>
+<path d="M196,318 L306,258" stroke="#1E2329" stroke-width="2.4" marker-end="url(#mk)"/>
+<g stroke="#C0392B" stroke-width="4" stroke-linecap="round"><line x1="302" y1="250" x2="322" y2="270"/><line x1="322" y1="250" x2="302" y2="270"/></g>
+<text x="244" y="322" font-size="12" fill="#9E2A1E" font-weight="600">too bulky</text>
+
+<!-- products -->
+<path d="M692,196 L770,196" stroke="#1B7F4B" stroke-width="3" marker-end="url(#m)"/>
+<polyline class="b" points="800,165 830,150 860,165"/>
+<text class="c" x="905" y="163">propane</text>
+<polyline class="b" points="800,225 830,210 860,225"/>
+<line x1="833" y1="219" x2="853" y2="229" stroke="#1E2329" stroke-width="2.6" stroke-linecap="round"/>
+<text class="c" x="905" y="223">propene</text>
+<text class="cb" x="850" y="262">C₃ products (LPG)</text>
+
+<rect x="170" y="352" width="0" height="0"/>
+<g transform="translate(340,338)">
+  <rect width="620" height="56" rx="8" fill="#EAF5EE" stroke="#8CC3A1"/>
+  <text x="310" y="24" font-size="14" text-anchor="middle" font-weight="700">Gasoline left behind: richer in iso-paraffins + aromatics → octane rises</text>
+  <text x="310" y="44" font-size="13" text-anchor="middle" fill="#2B3036">adding ~5 % ZSM-5 to the catalyst ≈ +1 RON (Fahim et al. 2010, §8.7.2)</text>
+</g>
+<text x="990" y="412" font-size="11.5" text-anchor="end" fill="#5A616A">After Fahim et al. (2010) Fig 8.5 (Scherzer 1990)</text>
+</svg>
