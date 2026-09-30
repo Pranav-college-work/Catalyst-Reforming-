@@ -36,147 +36,126 @@ window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],disp
     <header class="hero">
       <p class="kicker">Chapter 04 · chemistry</p>
       <h1>Reactions and reaction mechanism</h1>
-      <p class="lede">What cracks into what, which reactions give off heat and which absorb it, and the carbenium-ion chain on the acid catalyst, walked through one step at a time for n-octane.</p>
-      <div class="meta"><span><b>Sources:</b> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 9–13, 24</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.5–8.6, Table 8.3</span></a></span><span><b>Figures:</b> 4.1–4.2</span></div>
+      <p class="lede">What cracks into what, heat effects, and the carbenium-ion chain for n-octane, step by step.</p>
+      <div class="meta"><span><b>Read:</b> ~4 min</span><span><b>Sources:</b> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 9–13, 24</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.5–8.6, Table 8.3</span></a></span></div>
     </header>
 
     <section class="s">
-      <h2 class="sh" id="network" data-toc="Reaction network"><span class="n">4.1</span>The big picture: reaction network</h2>
-<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 4.1</span><span class="ti">FCC reaction network</span><a class="btn" href="figures/fig06-reaction-network.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom FCC reaction network"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig06-reaction-network.svg" alt="FCC reaction network" loading="lazy"></div><figcaption>Green arrows are the reactions we want; orange are side reactions to limit. Some coke is still needed, because burning it heats the unit. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Fig 8.3, p. 202</span></a></figcaption></figure>
+      <h2 class="sh" id="network" data-toc="Reaction network"><span class="n">4.1</span>Reaction network</h2>
+<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 4.1</span><span class="ti">FCC reaction network</span><a class="btn" href="figures/fig06-reaction-network.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom FCC reaction network"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig06-reaction-network.svg" alt="FCC reaction network" loading="lazy"></div><figcaption>Green = wanted, orange = limit. Some coke is still needed: it heats the unit. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Fig 8.3, p. 202</span></a></figcaption></figure>
       <div class="prose">
       <ul class="pts">
-        <li><b>Primary cracking:</b> VGO → gasoline + LCO (the desired step). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 202</span></a></li>
-        <li><b>Secondary reactions</b> must be limited: hydrogen transfer lowers gasoline yield, and cycloaddition can lead to coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 202</span></a></li>
-        <li>Large molecules → smaller fragments that carry double bonds. The hydrogen needed for that is balanced by <b>hydrogen transfer, cyclisation and aromatisation</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a></li>
-        <li><b>Basic reaction:</b> C–C scission of paraffins, cycloparaffins and aromatic side chains gives olefins and smaller paraffins. A small amount of aromatics and olefins condense to coke. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 24</span></a></li>
+        <li><b>Primary cracking:</b> VGO → gasoline + LCO (desired). <b>Secondary</b> (limit): H-transfer lowers gasoline yield; cycloaddition → coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 202</span></a></li>
+        <li>Large molecules → smaller fragments with double bonds; H balance kept by <b>H-transfer, cyclisation, aromatisation</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a></li>
+        <li><b>Basic reaction:</b> C–C scission of paraffins, cycloparaffins, aromatic side chains → olefins + smaller paraffins; some aromatics + olefins condense to coke. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 24</span></a></li>
       </ul>
       </div>
     </section>
 
     <section class="s prose">
-      <h2 class="sh" id="byclass" data-toc="Reactions by hydrocarbon type"><span class="n">4.2</span>Reactions by hydrocarbon type</h2>
+      <h2 class="sh" id="byclass" data-toc="Reactions by type"><span class="n">4.2</span>Reactions by hydrocarbon type</h2>
       <div class="tw"><table class="t">
-        <thead><tr><th>Feed molecule</th><th>Reactions in the FCC</th></tr></thead>
+        <thead><tr><th>Feed molecule</th><th>Reactions → products</th><th>Reactivity <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></th></tr></thead>
         <tbody>
-          <tr><td>Paraffins</td><td>Cracking → paraffins + olefins</td></tr>
-          <tr><td>Olefins</td><td>Cracking → LPG olefins · cyclisation → naphthenes · isomerisation → branched olefins and paraffins · H-transfer → paraffins · cyclisation → coke</td></tr>
-          <tr><td>Naphthenes</td><td>Cracking → olefins · dehydrogenation → aromatics · isomerisation → restructured naphthenes</td></tr>
-          <tr><td>Aromatics</td><td>Side-chain cracking → aromatics + olefins · transalkylation → alkylaromatics · dehydrogenation → polyaromatics → coke</td></tr>
+          <tr><td>Paraffins</td><td>Cracking → paraffins + olefins</td><td>Rate ↑ with C number, but coke ↑ too; gas rich in C₃, C₄</td></tr>
+          <tr><td>Olefins</td><td>Cracking → LPG olefins · isomerisation → branched olefins/paraffins · H-transfer → paraffins · cyclisation → naphthenes → coke</td><td>Much faster than paraffins; isomerise rapidly</td></tr>
+          <tr><td>Naphthenes</td><td>Cracking → olefins · dehydrogenation → aromatics · isomerisation</td><td>Faster than matching paraffins</td></tr>
+          <tr><td>Aromatics</td><td>Side-chain cracking → aromatics + olefins · transalkylation · dehydrogenation → polyaromatics → coke</td><td>Ring survives; side chains off by β-scission</td></tr>
         </tbody></table></div>
-      <p class="small">Source: <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 206</span></a></p>
+      <p class="small"><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 206</span></a></p>
 
-      <h3>Key equations</h3>
-      <div class="eq"><div class="eqn"><div>\[ \ce{C_{n}H_{2n+2} -> C_{m}H_{2m+2} + C_{p}H_{2p}} \qquad (n = m + p) \]</div><span class="tagno">paraffin → paraffin + olefin</span></div><p class="why">Example: \(\ce{n-C10H22 -> n-C7H16 + C3H6}\). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.3</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 2</span></a></p></div>
-      <div class="eq"><div class="eqn"><div>\[ \ce{1-C8H16 -> 2 C4H8} \]</div><span class="tagno">olefin cracking</span></div><p class="why">Olefins crack much faster than paraffins and isomerise rapidly. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.3</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></p></div>
-      <div class="eq"><div class="eqn"><div>\[ \ce{C6H5-CH2CH3 -> C6H6 + CH2=CH2} \]</div><span class="tagno">(8.5) dealkylation</span></div><p class="why">The aromatic ring is stable and does not crack; side chains come off by β-scission. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.5</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></p></div>
-      <div class="eq"><div class="eqn"><div>\[ \underbrace{\ce{3 C_{n}H_{2n}}}_{\text{olefin}} + \underbrace{\ce{C_{m}H_{2m}}}_{\text{naphthene}} \ce{->} \underbrace{\ce{3 C_{n}H_{2n+2}}}_{\text{paraffin}} + \underbrace{\ce{C_{m}H_{2m-6}}}_{\text{aromatic}} \]</div><span class="tagno">(8.7) H-transfer</span></div><p class="why">Turns reactive olefins into stable paraffins and aromatics. It lowers gasoline olefins, contributes to coke, and is strong on zeolites. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.7, p. 205</span></a></p></div>
-      <div class="eq"><div class="eqn"><div>\[ \text{aromatics, cyclo-olefins} \xrightarrow[\text{alkylation, condensation, polymerisation}]{\text{H loss}} \text{coke} \]</div><span class="tagno">(8.8) coke formation</span></div><p class="why">Hydrogen-deficient molecules lose more hydrogen and condense to coke; the hydrogen they give up saturates olefins to paraffins (Eq. 8.9). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eqs 8.8–8.9</span></a></p></div>
-
-      <h3>Reactivity order</h3>
-      <ul class="pts">
-        <li><b>Olefins</b> crack much faster than paraffins and isomerise rapidly. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></li>
-        <li><b>Naphthenes</b> crack faster than the corresponding paraffins. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></li>
-        <li><b>Paraffins:</b> rate rises with carbon number, but so does coke formation; the cracked gas is rich in C₃ and C₄. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></li>
-        <li><b>Aromatics:</b> the ring survives; alkyl groups are removed easily by β-scission. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></li>
-      </ul>
+      <div class="eq"><div class="eqn"><div>\[ \ce{C_{n}H_{2n+2} -> C_{m}H_{2m+2} + C_{p}H_{2p}} \quad (n = m + p) \qquad \text{e.g. } \ce{n-C10H22 -> n-C7H16 + C3H6} \]</div><span class="tagno">paraffin</span></div></div>
+      <div class="eq"><div class="eqn"><div>\[ \ce{1-C8H16 -> 2 C4H8} \qquad\quad \ce{C6H5-CH2CH3 -> C6H6 + CH2=CH2} \]</div><span class="tagno">olefin · (8.5) dealkylation</span></div><p class="why"><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.3, Eq. 8.5</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 2, 11</span></a></p></div>
+      <div class="eq"><div class="eqn"><div>\[ \underbrace{\ce{3 C_{n}H_{2n}}}_{\text{olefin}} + \underbrace{\ce{C_{m}H_{2m}}}_{\text{naphthene}} \ce{->} \underbrace{\ce{3 C_{n}H_{2n+2}}}_{\text{paraffin}} + \underbrace{\ce{C_{m}H_{2m-6}}}_{\text{aromatic}} \]</div><span class="tagno">(8.7) H-transfer</span></div><p class="why">Reactive olefins → stable P + A; lowers gasoline olefins, adds coke; strong on zeolites. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.7, p. 205</span></a></p></div>
+      <div class="eq"><div class="eqn"><div>\[ \text{aromatics, cyclo-olefins} \xrightarrow[\text{alkylation, condensation, polymerisation}]{\text{H loss}} \text{coke} \]</div><span class="tagno">(8.8) coke</span></div><p class="why">H given up saturates olefins → paraffins (Eq. 8.9). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eqs 8.8–8.9</span></a></p></div>
     </section>
 
     <section class="s prose">
       <h2 class="sh" id="heat" data-toc="Heat effects"><span class="n">4.3</span>Heat effects</h2>
       <div class="tw"><table class="t">
-        <thead><tr><th>Reaction type</th><th>Example (Table 8.3)</th><th>Heat</th><th class="num">|ΔH|, BTU/mol</th></tr></thead>
+        <thead><tr><th>Type</th><th>Example (Table 8.3)</th><th>Heat</th><th class="num">|ΔH|, BTU/mol</th></tr></thead>
         <tbody>
-          <tr><td>Cracking</td><td>\(\ce{n-C10H22 -> n-C7H16 + C3H6}\)</td><td>endothermic (+)</td><td class="num">32,050</td></tr>
-          <tr><td>Hydrogen transfer</td><td>\(\ce{4 C6H12 -> 3 C6H14 + C6H6}\)</td><td>exothermic (−)</td><td class="num">109,681</td></tr>
-          <tr><td>Isomerisation</td><td>\(\ce{1-C4H8 ->}\) trans-2-butene</td><td>mildly exothermic</td><td class="num">4,874</td></tr>
-          <tr><td>Cyclisation</td><td>1-heptene → methylcyclohexane</td><td>exothermic (−)</td><td class="num">37,980</td></tr>
-          <tr><td>Dealkylation</td><td>cumene → benzene + propylene</td><td>endothermic (+)</td><td class="num">40,602</td></tr>
-          <tr><td>Dehydrogenation</td><td>\(\ce{n-C6H14 -> 1-C6H12 + H2}\)</td><td>endothermic (+)</td><td class="num">56,008</td></tr>
-          <tr><td>Transalkylation</td><td>benzene + m-xylene → 2 toluene</td><td>≈ thermoneutral</td><td class="num">221</td></tr>
+          <tr><td>Cracking</td><td>\(\ce{n-C10H22 -> n-C7H16 + C3H6}\)</td><td>endo (+)</td><td class="num">32,050</td></tr>
+          <tr><td>H-transfer</td><td>\(\ce{4 C6H12 -> 3 C6H14 + C6H6}\)</td><td>exo (−)</td><td class="num">109,681</td></tr>
+          <tr><td>Isomerisation</td><td>1-butene → trans-2-butene</td><td>mildly exo</td><td class="num">4,874</td></tr>
+          <tr><td>Cyclisation</td><td>1-heptene → methylcyclohexane</td><td>exo (−)</td><td class="num">37,980</td></tr>
+          <tr><td>Dealkylation</td><td>cumene → benzene + propylene</td><td>endo (+)</td><td class="num">40,602</td></tr>
+          <tr><td>Dehydrogenation</td><td>\(\ce{n-C6H14 -> 1-C6H12 + H2}\)</td><td>endo (+)</td><td class="num">56,008</td></tr>
+          <tr><td>Transalkylation</td><td>benzene + m-xylene → 2 toluene</td><td>≈ 0</td><td class="num">221</td></tr>
         </tbody></table></div>
-      <p class="small">Magnitudes from <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.3</span></a> (Sadeghbeigi, 2000); signs from <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a>.</p>
+      <p class="small">Magnitudes <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.3</span></a> (Sadeghbeigi, 2000); signs <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a></p>
       <ul class="pts">
-        <li>β-scission, the key cracking step, is <b>not equilibrium-limited</b>: long-chain paraffins and olefins can crack up to <b>95 %</b> at cracking conditions. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 206</span></a></li>
-        <li>Olefin polymerisation and paraffin alkylation are <b>less favourable at higher temperature</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 206</span></a></li>
-        <li>The <b>net effect is quite endothermic</b>, so heat must come from burning coke in the regenerator. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></li>
-        <li>A catalyst with <b>less hydrogen transfer</b> makes the net reaction more endothermic, so the unit needs more catalyst circulation and possibly more coke to stay in heat balance. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 206</span></a></li>
+        <li>β-scission is <b>not equilibrium-limited</b>: long paraffins/olefins crack up to <b>95 %</b>. Polymerisation + alkylation <b>less favourable at high T</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 206</span></a></li>
+        <li><b>Net: quite endothermic</b> → heat from burning coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></li>
+        <li><b>Less H-transfer</b> catalyst → more endothermic → more circulation, possibly more coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 206</span></a></li>
       </ul>
     </section>
 
     <section class="s prose">
-      <h2 class="sh" id="ions" data-toc="Carbenium ions"><span class="n">4.4</span>How the carbenium ion forms</h2>
-      <div class="eq"><div class="eqn"><div>\[ \ce{R-CH=CH2 + H+ -> R-CH^+-CH3} \]</div><span class="tagno">protonation (Brønsted site)</span></div><p class="why">An acid site donates a proton to an olefin, giving a secondary carbenium ion. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.2</span></a></p></div>
+      <h2 class="sh" id="ions" data-toc="Carbenium ions"><span class="n">4.4</span>Carbenium ion formation</h2>
+      <div class="eq"><div class="eqn"><div>\[ \ce{R-CH=CH2 + H+ -> R-CH^+-CH3} \]</div><span class="tagno">Brønsted protonation → 2° ion</span></div><p class="why"><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.2</span></a></p></div>
       <ul class="pts">
-        <li><b>Lewis acids</b> (BF₃, AlCl₃, FeCl₃) can also add to olefins and generate the ion. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a></li>
-        <li>A carbenium ion can live from a fraction of a second to minutes. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a></li>
-        <li><b>Stability: tertiary &gt; secondary &gt; primary.</b> Ions rearrange toward the tertiary form, which is why FCC products are branched. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></li>
+        <li><b>Lewis acids</b> (BF₃, AlCl₃, FeCl₃) also add to olefins → ion. Ion lifetime: fraction of a second to minutes. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a></li>
+        <li><b>Stability 3° &gt; 2° &gt; 1°</b> → ions rearrange to 3° → branched products. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></li>
+        <li><b>Name:</b> lecture "carbonium" = book "carbenium" (modern term); both mean the positive, three-bonded carbon here. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></li>
       </ul>
-      <div class="callout note"><span class="lab">Name check</span><p>The lecture says <i>carbonium ion</i>; the textbook says <i>carbenium ion</i>. Both mean the positively charged, three-bonded carbon species in this mechanism; "carbenium" is the modern name. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></p></div>
     </section>
 
     <section class="s">
-      <h2 class="sh" id="mechanism" data-toc="Mechanism step by step"><span class="n">4.5</span>Mechanism step by step: cracking n-octane</h2>
-      <p class="prose">Use the tabs or Next / Back. The steps follow the lecture's five steps for n-C₈H₁₈ plus the book's termination step.</p>
+      <h2 class="sh" id="mechanism" data-toc="Mechanism step by step"><span class="n">4.5</span>Mechanism: cracking n-octane</h2>
       <div class="stepper" data-stepper>
         <div class="st-tabs" role="tablist"></div>
         <div class="st-panel" data-tab="Initiation">
-          <h4>Initiation: a little thermal cracking makes the first olefin</h4>
+          <h4>Initiation: mild thermal cracking makes the first olefin</h4>
           \[ \ce{n-C8H18 -> CH4 + CH3(CH2)4CH=CH2} \]
-          <ul class="pts"><li>Mild thermal cracking of the paraffin gives methane and 1-heptene, the first olefin. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.1</span></a></li><li>The olefin is needed because it is what the acid site can protonate.</li></ul>
+          <ul class="pts"><li>Gives methane + 1-heptene — the olefin the acid site can protonate. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.1</span></a></li></ul>
         </div>
         <div class="st-panel" data-tab="Proton addition">
-          <h4>Proton addition (proton shift) on a Brønsted site</h4>
+          <h4>Proton addition on a Brønsted site</h4>
           \[ \ce{CH3(CH2)4CH=CH2 + H+ ->[\text{zeolite}] CH3(CH2)4CH^+CH3} \]
-          <ul class="pts"><li>The zeolite's acidic Al–O(H)–Si site gives a proton to the olefin. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.2</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li><li>Product: a <b>secondary carbenium ion</b>, C₇H₁₅⁺, with the charge on C-2.</li></ul>
+          <ul class="pts"><li>Acidic Al–O(H)–Si site donates H⁺ → <b>secondary ion</b> C₇H₁₅⁺, charge on C-2. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.2</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li></ul>
         </div>
         <div class="st-panel" data-tab="β-scission">
-          <h4>β-scission: the C–C bond β to the charge breaks</h4>
+          <h4>β-scission: bond β to the charge breaks</h4>
           \[ \ce{CH3CH^+CH2CH2CH2CH2CH3 -> CH3CH=CH2 + {}^{+}CH2CH2CH2CH3} \]
-          <ul class="pts"><li>The bond between the α and β carbons (counted from C⁺) breaks. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.3</span></a></li><li>Products: an <b>olefin</b> (propene) and a <b>new, smaller carbenium ion</b> (primary C₄H₉⁺). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li><li>This is the cracking step itself. Fig 4.2 below draws it.</li></ul>
+          <ul class="pts"><li>Cα–Cβ bond breaks → <b>olefin</b> (propene) + <b>smaller ion</b> (1° C₄H₉⁺). The cracking step itself (Fig 4.2). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.3</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li></ul>
         </div>
         <div class="st-panel" data-tab="Rearrangement">
-          <h4>Rearrangement toward the more stable ion</h4>
+          <h4>Rearrangement to the most stable ion</h4>
           \[ \ce{{}^{+}CH2CH2CH2CH3 -> CH3CH^+CH2CH3 -> (CH3)3C^+} \]
-          <ul class="pts"><li>Hydride and methyl shifts move the charge: primary → secondary → tertiary. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li><li>Stability: tertiary &gt; secondary &gt; primary. This is the origin of the <b>iso-paraffins</b> in FCC gasoline and LPG. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.10</span></a></li></ul>
+          <ul class="pts"><li>Hydride/methyl shifts: 1° → 2° → 3° — source of <b>iso-paraffins</b> in gasoline + LPG. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.10</span></a></li></ul>
         </div>
         <div class="st-panel" data-tab="Hydride transfer">
-          <h4>Hydrogen (hydride) transfer: the chain propagates</h4>
+          <h4>Hydride transfer: chain propagates</h4>
           \[ \ce{(CH3)3C^+ + n-C8H18 -> (CH3)3CH + C8H17^+} \]
-          <ul class="pts"><li>The tertiary ion takes a hydride (H⁻) from a fresh paraffin molecule, giving <b>isobutane</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li><li>The paraffin becomes a new carbenium ion, which goes back to β-scission: a <b>chain reaction</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></li></ul>
+          <ul class="pts"><li>3° ion takes H⁻ from a paraffin → <b>isobutane</b>; new ion returns to β-scission → <b>chain reaction</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></li></ul>
         </div>
         <div class="st-panel" data-tab="Termination">
           <h4>Termination</h4>
-          <ul class="pts"><li>The ion <b>gives a proton back to the catalyst</b> and becomes an olefin; <b>or</b></li><li>it <b>picks up a hydride ion from a donor</b> (e.g. coke) and becomes a paraffin. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></li></ul>
           \[ \ce{R^+ -> R'CH=CH2 + H+} \qquad \ce{R^+ + H^- -> RH} \]
+          <ul class="pts"><li>Ion returns H⁺ to catalyst → olefin; <b>or</b> takes H⁻ from a donor (e.g. coke) → paraffin. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></li></ul>
         </div>
         <div class="st-nav"><button type="button" data-prev>← Back</button><span></span><button type="button" data-next>Next →</button></div>
       </div>
-<figure class="fig "><div class="fig-h"><span class="no">Fig 4.2</span><span class="ti">β-scission, rearrangement and hydride transfer drawn out</span><a class="btn" href="figures/fig07-beta-scission.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom β-scission, rearrangement and hydride transfer drawn out"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig07-beta-scission.svg" alt="β-scission, rearrangement and hydride transfer drawn out" loading="lazy"></div><figcaption>Top row: step 3 drawn as skeletal structures. Bottom row: steps 4 and 5, primary ion → tertiary ion → isobutane + new C₈ ion. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eqs 8.1–8.3, 8.10</span></a></figcaption></figure>
+<figure class="fig "><div class="fig-h"><span class="no">Fig 4.2</span><span class="ti">β-scission, rearrangement and hydride transfer drawn out</span><a class="btn" href="figures/fig07-beta-scission.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom β-scission, rearrangement and hydride transfer drawn out"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig07-beta-scission.svg" alt="β-scission, rearrangement and hydride transfer drawn out" loading="lazy"></div><figcaption>Top: step 3. Bottom: steps 4–5 (1° → 3° ion → isobutane + new C₈ ion). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eqs 8.1–8.3, 8.10</span></a></figcaption></figure>
     </section>
 
     <section class="s prose">
-      <h2 class="sh" id="secondary" data-toc="Secondary reactions"><span class="n">4.6</span>Secondary reactions</h2>
-      <div class="eq"><div class="eqn"><div>\[ \ce{R-CH2-CH2-CH^+-CH3 -> R-CH2-C^+(CH3)-CH3} \]</div><span class="tagno">(8.10) isomerisation</span></div><p class="why">Secondary → tertiary ion; net result: paraffins and olefins become <b>iso-paraffins</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.10</span></a></p></div>
+      <h2 class="sh" id="secondary" data-toc="Secondary reactions"><span class="n">4.6</span>Secondary reactions → product quality</h2>
+      <div class="eq"><div class="eqn"><div>\[ \ce{R-CH2-CH2-CH^+-CH3 -> R-CH2-C^+(CH3)-CH3} \]</div><span class="tagno">(8.10) isomerisation</span></div><p class="why">2° → 3° ion; paraffins + olefins → <b>iso-paraffins</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.10</span></a></p></div>
       <ul class="pts">
-        <li><b>Cyclisation:</b> olefins cyclise to naphthenes and possibly further to coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.11, p. 206</span></a></li>
-        <li><b>Hydrogen transfer</b> is caused by the same chemistry and drives secondary cracking of gasoline. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 205</span></a></li>
-        <li>With zeolites: \(\ce{O + N -> P + A}\), \(\ce{O -> P + A}\), cyclo-olefins → N + A, giving fewer olefins and more paraffins and aromatics. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></li>
+        <li><b>Cyclisation:</b> olefins → naphthenes → possibly coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.11, p. 206</span></a> <b>H-transfer</b> drives secondary cracking of gasoline. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 205</span></a></li>
+        <li><b>On zeolites:</b> \(\ce{O + N -> P + A}\), \(\ce{O -> P + A}\), cyclo-olefins → N + A → fewer olefins, more P + A. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></li>
+        <li><b>So:</b> branched (3° ions) → octane ↑, more isobutane · aromatics (naphthene dehydrogenation, H-transfer) → octane ↑ · C₃/C₄-rich gas <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a> · coke = regenerator fuel, but excess lowers yields.</li>
       </ul>
-      <div class="callout key"><span class="lab">Why this matters for product quality</span>
-        <ul class="pts">
-          <li><b>Branched products</b> ← ions rearrange to tertiary form → higher octane, more isobutane.</li>
-          <li><b>Aromatics</b> ← naphthene dehydrogenation and H-transfer → higher octane.</li>
-          <li><b>C₃/C₄-rich gas</b> ← β-scission gives olefins and ions in the C₃+ range. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 11</span></a></li>
-          <li><b>Coke</b> ← aromatics and olefins condensing → fuel for the regenerator, but too much lowers yields.</li>
-        </ul></div>
     </section>
 
     <section class="s qc">
       <h2 class="sh" id="check" data-toc="Quick check"><span class="n">4.7</span>Quick check</h2>
-      <details><summary>Write the β-scission of the 2-heptyl ion.</summary><div class="ans">\(\ce{CH3CH^+CH2CH2CH2CH2CH3 -> CH3CH=CH2 + {}^{+}CH2CH2CH2CH3}\): propene plus a primary butyl ion, which then rearranges to the tertiary butyl ion. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.3</span></a></div></details>
-      <details><summary>Why does FCC make so much isobutane?</summary><div class="ans">The butyl ion rearranges to the stable tertiary (CH₃)₃C⁺ ion, which takes a hydride from a paraffin to become isobutane (step 5). Zeolite H-transfer increases this further. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–13</span></a></div></details>
-      <details><summary>Is the net FCC reaction endothermic or exothermic? Why?</summary><div class="ans">Endothermic. Cracking, dealkylation and dehydrogenation absorb heat and outweigh the exothermic H-transfer, isomerisation and cyclisation. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a></div></details>
-      <details><summary>What stops the chain?</summary><div class="ans">The ion loses a proton to the catalyst (becomes an olefin) or gains a hydride from a donor such as coke (becomes a paraffin). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></div></details>
+      <details><summary>β-scission of the 2-heptyl ion?</summary><div class="ans">\(\ce{CH3CH^+CH2CH2CH2CH2CH3 -> CH3CH=CH2 + {}^{+}CH2CH2CH2CH3}\); the butyl ion then rearranges to tert-butyl. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.3</span></a></div></details>
+      <details><summary>Why so much isobutane?</summary><div class="ans">Butyl → stable (CH₃)₃C⁺ → takes H⁻ from a paraffin → isobutane; zeolite H-transfer adds more. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–13</span></a></div></details>
+      <details><summary>Net reaction endo or exo?</summary><div class="ans">Endothermic: cracking, dealkylation, dehydrogenation outweigh exothermic H-transfer, isomerisation, cyclisation. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a></div></details>
+      <details><summary>What stops the chain?</summary><div class="ans">Ion loses H⁺ (→ olefin) or gains H⁻ from a donor such as coke (→ paraffin). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></div></details>
     </section>
 
 <nav class="pager" aria-label="Chapter navigation"><a class="prev" href="03-flow-diagrams.html"><small>← previous</small><b>BFD & PFD</b></a><a class="next" href="05-reactor.html"><small>next →</small><b>Reactor</b></a></nav>

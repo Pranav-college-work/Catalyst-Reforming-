@@ -36,36 +36,34 @@ window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],disp
     <header class="hero">
       <p class="kicker">Chapter 05 · reactor</p>
       <h1>The riser reactor and regenerator</h1>
-      <p class="lede">What kind of reactor the FCC uses and why, the fluidisation regime in each part of the unit, riser dimensions, the coupled heat balance with a worked example, and the lump kinetic models.</p>
-      <div class="meta"><span><b>Sources:</b> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.4, 8.8–8.14, Examples E8.2–E8.4</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16–20</span></a></span><span><b>Figures:</b> 5.1–5.4 + live chart</span></div>
+      <p class="lede">Reactor type and why, fluidisation regimes, riser dimensions, heat balance with a worked example, lump kinetics.</p>
+      <div class="meta"><span><b>Read:</b> ~6 min</span><span><b>Sources:</b> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.4, 8.8–8.14, Ex. E8.2–E8.4</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16–20</span></a></span></div>
     </header>
 
     <section class="s prose">
       <h2 class="sh" id="type" data-toc="Kind of reactor"><span class="n">5.1</span>Kind of reactor used</h2>
-      <div class="callout exam"><span class="lab">Answer in one line (exam)</span><p>A <b>vertical riser reactor</b> (dilute-phase pneumatic transport, close to plug flow, 2–10 s) coupled to a <b>fluidised-bed regenerator</b> (turbulent regime), with fine zeolite catalyst circulating continuously between them. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5, p. 210</span></a></p></div>
+      <div class="callout exam"><span class="lab">Exam line</span><p><b>Vertical riser reactor</b> (dilute-phase pneumatic transport, ~plug flow, 2–10 s) + <b>fluidised-bed regenerator</b> (turbulent); fine zeolite circulates continuously between them. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5, p. 210</span></a></p></div>
       <ul class="pts">
-        <li>The unit is basically a <b>reactor (riser) and a regenerator</b>. The catalyst circulates between them: deactivated in the riser, regenerated in the regenerator. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></li>
-        <li>The <b>riser is the main reactor</b>, where the endothermic reactions take place. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></li>
-        <li>Supporting vessels: <b>disengager with cyclones</b> (separation) and a <b>baffled steam stripper</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></li>
-        <li><b>Why a riser?</b> Zeolites are very active, so short reaction times prevent over-cracking of gasoline to gas and coke. A catalyst–oil separator replaced the old dense-bed reactor. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 19</span></a></li>
-        <li>Before about 1965, cracking was done in a <b>dense-phase fluidised bed</b> in the reactor vessel. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></li>
+        <li>Catalyst deactivates in the riser, is regenerated in the regenerator. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a> <b>Riser = main reactor</b> (endothermic reactions). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></li>
+        <li><b>Support vessels:</b> disengager + cyclones; baffled steam stripper. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></li>
+        <li><b>Why a riser:</b> zeolites very active → short time prevents over-cracking; separator replaced the pre-1965 dense-bed reactor (see 1.5). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16, 19</span></a></li>
       </ul>
     </section>
 
     <section class="s">
-      <h2 class="sh" id="fluid" data-toc="Fluidisation regimes"><span class="n">5.2</span>Fluidisation: each vessel runs in a different regime</h2>
-<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 5.1</span><span class="ti">Modes of fluidisation and where FCC uses them</span><a class="btn" href="figures/fig10-fluidisation.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Modes of fluidisation and where FCC uses them"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig10-fluidisation.svg" alt="Modes of fluidisation and where FCC uses them" loading="lazy"></div><figcaption>As gas velocity rises: fixed bed (ΔP rises) → minimum fluidisation → bubbling, slugging, turbulent (ΔP ≈ constant, bed expands) → pneumatic transport (particles carried out). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.4, Fig 8.2, Table 8.5</span></a></figcaption></figure>
+      <h2 class="sh" id="fluid" data-toc="Fluidisation regimes"><span class="n">5.2</span>Fluidisation regimes</h2>
+<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 5.1</span><span class="ti">Modes of fluidisation and where FCC uses them</span><a class="btn" href="figures/fig10-fluidisation.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Modes of fluidisation and where FCC uses them"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig10-fluidisation.svg" alt="Modes of fluidisation and where FCC uses them" loading="lazy"></div><figcaption>Velocity ↑: fixed bed (ΔP ↑) → U<sub>mf</sub> → bubbling, slugging, turbulent (ΔP ≈ const, bed expands) → pneumatic transport (particles carried out). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.4, Fig 8.2</span></a></figcaption></figure>
       <div class="prose">
       <div class="tw"><table class="t">
         <thead><tr><th>Location</th><th>Mode</th><th>Why</th></tr></thead>
         <tbody>
-          <tr><td>Regenerator</td><td>Turbulent fluidisation</td><td>Uniform burning temperature in the bed</td></tr>
-          <tr><td>Line from regenerator to riser</td><td>Bubbling fluidisation</td><td>Catalyst flows like a liquid down the standpipe</td></tr>
-          <tr><td>Riser</td><td>Pneumatic transport</td><td>Catalyst and products carried up; plug flow with a few seconds' residence time</td></tr>
-          <tr><td>Stripper</td><td>Bubbling fluidisation</td><td>Steam vaporises and recovers heavy oil and reduces coke</td></tr>
-          <tr><td>Lift line, regenerator → reactor</td><td>Pneumatic transport</td><td>Moves catalyst upward</td></tr>
+          <tr><td>Regenerator</td><td>Turbulent</td><td>Uniform burning T</td></tr>
+          <tr><td>Regenerator → riser line</td><td>Bubbling</td><td>Catalyst flows like a liquid</td></tr>
+          <tr><td>Riser</td><td>Pneumatic transport</td><td>Carries catalyst + products; plug flow, few seconds</td></tr>
+          <tr><td>Stripper</td><td>Bubbling</td><td>Steam recovers heavy oil, cuts coke</td></tr>
+          <tr><td>Lift line regen → reactor</td><td>Pneumatic transport</td><td>Moves catalyst up</td></tr>
         </tbody></table></div>
-      <p class="small">Source: <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5, p. 212</span></a></p>
+      <p class="small"><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5, p. 212</span></a></p>
       </div>
     </section>
 
@@ -73,102 +71,92 @@ window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],disp
       <h2 class="sh" id="riser" data-toc="Riser dimensions"><span class="n">5.3</span>Riser anatomy and dimensions</h2>
       <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start" class="riser-grid">
         <div>
-<figure class="fig "><div class="fig-h"><span class="no">Fig 5.2</span><span class="ti">Anatomy of a riser reactor</span><a class="btn" href="figures/fig11-riser.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Anatomy of a riser reactor"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig11-riser.svg" alt="Anatomy of a riser reactor" loading="lazy"></div><figcaption>Bottom to top: lift steam, hot catalyst entry, feed nozzles, riser body, termination. Not to scale. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.4, p. 210</span></a></figcaption></figure>
+<figure class="fig "><div class="fig-h"><span class="no">Fig 5.2</span><span class="ti">Anatomy of a riser reactor</span><a class="btn" href="figures/fig11-riser.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Anatomy of a riser reactor"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig11-riser.svg" alt="Anatomy of a riser reactor" loading="lazy"></div><figcaption>Bottom → top: lift steam, hot catalyst, feed nozzles, riser body, termination. Not to scale. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.4, p. 210</span></a></figcaption></figure>
         </div>
         <div>
-          <h3 style="margin-top:22px">Typical industrial riser (Ex. E8.4)</h3>
+          <h3 style="margin-top:22px">Industrial riser (Ex. E8.4)</h3>
           <div class="tw"><table class="t">
-            <thead><tr><th>Quantity</th><th class="num">Value</th></tr></thead>
             <tbody>
-              <tr><td>Inside diameter</td><td class="num">0.8 m</td></tr>
-              <tr><td>Height</td><td class="num">33 m</td></tr>
-              <tr><td>Catalyst flow</td><td class="num">144 kg/s</td></tr>
-              <tr><td>Feed flow</td><td class="num">20 kg/s</td></tr>
-              <tr><td>Catalyst inlet temperature</td><td class="num">960 K</td></tr>
-              <tr><td>Feed inlet temperature</td><td class="num">494 K</td></tr>
-              <tr><td>Riser pressure</td><td class="num">2.9 atm</td></tr>
-              <tr><td>Mixing temperature at inlet</td><td class="num">821.8 K</td></tr>
-              <tr><td>Gas density at inlet</td><td class="num">23.84 kg/m³</td></tr>
-              <tr><td>Gas velocity at inlet</td><td class="num">1.67 m/s</td></tr>
+              <tr><td>ID × height</td><td class="num">0.8 m × 33 m</td></tr>
+              <tr><td>Catalyst · feed flow</td><td class="num">144 · 20 kg/s</td></tr>
+              <tr><td>Catalyst · feed inlet T</td><td class="num">960 · 494 K</td></tr>
+              <tr><td>Pressure</td><td class="num">2.9 atm</td></tr>
+              <tr><td>Inlet mixing T</td><td class="num">821.8 K</td></tr>
+              <tr><td>Inlet gas density · velocity</td><td class="num">23.84 kg/m³ · 1.67 m/s</td></tr>
             </tbody></table></div>
-          <p class="small">Data: <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table E8.4.1, p. 225</span></a> (Ali and Corriou, 1997).</p>
+          <p class="small"><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table E8.4.1, p. 225</span></a> (Ali and Corriou, 1997)</p>
           <ul class="pts">
-            <li>Catalyst-to-oil ratio here: \(144/20 = 7.2\). <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>from E8.4.1</span></a></li>
-            <li>Slenderness \(H/D = 33/0.8 \approx 41\): a long, thin pipe, which is why flow is close to plug flow. <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>from E8.4.1</span></a></li>
-            <li>Gas density, void fraction and velocity change along the riser and are updated as the balances are integrated. Temperature falls with height because the reaction is endothermic. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 223–226, Fig E8.4.2</span></a></li>
+            <li>C/O = 144/20 = <b>7.2</b>; H/D = 33/0.8 ≈ <b>41</b> (long thin pipe → ~plug flow). <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>from E8.4.1</span></a></li>
+            <li>Gas density, void fraction, velocity change with height (updated during integration); <b>T falls</b> (endothermic). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 223–226, Fig E8.4.2</span></a></li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="s prose">
-      <h2 class="sh" id="vessels" data-toc="Stripper & regenerator"><span class="n">5.4</span>Disengager, stripper and regenerator</h2>
+      <h2 class="sh" id="vessels" data-toc="Stripper & regenerator"><span class="n">5.4</span>Disengager, stripper, regenerator</h2>
       <ul class="pts">
-        <li><b>Hydrocyclones</b> in both reactor and regenerator catch solids carried over in the gas. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a></li>
-        <li><b>Stripper:</b> steam plus baffles strip oil from the catalyst before it goes to the regenerator. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></li>
-        <li><b>Regenerator:</b> excess air burns the coke. Air rate controls either the flue-gas CO₂/CO ratio or the regenerator temperature, which is kept low enough not to damage the catalyst. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 15–16</span></a></li>
-        <li>Some units steam-strip the regenerated catalyst to remove adsorbed oxygen before it meets the oil. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></li>
+        <li><b>Hydrocyclones</b> in reactor and regenerator catch carried-over solids. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a> <b>Stripper:</b> steam + baffles strip oil before regeneration. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></li>
+        <li><b>Regenerator:</b> excess air burns coke; air rate sets CO₂/CO ratio or T, kept low enough to protect catalyst. Some units steam-strip regenerated catalyst to remove adsorbed O₂. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 15–16</span></a></li>
+        <li><b>Flue gas heat:</b> raises steam or drives expanders that compress regeneration air + make power. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></li>
       </ul>
-      <div class="cmp">
-        <div class="card"><h3>Partial burn (to CO)</h3><ul class="pts"><li>Older units</li><li>Only about <b>half the air</b> of full burn, so a cheaper blower and lower running cost</li><li>Flue gas rich in CO → burned in a <b>CO boiler</b> to recover energy</li></ul><p><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></p></div>
-        <div class="card"><h3>Complete burn (to CO₂)</h3><ul class="pts"><li>Newer units</li><li>Much <b>lower residual carbon</b> on regenerated catalyst (range 0.01–0.4 wt%)</li><li>More active, more selective catalyst → better product distribution at the same conversion</li></ul><p><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></p></div>
-      </div>
-      <p>Hot flue gas can raise steam or drive expansion turbines that compress the regeneration air and generate electricity. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></p>
+      <div class="tw"><table class="t">
+        <thead><tr><th></th><th>Partial burn (to CO)</th><th>Complete burn (to CO₂)</th></tr></thead>
+        <tbody>
+          <tr><td>Units</td><td>Older</td><td>Newer</td></tr>
+          <tr><td>Air</td><td>~½ of full burn → cheaper blower + running cost</td><td>More</td></tr>
+          <tr><td>Flue gas</td><td>CO-rich → CO boiler recovers energy</td><td>—</td></tr>
+          <tr><td>Catalyst</td><td>Higher residual carbon</td><td>Much lower (range 0.01–0.4 wt%) → more active + selective → better product distribution</td></tr>
+        </tbody></table></div>
+      <p class="small"><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></p>
     </section>
 
     <section class="s">
       <h2 class="sh" id="heat" data-toc="Material & heat balance"><span class="n">5.5</span>Material and heat balance</h2>
-<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 5.3</span><span class="ti">Reactor–regenerator heat balance</span><a class="btn" href="figures/fig13-heat-balance.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Reactor–regenerator heat balance"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig13-heat-balance.svg" alt="Reactor–regenerator heat balance" loading="lazy"></div><figcaption>The catalyst is the heat carrier. Coke burned in the regenerator is the only fuel, so at steady state coke yield is fixed by how much heat the reactor needs. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 211, 216–218</span></a></figcaption></figure>
+<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 5.3</span><span class="ti">Reactor–regenerator heat balance</span><a class="btn" href="figures/fig13-heat-balance.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Reactor–regenerator heat balance"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig13-heat-balance.svg" alt="Reactor–regenerator heat balance" loading="lazy"></div><figcaption>Catalyst carries heat; coke is the only fuel → at steady state coke yield is fixed by reactor heat demand. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 211, 216–218</span></a></figcaption></figure>
       <div class="prose">
-      <h3>Material balances</h3>
-      <div class="eq"><div class="eqn"><div>\[ m_f + S_{in} + m_{cat} = \sum_{i=1}^{p} m_i + S_{out} + m_{scat} \]</div><span class="tagno">(8.13) reactor</span></div></div>
-      <div class="eq"><div class="eqn"><div>\[ m_f = \sum_{i=1}^{p} m_i + m_{coke}, \qquad m_{coke} = m_{scat} - m_{cat} \]</div><span class="tagno">(8.14)</span></div><p class="why">Steam passes through unchanged (\(S_{in} = S_{out}\)); the coke leaves on the spent catalyst. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 216–217</span></a></p></div>
-      <div class="eq"><div class="eqn"><div>\[ m_{air} + m_{scat} = \sum_{i=1}^{N} n_i + m_{cat} \]</div><span class="tagno">(8.15) regenerator</span></div><p class="why">\(n_i\): flue-gas components CO₂, CO, H₂O, SO₂, N₂, O₂. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 217</span></a></p></div>
-
-      <h3>Heat balances</h3>
+      <div class="eq"><div class="eqn"><div>\[ m_f + S_{in} + m_{cat} = \sum_{i=1}^{p} m_i + S_{out} + m_{scat} \;\Rightarrow\; m_f = \sum m_i + m_{coke},\;\; m_{coke} = m_{scat} - m_{cat} \]</div><span class="tagno">(8.13–8.14) reactor</span></div><p class="why">Steam passes through (\(S_{in} = S_{out}\)); coke leaves on spent catalyst. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 216–217</span></a></p></div>
+      <div class="eq"><div class="eqn"><div>\[ m_{air} + m_{scat} = \sum_{i=1}^{N} n_i + m_{cat} \]</div><span class="tagno">(8.15) regenerator</span></div><p class="why">\(n_i\) = CO₂, CO, H₂O, SO₂, N₂, O₂. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 217</span></a></p></div>
       <div class="eq"><div class="eqn"><div>\[ m_f C_{p,f}(T_f - T_o) + m_f(\Delta H_R) + m_{cat} C_{p,cat}(T_{Reg} - T_R) + S_{in} C_{ps}(T_s - T_R) = (T_R - T_o)\sum m_i C_{p,i} + m_{coke} C_{p,coke}(T_R - T_o) \]</div><span class="tagno">(8.17) reactor</span></div></div>
-      <div class="eq"><div class="eqn"><div>\[ m_{air} C_{p,air}(T_{air} - T_o) + m_{coke} C_{p,coke}(T_R - T_o) + q_{coke} = (T_{Reg} - T_o)\sum n_i C_{p,g_i} + m_{cat} C_{p,cat}(T_{Reg} - T_R) \]</div><span class="tagno">(8.18) regenerator</span></div><p class="why">\(q_{coke}\) is the heat released by burning coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 218</span></a></p></div>
+      <div class="eq"><div class="eqn"><div>\[ m_{air} C_{p,air}(T_{air} - T_o) + m_{coke} C_{p,coke}(T_R - T_o) + q_{coke} = (T_{Reg} - T_o)\sum n_i C_{p,g_i} + m_{cat} C_{p,cat}(T_{Reg} - T_R) \]</div><span class="tagno">(8.18) regenerator</span></div><p class="why">\(q_{coke}\) = heat of coke combustion. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 218</span></a></p></div>
 
-      <h3>Worked example: catalyst circulation from the regenerator balance (Ex. E8.2)</h3>
+      <h3>Worked example E8.2: catalyst circulation</h3>
       <ol class="pts">
-        <li><b>Coke</b> from Ex. E8.1: 13,551 kg/h ≈ 1129 kmol/h (as carbon). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 218</span></a></li>
-        <li><b>Heat released:</b> \(q_{coke} = 1129 \times 0.393\times10^{6} = 443.8\times10^{6}\ \text{kJ/h}\) for \(\ce{C + O2 -> CO2}\).</li>
-        <li><b>Air:</b> O₂ needed = 1129 kmol/h, so air = 1129/0.21 = 5376 kmol/h, giving N₂ = 4247 kmol/h and CO₂ = 1129 kmol/h.</li>
-        <li><b>Temperatures:</b> air 200 °C, spent catalyst 520 °C, flue gas 700 °C, regenerated catalyst 690 °C, reference 15 °C.</li>
-        <li><b>Balance (8.18):</b>
+        <li><b>Coke</b> (from E8.1) 13,551 kg/h ≈ 1129 kmol/h C → \(q_{coke} = 1129 \times 0.393\times10^{6} = 443.8\times10^{6}\) kJ/h (\(\ce{C + O2 -> CO2}\)). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 218</span></a></li>
+        <li><b>Air</b> = 1129/0.21 = 5376 kmol/h → N₂ 4247, CO₂ 1129 kmol/h.</li>
+        <li><b>T:</b> air 200 °C, spent cat 520 °C, flue gas 700 °C, regen. cat 690 °C, ref. 15 °C.
           \[ 5376(29.6)(185) + m_{cat}(1.11)(505) + 13551(21.1)(505) + 443.8\times10^{6} = 685\,[1129(46.9) + 4247(32.6)] + m_{cat}(1.11)(675) \]</li>
-        <li><b>Result:</b> \(m_{cat} = 2.58\times10^{6}\ \text{kg/h} = 43\ \text{t/min}\). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 219</span></a></li>
+        <li><b>\(m_{cat} = 2.58\times10^{6}\) kg/h = 43 t/min.</b> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 219</span></a> Feed 476,250 lb/h ≈ 216,000 kg/h → C/O ≈ <b>12</b> <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>from E8.1–E8.2</span></a>, above Table 8.4's 5.4 because E8.1 coke (6.3 wt%) is high: more coke burned → more heat for the catalyst to carry.</li>
       </ol>
-      <div class="callout key"><span class="lab">Read the result</span><p>The feed in Ex. E8.1 is 476,250 lb/h ≈ 216,000 kg/h, so this balance implies a catalyst-to-oil ratio of about \(2.58\times10^{6}/2.16\times10^{5} \approx 12\) <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>from E8.1–E8.2</span></a>. That is higher than the 5.4 in Table 8.4 because this example's coke yield (6.3 wt%) is high. More coke burned → more heat → the catalyst must carry more of it.</p></div>
       </div>
     </section>
 
     <section class="s">
       <h2 class="sh" id="kinetics" data-toc="Kinetics: lump models"><span class="n">5.6</span>Kinetics: lump models</h2>
-      <div class="prose"><p>FCC has too many reactions to model one by one, so products are grouped into <b>lumps</b>. VGO cracking is taken as <b>second order</b>, gasoline cracking as <b>first order</b>, with the same catalyst deactivation function \(\phi\) on every reaction. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.13</span></a></p></div>
-<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 5.4</span><span class="ti">Three-lump and four-lump models</span><a class="btn" href="figures/fig12-lump-models.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Three-lump and four-lump models"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig12-lump-models.svg" alt="Three-lump and four-lump models" loading="lazy"></div><figcaption>\(y\) is the mass fraction of each lump; \(k\) are rate constants. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Figs 8.9–8.10</span></a></figcaption></figure>
+      <div class="prose"><p>Products grouped into <b>lumps</b>. VGO cracking <b>2nd order</b>, gasoline cracking <b>1st order</b>, same deactivation \(\phi\) for all. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.13</span></a></p></div>
+<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 5.4</span><span class="ti">Three-lump and four-lump models</span><a class="btn" href="figures/fig12-lump-models.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Three-lump and four-lump models"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig12-lump-models.svg" alt="Three-lump and four-lump models" loading="lazy"></div><figcaption>\(y\) = lump mass fraction, \(k\) = rate constant. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Figs 8.9–8.10</span></a></figcaption></figure>
       <div class="prose">
-      <div class="eq"><div class="eqn"><div>\[ \frac{dy_1}{dt} = -(k_1 + k_3)\,y_1^2\,\phi, \qquad \frac{dy_2}{dt} = \left(k_1 y_1^2 - k_2 y_2\right)\phi, \qquad \frac{dy_3}{dt} = \left(k_3 y_1^2 + k_2 y_2\right)\phi \]</div><span class="tagno">(8.19–8.21)</span></div><p class="why">Three-lump model: VGO (\(y_1\)), gasoline (\(y_2\)), gas + coke (\(y_3\)). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 220</span></a></p></div>
-      <div class="eq"><div class="eqn"><div>\[ \frac{dy_1}{dt} = -(k_{12} + k_{13} + k_{14})\,y_1^2\,\phi, \qquad \frac{dy_2}{dt} = \left[k_{12} y_1^2 - (k_{23} + k_{24})\,y_2\right]\phi \]</div><span class="tagno">(8.22–8.23)</span></div><p class="why">Four-lump model splits gas (\(y_3\)) from coke (\(y_4\)). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 220–221</span></a></p></div>
-      <div class="eq"><div class="eqn"><div>\[ C_c = 2.43\times10^{-3}\,t_c^{0.2}, \qquad \phi = \frac{1}{1 + 69.47\,(100\,C_c)^{3.8}} \]</div><span class="tagno">(8.33–8.34)</span></div><p class="why">Catalyst activity falls as coke content \(C_c\) builds with coking time \(t_c\). Ex. E8.4 plots activity falling along the riser as coke builds up. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 223, 226</span></a></p></div>
+      <div class="eq"><div class="eqn"><div>\[ \frac{dy_1}{dt} = -(k_1 + k_3)\,y_1^2\,\phi, \quad \frac{dy_2}{dt} = \left(k_1 y_1^2 - k_2 y_2\right)\phi, \quad \frac{dy_3}{dt} = \left(k_3 y_1^2 + k_2 y_2\right)\phi \]</div><span class="tagno">(8.19–8.21) 3-lump</span></div><p class="why">VGO \(y_1\), gasoline \(y_2\), gas + coke \(y_3\). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 220</span></a></p></div>
+      <div class="eq"><div class="eqn"><div>\[ \frac{dy_1}{dt} = -(k_{12} + k_{13} + k_{14})\,y_1^2\,\phi, \quad \frac{dy_2}{dt} = \left[k_{12} y_1^2 - (k_{23} + k_{24})\,y_2\right]\phi \]</div><span class="tagno">(8.22–8.23) 4-lump</span></div><p class="why">Gas \(y_3\) and coke \(y_4\) separate. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 220–221</span></a></p></div>
+      <div class="eq"><div class="eqn"><div>\[ C_c = 2.43\times10^{-3}\,t_c^{0.2}, \qquad \phi = \frac{1}{1 + 69.47\,(100\,C_c)^{3.8}} \]</div><span class="tagno">(8.33–8.34)</span></div><p class="why">Activity falls as coke \(C_c\) builds with coking time \(t_c\); falls along the riser in E8.4. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 223, 226</span></a></p></div>
       </div>
 
       <div class="tool" id="lumpTool">
         <div class="tool-h">
-          <div><h3 style="margin:0">Live chart: gasoline yield vs conversion (three-lump model)</h3><p class="small" style="margin:4px 0 0">Starts at the book's fitted constants for 548.9 °C, C/O = 4 <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.3</span></a>. Move \(k_2\) (gasoline over-cracking) and watch the peak.</p></div>
+          <div><h3 style="margin:0">Live chart: gasoline vs conversion (3-lump)</h3><p class="small" style="margin:4px 0 0">Book constants at 548.9 °C, C/O = 4 <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.3</span></a>. Move \(k_2\) (over-cracking) to shift the peak.</p></div>
         </div>
         <div class="tool-h">
           <label class="field">k₁ VGO → gasoline <b><span id="k1v">23</span> h⁻¹</b><input type="range" id="k1" min="5" max="60" step="0.5" value="23"></label>
           <label class="field">k₂ gasoline → gas + coke <b><span id="k2v">3.1</span> h⁻¹</b><input type="range" id="k2" min="0" max="15" step="0.1" value="3.1"></label>
           <label class="field">k₃ VGO → gas + coke <b><span id="k3v">7.5</span> h⁻¹</b><input type="range" id="k3" min="0" max="30" step="0.5" value="7.5"></label>
-          <button class="btn2" type="button" id="kreset">Reset to book values</button>
+          <button class="btn2" type="button" id="kreset">Reset</button>
         </div>
         <div class="tool-grid">
           <div class="chart" id="lumpChart" role="img" aria-label="Yield versus conversion chart"></div>
           <div>
-            <div class="legend"><span><i style="background:#2E9B63"></i>gasoline (model)</span><span><i style="background:#8A929B"></i>gas + coke (model)</span><span><i style="background:#C06A1F"></i>unconverted VGO</span><span>● ■ experimental points (Table 8.7)</span></div>
+            <div class="legend"><span><i style="background:#2E9B63"></i>gasoline</span><span><i style="background:#8A929B"></i>gas + coke</span><span><i style="background:#C06A1F"></i>unconverted VGO</span><span>● ■ data (Table 8.7)</span></div>
             <div id="lumpOut" class="small"></div>
-            <div class="callout warn" style="margin-top:12px"><span class="lab">Honest note</span><p>With the book's constants the model under-predicts gasoline at high conversion: at 82 % it gives about 44 wt% against 54 wt% measured. The shape still shows the key point: <b>gasoline passes through a maximum</b>, because beyond it over-cracking (k₂) destroys gasoline faster than it forms. <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>integrated Eqs 8.19–8.21</span></a></p></div>
+            <div class="callout warn" style="margin-top:12px"><span class="lab">Note</span><p>Model under-predicts at high conversion (82 %: ~44 wt% vs 54 wt% measured), but shows the key point: <b>gasoline peaks</b>, then over-cracking (k₂) destroys it. <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>integrated Eqs 8.19–8.21</span></a></p></div>
           </div>
         </div>
       </div>
@@ -176,10 +164,10 @@ window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],disp
 
     <section class="s qc">
       <h2 class="sh" id="check" data-toc="Quick check"><span class="n">5.7</span>Quick check</h2>
-      <details><summary>Which fluidisation regime is used in the riser, the regenerator and the stripper?</summary><div class="ans">Riser: pneumatic transport. Regenerator: turbulent. Stripper and regenerator-to-riser standpipe: bubbling. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5</span></a></div></details>
-      <details><summary>Why can't the operator set the coke yield independently?</summary><div class="ans">Coke is the only fuel. At steady state the heat released by burning it must equal the heat the reactor absorbs (Eqs 8.17–8.18), so the unit makes the coke that its heat balance demands. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a></div></details>
-      <details><summary>Give one advantage of burning coke completely to CO₂.</summary><div class="ans">Lower residual carbon on regenerated catalyst, so a more active and selective catalyst and a better product distribution. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></div></details>
-      <details><summary>Using Ex. E8.4 data, what is the catalyst-to-oil ratio?</summary><div class="ans">144 kg/s ÷ 20 kg/s = 7.2. <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>from E8.4.1</span></a></div></details>
+      <details><summary>Regime in riser, regenerator, stripper?</summary><div class="ans">Pneumatic transport; turbulent; bubbling (also regen → riser standpipe). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5</span></a></div></details>
+      <details><summary>Why can't coke yield be set independently?</summary><div class="ans">Coke is the only fuel: its combustion heat must equal reactor heat demand (Eqs 8.17–8.18). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a></div></details>
+      <details><summary>One advantage of full burn to CO₂?</summary><div class="ans">Lower residual carbon → more active, selective catalyst → better products. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></div></details>
+      <details><summary>C/O in Ex. E8.4?</summary><div class="ans">144 ÷ 20 = 7.2. <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>from E8.4.1</span></a></div></details>
     </section>
 
 <nav class="pager" aria-label="Chapter navigation"><a class="prev" href="04-reactions-mechanism.html"><small>← previous</small><b>Reactions & mechanism</b></a><a class="next" href="06-products-optimisation.html"><small>next →</small><b>Products & optimisation</b></a></nav>

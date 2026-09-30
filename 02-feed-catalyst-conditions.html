@@ -36,163 +36,132 @@ window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],disp
     <header class="hero">
       <p class="kicker">Chapter 02 · parameters</p>
       <h1>Feed, catalyst and operating conditions</h1>
-      <p class="lede">All the numbers in one datasheet first, then the feed and its contaminants, then the catalyst: why it must be acidic, zeolite Y, the matrix, ZSM-5, and how it loses activity.</p>
-      <div class="meta"><span><b>Sources:</b> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 9–20</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.3, 8.6–8.9, Tables 8.1, 8.4</span></a></span><span><b>Figures:</b> 2.1–2.2</span></div>
+      <p class="lede">All numbers in one table, then feed + contaminants, then the catalyst.</p>
+      <div class="meta"><span><b>Read:</b> ~7 min</span><span><b>Sources:</b> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 9–20</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.3, 8.6–8.9, Tables 8.1, 8.4</span></a></span></div>
     </header>
 
     <section class="s">
       <h2 class="sh" id="params" data-toc="Operating parameters"><span class="n">2.1</span>Operating parameters</h2>
-      <p class="prose">°F values from the book are converted to °C and psig to barg here <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>unit conversion</span></a>. "Max-gasoline case" is the 40,000 BPSD unit in Table 8.4 (Parkash, 2003).</p>
+      <p class="prose small">°F → °C and psig → barg converted here <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>unit conversion</span></a>. "Case" = the 40,000 BPSD max-gasoline unit of Table 8.4 (Parkash, 2003).</p>
       <div class="tw"><table class="t">
-        <thead><tr><th>Parameter</th><th>Typical value</th><th>Note</th><th>Source</th></tr></thead>
+        <thead><tr><th>Parameter</th><th>Value</th><th>Note</th><th>Source</th></tr></thead>
         <tbody>
           <tr class="grp"><td colspan="4">Reactor (riser)</td></tr>
-          <tr><td>Reaction temperature</td><td class="num">480–550 °C</td><td>High temperature needed because cracking is strongly endothermic</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
-          <tr><td>Riser outlet temperature</td><td class="num">991 °F ≈ 533 °C</td><td>Max-gasoline case</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Reactor pressure</td><td class="num">1–5 bar</td><td>Low, because cracking makes many more moles of product</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
-          <tr><td>Reactor pressure (case)</td><td class="num">30 psig ≈ 2.1 barg</td><td>Max-gasoline case</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Residence time in riser</td><td class="num">2–10 s</td><td>Lecture gives 1–4 s</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></td></tr>
-          <tr><td>Feed preheat temperature</td><td class="num">316–427 °C</td><td>600–800 °F; Table 8.4 case uses 446 °F ≈ 230 °C</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210, Table 8.4</span></a></td></tr>
-          <tr><td>Catalyst-to-oil ratio</td><td class="num">5.4</td><td>kg catalyst per kg oil, max-gasoline case</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Dispersion steam</td><td class="num">0.9 wt% of feed</td><td>Atomises the feed at the nozzles</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Stripping steam</td><td class="num">0.0213 t / t catalyst</td><td>Strips adsorbed oil off spent catalyst</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr class="grp"><td colspan="4">Regenerator and catalyst circulation</td></tr>
-          <tr><td>Regenerator temperature</td><td class="num">620–845 °C</td><td>1150–1550 °F; controlled by air rate</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></td></tr>
-          <tr><td>Regenerator temperature (case)</td><td class="num">1341 °F ≈ 727 °C</td><td>Max-gasoline case</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Regenerator pressure (case)</td><td class="num">33 psig ≈ 2.3 barg</td><td>Slightly above the reactor</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Flue gas temperature (case)</td><td class="num">1355 °F ≈ 735 °C</td><td></td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Regenerated catalyst to riser</td><td class="num">649–760 °C</td><td>1200–1400 °F</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></td></tr>
-          <tr><td>Spent catalyst to regenerator</td><td class="num">482–538 °C</td><td>900–1000 °F</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a></td></tr>
-          <tr><td>Coke left on regenerated catalyst</td><td class="num">0.01–0.4 wt%</td><td>Lower when coke is burned fully to CO₂</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></td></tr>
-          <tr><td>Catalyst circulation (case)</td><td class="num">21.7 t/min</td><td>For a 40,000 BPSD feed</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
-          <tr><td>Catalyst make-up (case)</td><td class="num">2.5 t/day</td><td>Replaces fines lost and keeps activity up</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Reaction temperature</td><td class="num">480–550 °C</td><td>High: cracking is strongly endothermic</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
+          <tr><td>Riser outlet (case)</td><td class="num">991 °F ≈ 533 °C</td><td></td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Pressure</td><td class="num">1–5 bar</td><td>Low: cracking multiplies moles. Case: 30 psig ≈ 2.1 barg</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208, Table 8.4</span></a></td></tr>
+          <tr><td>Residence time</td><td class="num">2–10 s</td><td>Lecture: 1–4 s</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></td></tr>
+          <tr><td>Feed preheat</td><td class="num">316–427 °C</td><td>600–800 °F; case 446 °F ≈ 230 °C</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210, Table 8.4</span></a></td></tr>
+          <tr><td>Catalyst / oil (case)</td><td class="num">5.4</td><td>kg/kg</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Dispersion steam (case)</td><td class="num">0.9 wt% feed</td><td>Atomises feed</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Stripping steam (case)</td><td class="num">0.0213 t/t cat</td><td>Strips oil off spent catalyst</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr class="grp"><td colspan="4">Regenerator and circulation</td></tr>
+          <tr><td>Regenerator temperature</td><td class="num">620–845 °C</td><td>1150–1550 °F, set by air rate; case 1341 °F ≈ 727 °C</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Regenerator pressure (case)</td><td class="num">33 psig ≈ 2.3 barg</td><td>Slightly above reactor</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Flue gas (case)</td><td class="num">1355 °F ≈ 735 °C</td><td></td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Regenerated catalyst → riser</td><td class="num">649–760 °C</td><td>1200–1400 °F</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></td></tr>
+          <tr><td>Spent catalyst → regenerator</td><td class="num">482–538 °C</td><td>900–1000 °F</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a></td></tr>
+          <tr><td>Coke on regenerated catalyst</td><td class="num">0.01–0.4 wt%</td><td>Lower with full burn to CO₂</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></td></tr>
+          <tr><td>Circulation / make-up (case)</td><td class="num">21.7 t/min · 2.5 t/day</td><td>Make-up replaces lost fines, keeps activity</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
           <tr class="grp"><td colspan="4">Catalyst particles</td></tr>
-          <tr><td>Average particle size</td><td class="num">~70 µm / 75 µm</td><td>Lecture / book</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
-          <tr><td>Surface area</td><td class="num">~800 m²/g</td><td>Zeolite powder</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
+          <tr><td>Size · surface area</td><td class="num">~70 / 75 µm · ~800 m²/g</td><td>Lecture / book</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
         </tbody></table></div>
     </section>
 
     <section class="s prose">
       <h2 class="sh" id="feed" data-toc="Feed"><span class="n">2.2</span>Feed</h2>
       <ul class="pts">
-        <li><b>Main feed:</b> gas oil boiling between <b>316 and 566 °C</b> (600–1050 °F), a mixture of aromatic, naphthenic and paraffinic molecules. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 200</span></a></li>
-        <li><b>Primary feeds</b> are atmospheric and vacuum gas oils (AGO, VGO). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></li>
-        <li><b>Other possible feeds:</b> atmospheric distillates, coker distillates, visbreaker distillates, desulphurised atmospheric residue, desulphurised and deasphalted vacuum residue. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></li>
-        <li>Contaminants (S, N, metals) sit mostly in the <b>higher-boiling fractions</b>, so feeds are normally <b>hydrotreated</b> first to protect the catalyst and improve yields. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></li>
-        <li>Refiners blend atmospheric and vacuum tower bottoms into FCC feed because residual fuel is worth much less than cracking feed. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></li>
+        <li><b>Main feed:</b> gas oil, <b>316–566 °C</b> (600–1050 °F); aromatic + naphthenic + paraffinic. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 200</span></a></li>
+        <li><b>Primary:</b> AGO, VGO. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a> <b>Others:</b> atmospheric, coker, visbreaker distillates; desulphurised AR; desulphurised + deasphalted VR. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></li>
+        <li><b>Contaminants</b> (S, N, metals) concentrate in heavier fractions → feed normally <b>hydrotreated</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></li>
+        <li><b>Economics:</b> residual fuel is worth far less than cracking feed → refiners blend AR/VR bottoms into FCC feed. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></li>
       </ul>
-      <h3>Typical feed properties</h3>
       <div class="tw"><table class="t">
-        <thead><tr><th>Property</th><th class="num">Desulphurised VGO</th><th class="num">Atmospheric residue</th></tr></thead>
+        <thead><tr><th>Property</th><th class="num">Desulph. VGO</th><th class="num">Atm. residue</th></tr></thead>
         <tbody>
-          <tr><td>Specific gravity (15/4 °C)</td><td class="num">0.896</td><td class="num">0.889</td></tr>
-          <tr><td>API gravity</td><td class="num">26.3</td><td class="num">27.5</td></tr>
-          <tr><td>Gas oil fraction (&lt; 343 °C), wt%</td><td class="num">7</td><td class="num">4</td></tr>
-          <tr><td>VGO fraction (343–538 °C), wt%</td><td class="num">88.5</td><td class="num">52.5</td></tr>
-          <tr><td>Vacuum residue (&gt; 538 °C), wt%</td><td class="num">4.5</td><td class="num">43.5</td></tr>
-          <tr><td>Conradson carbon residue, wt%</td><td class="num">0.2</td><td class="num">4.2</td></tr>
-          <tr><td>Sulphur, wt%</td><td class="num">0.4</td><td class="num">0.11</td></tr>
-          <tr><td>Nitrogen, wt%</td><td class="num">0.064</td><td class="num">0.19</td></tr>
-          <tr><td>Nickel, wppm</td><td class="num">0.26</td><td class="num">17</td></tr>
-          <tr><td>Vanadium, wppm</td><td class="num">0.15</td><td class="num">0.5</td></tr>
+          <tr><td>SG (15/4 °C) · API</td><td class="num">0.896 · 26.3</td><td class="num">0.889 · 27.5</td></tr>
+          <tr><td>GO / VGO / VR fraction, wt%<br><span class="small">&lt;343 · 343–538 · &gt;538 °C</span></td><td class="num">7 / 88.5 / 4.5</td><td class="num">4 / 52.5 / 43.5</td></tr>
+          <tr><td>Conradson carbon, wt%</td><td class="num">0.2</td><td class="num">4.2</td></tr>
+          <tr><td>S · N, wt%</td><td class="num">0.4 · 0.064</td><td class="num">0.11 · 0.19</td></tr>
+          <tr><td>Ni · V, wppm</td><td class="num">0.26 · 0.15</td><td class="num">17 · 0.5</td></tr>
         </tbody></table></div>
-      <p class="small">Source: <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.1</span></a> (Tominaga and Tamaki, 1997).</p>
+      <p class="small"><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.1</span></a> (Tominaga and Tamaki, 1997)</p>
 
-      <h3>Contaminants: effect and control</h3>
+      <h3>Contaminants</h3>
       <div class="tw"><table class="t">
-        <thead><tr><th>Contaminant</th><th>What it does</th><th>Control</th><th>Source</th></tr></thead>
+        <thead><tr><th>Contaminant</th><th>Effect</th><th>Control</th><th>Source</th></tr></thead>
         <tbody>
-          <tr><td>Conradson carbon (CCR)</td><td>Deposits on the catalyst as coke; can exceed the regenerator's burning capacity</td><td>Limit or hydrotreat; residue feeds need an RFCC design</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></td></tr>
-          <tr><td>Nickel</td><td>Increases coke and hydrogen formation (dehydrogenation)</td><td>Up to 15 ppm Ni + V: add organic antimony to passivate Ni. Coke falls up to 15 %, H₂ up to 45 %</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
-          <tr><td>Vanadium</td><td>Main cause of catalyst activity loss from metals</td><td>Above 15 ppm metals with CCR above 3 %: hydroprocess the feed</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
-          <tr><td>Nitrogen</td><td>Poisons the catalyst by neutralising its acid sites</td><td>Unit is unaffected if N is kept below 0.2 %</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></td></tr>
-          <tr><td>Sulphur</td><td>Ends up in H₂S, LCO, HCO and coke, then as SOₓ in flue gas</td><td>Feed hydrotreating; metal-oxide SOₓ additive in the catalyst</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 201, 209</span></a></td></tr>
-          <tr><td>Heavy aromatics</td><td>Even small amounts crack poorly and lay down coke</td><td>Feed selection or hydrotreating</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 15</span></a></td></tr>
-          <tr><td>Organometallics</td><td>Deposit metals during feed desulphurisation</td><td>Guard reactor ahead of the desulphuriser</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></td></tr>
+          <tr><td>CCR</td><td>Coke on catalyst; can exceed regenerator burning capacity</td><td>Limit / hydrotreat; RFCC design for residues</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></td></tr>
+          <tr><td>Nickel</td><td>More coke + H₂ (dehydrogenation)</td><td>≤15 ppm Ni + V: organic antimony passivation → coke −15 %, H₂ −45 %</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
+          <tr><td>Vanadium</td><td>Main metal cause of activity loss</td><td>&gt;15 ppm metals + CCR &gt;3 %: hydroprocess feed</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
+          <tr><td>Nitrogen</td><td>Neutralises acid sites</td><td>OK below 0.2 %</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></td></tr>
+          <tr><td>Sulphur</td><td>→ H₂S, LCO, HCO, coke → SOₓ in flue gas</td><td>Feed HT; metal-oxide SOₓ additive</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 201, 209</span></a></td></tr>
+          <tr><td>Heavy aromatics</td><td>Crack poorly, lay down coke</td><td>Feed selection / HT</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 15</span></a></td></tr>
+          <tr><td>Organometallics</td><td>Deposit metals during desulphurisation</td><td>Guard reactor</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></td></tr>
         </tbody></table></div>
     </section>
 
     <section class="s">
       <h2 class="sh" id="catalyst" data-toc="Catalyst"><span class="n">2.3</span>Catalyst</h2>
       <div class="prose">
-      <h3>Why it must be acidic</h3>
       <ul class="pts">
-        <li>A cracking catalyst must <b>supply a proton</b> (Brønsted acid). Lewis acids (BF₃, AlCl₃, FeCl₃) can also form carbenium ions. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 10, 12</span></a></li>
-        <li>Each acid-catalysed reaction needs a minimum acid strength. <b>Cracking needs the strongest sites</b>, which is why catalyst acidity sets the product slate. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>Fig 4.7</span></a></li>
+        <li><b>Must be acidic:</b> supplies a proton (Brønsted); Lewis acids (BF₃, AlCl₃, FeCl₃) also form carbenium ions. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 10, 12</span></a></li>
+        <li><b>Cracking needs the strongest acid sites</b> of all acid reactions (Fig 2.1). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>Fig 4.7</span></a></li>
+        <li><b>Generations:</b> ① acid-treated natural aluminosilicates (clays) → ② amorphous synthetic silica–alumina → ③ <b>crystalline zeolites</b> (molecular sieves: more active sites + adsorption → faster cracking). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li>
       </ul>
       </div>
-<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 2.1</span><span class="ti">Acid strength needed by each reaction</span><a class="btn" href="figures/fig08-acid-strength.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Acid strength needed by each reaction"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig08-acid-strength.svg" alt="Acid strength needed by each reaction" loading="lazy"></div><figcaption>Weak sites only isomerise olefins; progressively stronger sites allow hydrogen transfer, polymerisation, alkylation and finally cracking. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>Fig 4.7, p. 10</span></a></figcaption></figure>
+<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 2.1</span><span class="ti">Acid strength needed by each reaction</span><a class="btn" href="figures/fig08-acid-strength.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Acid strength needed by each reaction"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig08-acid-strength.svg" alt="Acid strength needed by each reaction" loading="lazy"></div><figcaption>Weak sites only isomerise; stronger sites add H-transfer, polymerisation, alkylation, then cracking. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>Fig 4.7, p. 10</span></a></figcaption></figure>
       <div class="prose">
-      <h3>Three generations of cracking catalyst</h3>
-      <ol class="pts">
-        <li>Acid-treated <b>natural aluminosilicates</b> (clays). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li>
-        <li><b>Amorphous synthetic silica–alumina</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li>
-        <li><b>Crystalline synthetic aluminosilicates: zeolites</b> (molecular sieves). They have more active sites and more adsorption capacity, so they crack faster. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 12</span></a></li>
-      </ol>
-
-      <h3>Zeolite Y: the active component</h3>
+      <h3>Zeolite Y (active component)</h3>
       <ul class="pts">
-        <li><b>Faujasite</b> is the natural crystalline aluminosilicate; <b>zeolite Y</b> is its synthetic form and the usual cracking catalyst. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></li>
-        <li>Sodium form composition: <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a>
+        <li><b>Faujasite</b> = natural; <b>zeolite Y</b> = synthetic form, the usual FCC catalyst. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></li>
+        <li>Sodium form: <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a>
           <div class="eq"><div class="eqn"><div>\[ (0.9 \pm 0.2)\,\mathrm{Na_2O}\cdot \mathrm{Al_2O_3}\cdot w\,\mathrm{SiO_2}\cdot x\,\mathrm{H_2O}, \qquad 3 &lt; w &lt; 6,\;\; x &lt; 9 \]</div></div></div></li>
-        <li><b>Sodium poisons cracking</b>, so the zeolite is converted to the acid form by <b>ion exchange with rare-earth cations</b>. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a>
-          <div class="callout note" style="margin:8px 0"><span class="lab">Note on the lecture text</span><p>The slide lists "cesium, lanthanum". Caesium is an alkali metal, not a rare earth; the rare earths used alongside lanthanum are typically cerium and similar lanthanides.</p></div></li>
-        <li>Largest opening in Y-faujasite is the <b>~8 Å supercage</b>, which admits C₁₈–C₂₅ one-, two- and three-ring aromatics from VGO. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></li>
-        <li>Powder with average particle size <b>75 µm</b> and surface area about <b>800 m²/g</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></li>
+        <li><b>Na poisons cracking</b> → ion-exchange with <b>rare-earth cations</b> → acid form. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a> <span class="small">(Slide says "cesium, lanthanum"; caesium is an alkali metal, not a rare earth — cerium-type lanthanides are meant.)</span></li>
+        <li><b>~8 Å supercage</b> admits C₁₈–C₂₅ 1-, 2-, 3-ring aromatics from VGO; powder <b>75 µm</b>, <b>~800 m²/g</b>. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></li>
       </ul>
-
-      <h3>The matrix</h3>
-      <p>Zeolite crystals are embedded in a matrix that gives the particle its body. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></p>
-      <div class="tw"><table class="t">
-        <thead><tr><th>Matrix part</th><th>Job</th></tr></thead>
-        <tbody>
-          <tr><td>Binder</td><td>"Glue" that gives cohesion between zeolite particles</td></tr>
-          <tr><td>Filler (kaolin clay)</td><td>Makes up the body; with the binder, gives density and attrition resistance</td></tr>
-          <tr><td>Additives</td><td>ppm-level metal promotes CO → CO₂ combustion in the regenerator; metal oxides fix SOₓ on the catalyst, and the sulphur is released as H₂S in the reactor</td></tr>
-        </tbody></table></div>
-      <p class="small">Source: <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.7.2, p. 209</span></a></p>
+      <h3>Matrix <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.7.2, p. 209</span></a></h3>
+      <ul class="pts">
+        <li><b>Binder:</b> "glue" giving cohesion. <b>Filler (kaolin):</b> body; with binder → density + attrition resistance.</li>
+        <li><b>Additives:</b> ppm metal → CO → CO₂ in regenerator; metal oxides fix SOₓ (released as H₂S in reactor).</li>
+      </ul>
       </div>
-
-      <div class="prose"><h3>ZSM-5 additive: shape-selective octane boost</h3></div>
-<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 2.2</span><span class="ti">Shape-selective cracking in ZSM-5</span><a class="btn" href="figures/fig09-zsm5.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom Shape-selective cracking in ZSM-5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig09-zsm5.svg" alt="Shape-selective cracking in ZSM-5" loading="lazy"></div><figcaption>Linear n-hexane fits the narrow zig-zag channels and cracks to C₃. Bulky iso-hexane and benzene cannot enter, so the gasoline left behind is richer in high-octane iso-paraffins and aromatics. About 5 % ZSM-5 raises RON by roughly one number. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.7.1–8.7.2, Fig 8.5</span></a></figcaption></figure>
-
+<figure class="fig narrow"><div class="fig-h"><span class="no">Fig 2.2</span><span class="ti">ZSM-5 additive: shape-selective cracking</span><a class="btn" href="figures/fig09-zsm5.svg" target="_blank" rel="noopener">Open SVG</a><button type="button" class="zoom" aria-label="Zoom ZSM-5 additive: shape-selective cracking"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg>Zoom</button></div><div class="fig-b"><img src="figures/fig09-zsm5.svg" alt="ZSM-5 additive: shape-selective cracking" loading="lazy"></div><figcaption>Linear n-hexane enters the narrow zig-zag channels and cracks to C₃; bulky iso-hexane and benzene can't enter → gasoline enriched in iso-paraffins + aromatics. ~5 % ZSM-5 ≈ +1 RON. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>§8.7.1–8.7.2, Fig 8.5</span></a></figcaption></figure>
       <div class="prose">
-      <h3>Zeolite vs amorphous silica–alumina</h3>
+      <h3>Zeolite vs amorphous silica–alumina <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–13</span></a></h3>
       <div class="tw"><table class="t">
-        <thead><tr><th>Property</th><th>Amorphous SiO₂–Al₂O₃</th><th>Zeolite</th></tr></thead>
+        <thead><tr><th>Property</th><th>Amorphous</th><th>Zeolite</th></tr></thead>
         <tbody>
-          <tr><td>Activity</td><td>1 (reference)</td><td><b>~100× higher</b></td></tr>
-          <tr><td>Gasoline yield at same conversion</td><td>Lower</td><td><b>Higher</b></td></tr>
-          <tr><td>Gasoline octane</td><td>2–3 numbers higher</td><td>2–3 numbers lower</td></tr>
-          <tr><td>Coke yield</td><td>Higher</td><td><b>Lower</b></td></tr>
-          <tr><td>Dry gas (C₁–C₄)</td><td>Higher</td><td><b>Lower</b></td></tr>
-          <tr><td>Iso-butane</td><td>Lower</td><td><b>Higher</b> (hydrogen transfer)</td></tr>
-          <tr><td>Gasoline composition</td><td>More olefins</td><td>More paraffins and aromatics, fewer olefins (strong H-transfer)</td></tr>
+          <tr><td>Activity</td><td>1</td><td><b>~100×</b></td></tr>
+          <tr><td>Gasoline at same conversion</td><td>Lower</td><td><b>Higher</b></td></tr>
+          <tr><td>Gasoline octane</td><td>2–3 numbers higher</td><td>2–3 lower</td></tr>
+          <tr><td>Coke · dry gas (C₁–C₄)</td><td>Higher</td><td><b>Lower</b></td></tr>
+          <tr><td>Iso-butane</td><td>Lower</td><td><b>Higher</b> (H-transfer)</td></tr>
+          <tr><td>Gasoline composition</td><td>More olefins</td><td>More paraffins + aromatics (strong H-transfer)</td></tr>
         </tbody></table></div>
-      <p class="small">Source: <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–13</span></a>. Why zeolite gives more gasoline: the large ion forms and cracks by β-scission to a smaller ion plus C₃, instead of over-cracking to gas. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></p>
-      <div class="callout warn"><span class="lab">Watch out: lecture Tab 4.2</span>
-        <p>The table prints P / A / N / O as amorphous 38 / 10 / 0.45 / 10 and zeolite 45 / 20 / 0.15 / 20. The text beneath says <i>olefins are lower</i> with zeolite, which contradicts the olefin column as printed. The conclusion in the text is the one to quote: fewer olefins, more paraffins and aromatics, because zeolites transfer hydrogen well (\(\ce{O + N -> P + A}\)). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.7</span></a></p></div>
+      <p class="small">More gasoline because the large ion β-scissions to a smaller ion + C₃ instead of over-cracking to gas. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></p>
+      <div class="callout warn"><span class="lab">Lecture Tab 4.2 inconsistency</span>
+        <p>Printed P / A / N / O: amorphous 38 / 10 / 0.45 / 10, zeolite 45 / 20 / 0.15 / 20 — but the text says olefins are <i>lower</i> with zeolite. Quote the text: fewer olefins, more P + A via H-transfer (\(\ce{O + N -> P + A}\)). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.7</span></a></p></div>
 
-      <h3>How the catalyst loses activity</h3>
+      <h3>Deactivation</h3>
       <div class="tw"><table class="t">
-        <thead><tr><th>Cause</th><th>What happens / remedy</th><th>Source</th></tr></thead>
+        <thead><tr><th>Cause</th><th>Effect / remedy</th><th>Source</th></tr></thead>
         <tbody>
-          <tr><td>Coke</td><td>Builds up during cracking; temporary, because it is burned off with air in the regenerator every cycle</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 15</span></a></td></tr>
-          <tr><td>Vanadium</td><td>Main metal cause of activity loss; hydroprocess high-metal feeds</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
-          <tr><td>Nickel</td><td>Raises coke and H₂; passivate with antimony</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
+          <tr><td>Coke</td><td>Temporary: burned off in the regenerator every cycle</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 15</span></a></td></tr>
+          <tr><td>V · Ni</td><td>V kills activity (hydroprocess feed); Ni → coke + H₂ (Sb passivation)</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></td></tr>
           <tr><td>Nitrogen</td><td>Neutralises acid sites; keep N &lt; 0.2 %</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></td></tr>
-          <tr><td>Overheating</td><td>Regenerator temperature is controlled carefully to avoid it</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></td></tr>
-          <tr><td>Attrition / fines loss</td><td>Fines leave with flue gas and slurry; fresh make-up catalyst is added (2.5 t/day in the Table 8.4 case)</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 211, 212</span></a></td></tr>
+          <tr><td>Overheating</td><td>Regenerator T controlled carefully to avoid it</td><td><a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></td></tr>
+          <tr><td>Attrition</td><td>Fines lost with flue gas / slurry → make-up (2.5 t/day in case)</td><td><a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 211, 212</span></a></td></tr>
         </tbody></table></div>
       </div>
     </section>
 
     <section class="s qc">
       <h2 class="sh" id="check" data-toc="Quick check"><span class="n">2.4</span>Quick check</h2>
-      <details><summary>Why is sodium removed from zeolite Y, and how?</summary><div class="ans">Na poisons cracking because it occupies sites that must be acidic. It is removed by ion exchange with rare-earth cations, which leaves the acid form. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></div></details>
-      <details><summary>Which metal mainly destroys activity, and which mainly makes extra coke and hydrogen?</summary><div class="ans">Vanadium destroys activity. Nickel promotes coke and H₂ (dehydrogenation) and can be passivated with antimony. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></div></details>
-      <details><summary>Why does ZSM-5 raise gasoline octane?</summary><div class="ans">Its narrow channels only admit linear paraffins, which crack to C₃. The gasoline left behind is enriched in branched paraffins and aromatics, both high-octane. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></div></details>
-      <details><summary>Why is the reactor run at low pressure (1–5 bar)?</summary><div class="ans">Cracking large molecules produces a large increase in moles (volume), so low pressure favours it. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></div></details>
+      <details><summary>Why and how is Na removed from zeolite Y?</summary><div class="ans">Na blocks acid sites (poisons cracking); ion exchange with rare-earth cations gives the acid form. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></div></details>
+      <details><summary>Which metal kills activity; which makes coke + H₂?</summary><div class="ans">V kills activity; Ni → coke + H₂ (passivate with Sb). <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></div></details>
+      <details><summary>Why does ZSM-5 raise octane?</summary><div class="ans">Only linear paraffins enter and crack to C₃ → remaining gasoline richer in branched paraffins + aromatics. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></div></details>
+      <details><summary>Why low pressure (1–5 bar)?</summary><div class="ans">Cracking greatly increases moles; low P favours it. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></div></details>
     </section>
 
 <nav class="pager" aria-label="Chapter navigation"><a class="prev" href="01-unit-and-types.html"><small>← previous</small><b>Unit & types</b></a><a class="next" href="03-flow-diagrams.html"><small>next →</small><b>BFD & PFD</b></a></nav>
