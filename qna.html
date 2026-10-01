@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FCC Q&A Prep</title>
+<meta name="description" content="One-page question and answer preparation sheet for the catalytic cracking presentation.">
+<script>try{var t=localStorage.getItem('fcc-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+window.MathJax={tex:{packages:{'[+]':['mhchem']},inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},svg:{fontCache:'global'},options:{enableMenu:false}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js" async></script>
+<script src="assets/app.js" defer></script>
+</head>
+<body data-prev="video.html" data-next="01-unit-and-types.html">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html" aria-label="FCC study material home"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="9" width="11" height="17" rx="5" fill="none" stroke="#F0804F" stroke-width="2.2"/><rect x="20" y="3" width="4" height="24" fill="#E9E7E2"/><path d="M8 26v2h14" fill="none" stroke="#F0804F" stroke-width="2.2"/><path d="M22 3h-6v6" fill="none" stroke="#E9E7E2" stroke-width="2"/></svg><div><b>FCC</b><span>1 Oct presentation</span></div></a>
+    <nav class="chapters" aria-label="Chapters"><a href="index.html">Home</a><a href="presentation.html">▶ Slides</a><a href="video.html">Video</a><a href="qna.html" aria-current="page">Q&A prep</a><a href="01-unit-and-types.html"><i>01</i>Unit & types</a><a href="02-feed-catalyst-conditions.html"><i>02</i>Feed, catalyst, conditions</a><a href="03-flow-diagrams.html"><i>03</i>BFD & PFD</a><a href="04-reactions-mechanism.html"><i>04</i>Reactions & mechanism</a><a href="05-reactor.html"><i>05</i>Reactor</a><a href="06-products-optimisation.html"><i>06</i>Products & optimisation</a><a href="sources.html">Sources</a></nav>
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Toggle theme"></button>
+  </div>
+  <div class="progress"></div>
+</header>
+<div class="layout">
+  <aside class="toc" aria-label="On this page">
+    <h2>On this page</h2>
+    <ol id="tocList"></ol>
+    <p class="keys"><kbd>[</kbd> <kbd>]</kbd> previous / next chapter<br>Click any diagram to zoom.</p>
+  </aside>
+  <main id="main">
+    <header class="hero">
+      <p class="kicker">Q&amp;A prep · one page</p>
+      <h1>Everything to know in ~10 minutes</h1>
+      <p class="lede">Core story, numbers, slide-by-slide lines, and likely questions with short answers. Chapter links are only for when you need more.</p>
+      <div class="meta"><span><a class="btn2" href="presentation.html" style="text-decoration:none">▶ Slides</a></span><span><a class="btn2" href="video.html" style="text-decoration:none">Video</a></span><span><b>Sources:</b> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>lecture</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Fahim Ch. 8</span></a></span></div>
+    </header>
+
+    <section class="s prose">
+      <h2 class="sh" id="core" data-toc="Core story"><span class="n">1</span>Core story (say this if you blank)</h2>
+      <ol class="pts">
+        <li><b>What:</b> FCC cracks heavy gas oil (VGO, 316–566 °C) into gasoline, LPG olefins and cycle oils on an acidic zeolite catalyst. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 199–200</span></a></li>
+        <li><b>How:</b> hot regenerated catalyst + feed rise through a <b>riser</b> (480–550 °C, 1–5 bar, a few seconds); cyclones separate; steam strips the catalyst. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 208, 210</span></a></li>
+        <li><b>Regenerate:</b> air burns the coke off; the reheated catalyst returns and <b>carries the heat</b> for the endothermic cracking. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></li>
+        <li><b>Chemistry:</b> carbenium-ion chain on acid sites: protonation → β-scission → hydride transfer. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a></li>
+        <li><b>Why it matters:</b> main gasoline maker ("heart of the refinery") + C₃/C₄ olefins for alkylation. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 199</span></a></li>
+      </ol>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="numbers" data-toc="Numbers"><span class="n">2</span>Numbers: what your slides say vs the sources</h2>
+      <p class="small">Where they differ, quote the slide and add the source range if asked. All are "typical ranges", so both are defensible.</p>
+      <div class="tw"><table class="t">
+        <thead><tr><th>Quantity</th><th>Your slides</th><th>Sources</th></tr></thead>
+        <tbody>
+          <tr><td>Riser temperature</td><td class="num">480–550 °C (s8)</td><td>480–550 °C <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
+          <tr><td>Regenerator temperature</td><td class="num">660–760 (s8) · 650–750 °C (s9)</td><td>Regenerated catalyst 649–760 °C <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a>; lecture's full range 620–845 °C <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a>; example unit 727 °C <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Pressure</td><td class="num">riser 1–5, regen 1–3 bar (s8) · 1.5–3 bar (s9)</td><td>1–5 bar <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a>; example 2.1 / 2.3 barg, regenerator slightly higher <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a></td></tr>
+          <tr><td>Riser contact time</td><td class="num">2–5 s (s9)</td><td>2–10 s <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a>; 1–4 s <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 13</span></a></td></tr>
+          <tr><td>Catalyst / oil</td><td class="num">4–10 : 1 (s9)</td><td>5.4 example <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.4</span></a>; 7.2 riser example <a class="src D" href="sources.html#derived" title="Derived here from the sources&#x27; equations or data"><b>D</b><span>E8.4</span></a></td></tr>
+          <tr><td>Conversion</td><td class="num">65–80 % (s9)</td><td>Book examples use 70–75 % <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.1</span></a>; = 100 − gas-oil yield <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 23</span></a></td></tr>
+          <tr><td>Feed boiling range</td><td class="num">316–566 °C (s8, s10)</td><td>same <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 200</span></a></td></tr>
+          <tr><td>Catalyst size</td><td class="num">~70 µm (s8)</td><td>~70 µm <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a>; 75 µm, ~800 m²/g <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></td></tr>
+          <tr><td>Liquid yield</td><td class="num">90–93 % mass (s17)</td><td>same; &gt;100 % by volume <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 23</span></a></td></tr>
+          <tr><td>Yields, wt%</td><td class="num">not on slides</td><td>gasoline 35–60 · LPG 8–20 · LCO 12–20 · HCO + slurry 10–15 · dry gas 3–5 · coke 3–5 <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.2</span></a></td></tr>
+        </tbody></table></div>
+      <div class="callout warn"><span class="lab">"USY" on slide 9</span><p>Slide says "Zeolite-based (USY)". The lecture and textbook say <b>zeolite Y (faujasite), rare-earth exchanged</b>. If asked: USY = ultrastable Y, a more heat-stable form of the same Y zeolite (this detail is general knowledge, not in the two sources).</p></div>
+    </section>
+
+    <section class="s prose">
+      <h2 class="sh" id="slides" data-toc="Slide by slide"><span class="n">3</span>Slide by slide: the one line to say</h2>
+      <div class="tw"><table class="t">
+        <thead><tr><th class="num">#</th><th>Slide</th><th>Say</th><th>More</th></tr></thead>
+        <tbody>
+          <tr><td class="num">2</td><td>What it is</td><td>Acid catalyst, carbenium ions (not free radicals); ~70 µm powder flows like a fluid; endothermic, heat from coke burn</td><td><a href="01-unit-and-types.html#what">1.1</a></td></tr>
+          <tr><td class="num">3</td><td>Role in refinery</td><td>CDU → VDU → VGO hydrotreater → FCC → gasoline pool, alkylation, LCO hydrotreating</td><td><a href="01-unit-and-types.html#why">1.2</a></td></tr>
+          <tr><td class="num">4</td><td>Thermal vs catalytic</td><td>Heat only + radicals → light gas, straight chains, low octane; catalyst + ions → C₃/C₄, branched, high octane</td><td><a href="01-unit-and-types.html#thermal">1.3</a></td></tr>
+          <tr><td class="num">5</td><td>Reactor types</td><td>Fixed bed (Houdry 1936, cyclic) → moving bed (TCC 1943, beads) → fluidised bed (FCC, continuous)</td><td><a href="01-unit-and-types.html#types">1.4</a></td></tr>
+          <tr><td class="num">6</td><td>Configurations</td><td>Side-by-side vs stacked (Orthoflow); dense bed before ~1965 → riser cracking with zeolites</td><td><a href="01-unit-and-types.html#config">1.5</a></td></tr>
+          <tr><td class="num">7</td><td>Modern variants</td><td>RFCC (residue), DCC/CPP (light olefins), Petro-FCC: propylene 22 vs 4.7 wt%</td><td><a href="01-unit-and-types.html#variants">1.6</a></td></tr>
+          <tr><td class="num">8–9</td><td>Conditions</td><td>Riser 480–550 °C, low pressure, seconds of contact; regenerator hotter (coke burn)</td><td><a href="02-feed-catalyst-conditions.html#params">2.1</a></td></tr>
+          <tr><td class="num">10</td><td>Feed, contaminants</td><td>CCR → coke; Ni → coke + H₂; V → kills activity; N → neutralises acid sites; S → SOₓ</td><td><a href="02-feed-catalyst-conditions.html#feed">2.2</a></td></tr>
+          <tr><td class="num">11</td><td>Catalyst</td><td>Zeolite Y in clay matrix (binder + kaolin filler); Na removed by rare-earth exchange; ZSM-5 for octane</td><td><a href="02-feed-catalyst-conditions.html#catalyst">2.3</a></td></tr>
+          <tr><td class="num">12</td><td>Reactions</td><td>Primary cracking; hydrogen transfer (olefin + naphthene → paraffin + aromatic); coke burn C + O₂ → CO₂</td><td><a href="04-reactions-mechanism.html#byclass">4.2</a></td></tr>
+          <tr><td class="num">13</td><td>Mechanism</td><td>Protonation → β-scission → hydride transfer → proton return (H–Z = Brønsted acid site)</td><td><a href="04-reactions-mechanism.html#mechanism">4.5</a></td></tr>
+          <tr><td class="num">14–15</td><td>BFD, PFD</td><td>HC path: preheater → riser → disengager → fractionator → gas plant. Catalyst loop: riser → stripper → regenerator → riser</td><td><a href="03-flow-diagrams.html#steps">3.4</a></td></tr>
+          <tr><td class="num">16</td><td>Optimising</td><td>Severity (T, time), catalyst activity, feed quality, regeneration; too low → unconverted oil, too high → gas + coke</td><td><a href="06-products-optimisation.html#levers">6.4</a></td></tr>
+          <tr><td class="num">17</td><td>Products</td><td>Gas, gasoline (main), LCO, HCO, clarified slurry, coke; conversion = 100 − gas-oil yield</td><td><a href="06-products-optimisation.html#products">6.1</a></td></tr>
+        </tbody></table></div>
+    </section>
+
+    <section class="s qc">
+      <h2 class="sh" id="qa" data-toc="Likely questions"><span class="n">4</span>Likely questions (answer aloud, then open)</h2>
+      <h3>Process</h3>
+      <details><summary>Why is it called "fluid" catalytic cracking?</summary><div class="ans">The ~70 µm catalyst powder behaves like a fluid when aerated, so it can circulate continuously between reactor and regenerator. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 16</span></a></div></details>
+      <details><summary>Where does the heat for cracking come from?</summary><div class="ans">Burning coke in the regenerator. Hot catalyst carries it to the riser. At steady state, heat made in the regenerator = heat used in the reactor, so coke yield is set by the heat balance. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>pp. 199, 211</span></a></div></details>
+      <details><summary>Why a riser and not a dense fluidised bed?</summary><div class="ans">Zeolites are ~100× more active; a short, plug-flow contact with fast separation prevents gasoline over-cracking to gas and coke. Dense beds were used before ~1965. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12, 16, 19</span></a></div></details>
+      <details><summary>Why low pressure and high temperature?</summary><div class="ans">Cracking makes many more moles (favoured by low P) and is strongly endothermic (needs high T). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a></div></details>
+      <details><summary>What does the stripper do?</summary><div class="ans">Steam + baffles remove oil adsorbed on spent catalyst so it is recovered as product instead of being burned. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 210</span></a></div></details>
+      <details><summary>Partial vs complete combustion in the regenerator?</summary><div class="ans">Partial (to CO): older, about half the air, needs a CO boiler. Complete (to CO₂): newer, lower carbon left on catalyst (0.01–0.4 wt%) → more active, selective catalyst. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 17</span></a></div></details>
+      <details><summary>Fluidisation regime in each vessel?</summary><div class="ans">Riser: pneumatic transport. Regenerator: turbulent. Stripper and standpipe: bubbling. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.5</span></a></div></details>
+      <details><summary>What happens to the flue gas?</summary><div class="ans">Cyclones → power-recovery expander → CO boiler (if CO present) → electrostatic precipitator → stack. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 211</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16–17</span></a></div></details>
+      <details><summary>Typical riser size?</summary><div class="ans">Example: 0.8 m diameter × 33 m tall, catalyst 144 kg/s, feed 20 kg/s (C/O 7.2). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.4</span></a></div></details>
+
+      <h3>Catalyst and feed</h3>
+      <details><summary>Why must the catalyst be acidic?</summary><div class="ans">It must donate a proton (Brønsted site) to form the carbenium ion; cracking needs the strongest acid sites. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 10, 12</span></a></div></details>
+      <details><summary>Zeolite vs amorphous silica–alumina?</summary><div class="ans">Zeolite: ~100× activity, more gasoline, less coke and dry gas, more iso-butane; octane 2–3 numbers lower. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–13</span></a></div></details>
+      <details><summary>What is the matrix for?</summary><div class="ans">Binder (cohesion) + kaolin filler (body) give density and attrition resistance; additives promote CO → CO₂ and trap SOₓ. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></div></details>
+      <details><summary>What does ZSM-5 do?</summary><div class="ans">Shape-selective: only linear paraffins enter and crack to C₃/C₄, so gasoline is richer in iso-paraffins + aromatics. ~5 % gives about +1 RON. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 209</span></a></div></details>
+      <details><summary>How does the catalyst deactivate?</summary><div class="ans">Coke (temporary, burned each cycle); V (activity loss) and Ni (coke + H₂); nitrogen neutralises acid sites; overheating in the regenerator. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 16, 20</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a></div></details>
+      <details><summary>How are metals handled?</summary><div class="ans">Up to 15 ppm Ni + V: antimony passivation (coke −15 %, H₂ −45 %). Above that with CCR &gt; 3 %: hydroprocess the feed. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></div></details>
+      <details><summary>Why hydrotreat the feed?</summary><div class="ans">Removes S, N, metals and lowers carbon residue → protects catalyst, more gasoline, less coke. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 201</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></div></details>
+
+      <h3>Chemistry</h3>
+      <details><summary>Write β-scission.</summary><div class="ans">\(\ce{R-CH^+-CH2-CH2-R' -> R-CH=CH2 + {}^{+}CH2-R'}\): the C–C bond β to the charge breaks → olefin + smaller ion. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.3</span></a></div></details>
+      <details><summary>Carbenium ion stability, and why it matters?</summary><div class="ans">Tertiary &gt; secondary &gt; primary. Ions rearrange to tertiary → branched (iso) products → high octane, lots of iso-butane. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 11–12</span></a></div></details>
+      <details><summary>What is hydrogen transfer?</summary><div class="ans">\(\ce{3 C_{n}H_{2n} + C_{m}H_{2m} -> 3 C_{n}H_{2n+2} + C_{m}H_{2m-6}}\): olefin + naphthene → paraffin + aromatic. Lowers olefins, adds coke; strong on zeolites. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.7</span></a></div></details>
+      <details><summary>How does coke form?</summary><div class="ans">Aromatics and olefins lose hydrogen and condense/polymerise on the catalyst. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.8</span></a></div></details>
+      <details><summary>Carbonium or carbenium?</summary><div class="ans">Same species here. Lecture says carbonium; the textbook uses carbenium, the modern name. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 9</span></a> <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 204</span></a></div></details>
+      <details><summary>Is the overall reaction endo- or exothermic?</summary><div class="ans">Endothermic. Cracking, dealkylation and dehydrogenation absorb more than H-transfer, isomerisation and cyclisation release. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>p. 208</span></a> <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 10</span></a></div></details>
+
+      <h3>Products and optimisation</h3>
+      <details><summary>Define conversion.</summary><div class="ans">(feed − cycle stock) / feed × 100 by volume = 100 − gas-oil yield; cycle stock = LCO + HCO. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Eq. 8.12</span></a></div></details>
+      <details><summary>Why can liquid volume yield exceed 100 %?</summary><div class="ans">Products are less dense than the feed. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 23</span></a></div></details>
+      <details><summary>How do you increase gasoline?</summary><div class="ans">Zeolite catalyst, short contact + fast separation, optimum (not maximum) riser temperature, hydrotreated feed, full CO₂ regeneration. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>pp. 12–20</span></a></div></details>
+      <details><summary>What if severity is too high?</summary><div class="ans">Gasoline over-cracks to gas and coke: gasoline yield passes through a maximum with conversion. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Ex. E8.3</span></a></div></details>
+      <details><summary>How do you get more propylene?</summary><div class="ans">ZSM-5, higher severity, or DCC / Petro-FCC designs (22 vs 4.7 wt% propylene). <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.8</span></a></div></details>
+      <details><summary>Uses of LCO and slurry?</summary><div class="ans">LCO: diesel after hydrotreating, or fuel diluent. Clarified slurry: fuel oil, aromatic solvent, or recycle to the riser. <a class="src B" href="sources.html#book" title="Book: Fahim et al. (2010), Fundamentals of Petroleum Refining, Ch. 8"><b>B</b><span>Table 8.2, p. 211</span></a></div></details>
+      <details><summary>FCC vs hydrocracking?</summary><div class="ans">FCC adds no hydrogen and rejects carbon as coke; hydrocracking adds hydrogen and costs more. The lecture notes gas oils could go to a hydrocracker for diesel, but FCC is the cheaper process. <a class="src L" href="sources.html#lecture" title="Lecture: Cracking and Reforming 1"><b>L</b><span>p. 20</span></a></div></details>
+    </section>
+
+<nav class="pager" aria-label="Chapter navigation"><a class="prev" href="video.html"><small>← previous</small><b>Video</b></a><a class="next" href="01-unit-and-types.html"><small>next →</small><b>Unit & types</b></a></nav>
+    <footer class="foot">Fluid catalytic cracking · study material for the 1 Oct presentation · Sources: lecture <i>Cracking and Reforming 1</i> and Fahim et al. (2010), <i>Fundamentals of Petroleum Refining</i>, Ch. 8. <a href="sources.html">Full source list →</a></footer>
+  </main>
+</div>
+<button class="totop" type="button" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<dialog class="lb" id="lb" aria-label="Diagram viewer">
+  <div class="lb-bar"><span class="ti"></span>
+    <button type="button" data-z="out" aria-label="Zoom out">−</button>
+    <button type="button" data-z="fit">Fit</button>
+    <button type="button" data-z="in" aria-label="Zoom in">+</button>
+    <a class="open" href="#" target="_blank" rel="noopener">Open SVG</a>
+    <button type="button" data-z="close">Close ✕</button></div>
+  <div class="lb-body"><img alt=""></div>
+</dialog>
+</body>
+</html>
